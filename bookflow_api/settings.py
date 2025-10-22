@@ -28,7 +28,7 @@ SECRET_KEY = APP_SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['b2efc4a69051.ngrok-free.app', '127.0.0.1']
+ALLOWED_HOSTS = ['b2efc4a69051.ngrok-free.app', 'bookflow-api-bcke.onrender.com']
 
 
 # Application definition
