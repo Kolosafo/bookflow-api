@@ -186,7 +186,6 @@ class MyTokenObtainPairView(TokenObtainPairView):
 @api_view(['POST'])
 def resend_OTP(request):
     email = request.data['email']
-    username = request.data['username']
     
     get_previous = OTPService.objects.filter(email=email).last()
     if get_previous:
@@ -194,7 +193,7 @@ def resend_OTP(request):
         
     OTP = generate_otp()
     save_otp(email, str(OTP), "email_verification")
-    send_verification_email(email, username, str(OTP))
+    send_verification_email(email, str(OTP))
     
     return Response({
                 "data": None,
