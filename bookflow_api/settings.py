@@ -133,8 +133,16 @@ WSGI_APPLICATION = "bookflow_api.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        # "ENGINE": "django.db.backends.sqlite3",
+        # "NAME": BASE_DIR / "db.sqlite3",
+        
+         #HEROKU
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv("DB_NAME", default=""),
+        'USER': os.getenv("DB_USERNAME", default=""),
+        'PASSWORD': os.getenv("DB_PASSWORD", default=""),
+        'HOST': os.getenv("DB_HOST_NAME", default=""),
+        'PORT': '5432'
     }
 }
 
