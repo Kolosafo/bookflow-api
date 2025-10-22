@@ -1,0 +1,3634 @@
+[
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "upUxaNWSaRIC",
+        "etag": "W0UIDtdnFzA",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/upUxaNWSaRIC",
+        "volumeInfo": {
+          "title": "The 7 Habits of Highly Effective People",
+          "subtitle": "Powerful Lessons in Personal Change",
+          "authors": ["Stephen R. Covey"],
+          "publisher": "Simon and Schuster",
+          "publishedDate": "2004",
+          "description": "A leading management consultant outlines seven organizational rules for improving effectiveness and increasing productivity at work and at home.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780743272452"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "0743272455"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 392,
+          "printType": "BOOK",
+          "categories": ["Character"],
+          "averageRating": 4.5,
+          "ratingsCount": 23,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.3.4.0.preview.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=upUxaNWSaRIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=upUxaNWSaRIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=upUxaNWSaRIC&printsec=frontcover&dq=intitle:The%2B7%2BHabits%2Bof%2BHighly%2BEffective%2BPeople%2Binauthor:Stephen%2BCovey&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=upUxaNWSaRIC&dq=intitle:The%2B7%2BHabits%2Bof%2BHighly%2BEffective%2BPeople%2Binauthor:Stephen%2BCovey&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_7_Habits_of_Highly_Effective_People.html?hl=&id=upUxaNWSaRIC"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=upUxaNWSaRIC&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "A leading management consultant outlines seven organizational rules for improving effectiveness and increasing productivity at work and at home."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "yzFYEAAAQBAJ",
+        "etag": "oVZMvNmnMJo",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/yzFYEAAAQBAJ",
+        "volumeInfo": {
+          "title": "Atomic Habits Summary (by James Clear)",
+          "subtitle": "Summary and Illustration",
+          "authors": ["James Clear"],
+          "publisher": "James Clear",
+          "description": "SUMMARY: ATOMIC HABITS: An Easy & Proven Way to Build Good Habits & Break Bad Ones. This book is not meant to replace the original book but to serve as a companion to it. ABOUT ORIGINAL BOOK: Atomic Habits can help you improve every day, no matter what your goals are. As one of the world's leading experts on habit formation, James Clear reveals practical strategies that will help you form good habits, break bad ones, and master tiny behaviors that lead to big changes. If you're having trouble changing your habits, the problem isn't you. Instead, the issue is with your system. There is a reason bad habits repeat themselves over and over again, it's not that you are not willing to change, but that you have the wrong system for changing. “You do not rise to the level of your goals. You fall to the level of your systems” - James Clear I’m a huge fan of this book, and as soon as I read it I knew it was going to make a big difference in my life, so I couldn’t wait to make a video on this book and share my ideas. Here is a link to James Clear’s website, where I found he uploads a tonne of useful posts on motivation, habit formation and human psychology. DISCLAIMER: This is an UNOFFICIAL summary and not the original book. It designed to record all the key points of the original book.",
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 39,
+          "printType": "BOOK",
+          "categories": ["Self-Help"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "2.2.2.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=yzFYEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=yzFYEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=yzFYEAAAQBAJ&printsec=frontcover&dq=intitle:Atomic%2BHabits%2Binauthor:James%2BClear&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=yzFYEAAAQBAJ&dq=intitle:Atomic%2BHabits%2Binauthor:James%2BClear&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Atomic_Habits_Summary_by_James_Clear.html?hl=&id=yzFYEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Atomic_Habits_Summary_by_James_Clear-sample-epub.acsm?id=yzFYEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Atomic_Habits_Summary_by_James_Clear-sample-pdf.acsm?id=yzFYEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=yzFYEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Here is a link to James Clear’s website, where I found he uploads a tonne of useful posts on motivation, habit formation and human psychology. DISCLAIMER: This is an UNOFFICIAL summary and not the original book."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "TCf-DwAAQBAJ",
+        "etag": "pobUwldfDMg",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/TCf-DwAAQBAJ",
+        "volumeInfo": {
+          "title": "Think and Grow Rich",
+          "authors": ["Napoleon Hill"],
+          "publisher": "Sristhi Publishers & Distributors",
+          "publishedDate": "2020-10-12",
+          "description": "Ever wondered how life would be if we could condition our minds to Think and Grow Rich? Author Napoleon Hill claims to have based this book on twenty years of rigorous research on the lives of those who had amassed great wealth and made a fortune. Observing their habits, their ways of working and the principles they followed, Hill put together laws and philosophies that can be practiced in everyday life to achieve all-round success. The narrative is rich with stories and anecdotes, which not only inspire, but also show a way forward to take action. After all, riches are not just material, but also pertaining to the mind, body and spirit. Having sold more than fifteen million copies across the world, this book remains the most read self-improvement book of all times!",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9788194790884"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "8194790883"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 296,
+          "printType": "BOOK",
+          "categories": ["Self-Help"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "0.1.2.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=TCf-DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=TCf-DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=TCf-DwAAQBAJ&printsec=frontcover&dq=intitle:Think%2Band%2BGrow%2BRich%2Binauthor:Napoleon%2BHill&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=TCf-DwAAQBAJ&dq=intitle:Think%2Band%2BGrow%2BRich%2Binauthor:Napoleon%2BHill&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Think_and_Grow_Rich.html?hl=&id=TCf-DwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Think_and_Grow_Rich-sample-pdf.acsm?id=TCf-DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=TCf-DwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Author Napoleon Hill claims to have based this book on twenty years of rigorous research on the lives of those who had amassed great wealth and made a fortune."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "YDhjE39j-t0C",
+        "etag": "Icjrd2Sxctw",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/YDhjE39j-t0C",
+        "volumeInfo": {
+          "title": "Mindset",
+          "subtitle": "The New Psychology of Success",
+          "authors": ["Carol S. Dweck"],
+          "publisher": "Random House",
+          "publishedDate": "2006-02-28",
+          "description": "From the renowned psychologist who introduced the world to “growth mindset” comes this updated edition of the million-copy bestseller—featuring transformative insights into redefining success, building lifelong resilience, and supercharging self-improvement. “Through clever research studies and engaging writing, Dweck illuminates how our beliefs about our capabilities exert tremendous influence on how we learn and which paths we take in life.”—Bill Gates, GatesNotes “It’s not always the people who start out the smartest who end up the smartest.” After decades of research, world-renowned Stanford University psychologist Carol S. Dweck, Ph.D., discovered a simple but groundbreaking idea: the power of mindset. In this brilliant book, she shows how success in school, work, sports, the arts, and almost every area of human endeavor can be dramatically influenced by how we think about our talents and abilities. People with a fixed mindset—those who believe that abilities are fixed—are less likely to flourish than those with a growth mindset—those who believe that abilities can be developed. Mindset reveals how great parents, teachers, managers, and athletes can put this idea to use to foster outstanding accomplishment. In this edition, Dweck offers new insights into her now famous and broadly embraced concept. She introduces a phenomenon she calls false growth mindset and guides people toward adopting a deeper, truer growth mindset. She also expands the mindset concept beyond the individual, applying it to the cultures of groups and organizations. With the right mindset, you can motivate those you lead, teach, and love—to transform their lives and your own.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1400062756"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781400062751"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 407,
+          "printType": "BOOK",
+          "categories": ["Psychology"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.2.2.0.preview.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=YDhjE39j-t0C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=YDhjE39j-t0C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=YDhjE39j-t0C&dq=intitle:Mindset%2Binauthor:Carol%2BDweck&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=YDhjE39j-t0C&dq=intitle:Mindset%2Binauthor:Carol%2BDweck&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Mindset.html?hl=&id=YDhjE39j-t0C"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=YDhjE39j-t0C&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "From the renowned psychologist who introduced the world to “growth mindset” comes this updated edition of the million-copy bestseller—featuring transformative insights into redefining success, building lifelong resilience, and ..."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "Xh2rEAAAQBAJ",
+        "etag": "jwVT9ee+Sf0",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/Xh2rEAAAQBAJ",
+        "volumeInfo": {
+          "title": "Grit (HBR Emotional Intelligence Series)",
+          "authors": [
+            "Harvard Business Review",
+            "Angela L. Duckworth",
+            "Misty Copeland",
+            "Shannon Huffman Polson",
+            "Tomas Chamorro-Premuzic"
+          ],
+          "publisher": "Harvard Business Press",
+          "publishedDate": "2023-09-26",
+          "description": "In the face of hardship, you need perseverance and determination. You need grit. But how do you build it? This book explores how you can persist in difficult situations. You'll learn how to convince yourself to do hard things, find support in trying circumstances, and know when you're pushing yourself too hard. This volume includes the work of: Angela Duckworth Misty Copeland Shannon Huffman Polson Tomas Chamorro-Premuzic How to be human at work. The HBR Emotional Intelligence Series features smart, essential reading on the human side of professional life from the pages of Harvard Business Review. Each book in the series offers proven research showing how our emotions impact our work lives, practical advice for managing difficult people and situations, and inspiring essays on what it means to tend to our emotional well-being at work. Uplifting and practical, these books describe the social skills that are critical for ambitious professionals to master.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781647825621"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1647825628"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 75,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "2.3.3.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=Xh2rEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=Xh2rEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=Xh2rEAAAQBAJ&printsec=frontcover&dq=intitle:Grit%2Binauthor:Angela%2BDuckworth&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=Xh2rEAAAQBAJ&dq=intitle:Grit%2Binauthor:Angela%2BDuckworth&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Grit_HBR_Emotional_Intelligence_Series.html?hl=&id=Xh2rEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Grit_HBR_Emotional_Intelligence_Series-sample-epub.acsm?id=Xh2rEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Grit_HBR_Emotional_Intelligence_Series-sample-pdf.acsm?id=Xh2rEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=Xh2rEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Uplifting and practical, these books describe the social skills that are critical for ambitious professionals to master."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "NFQ7DwAAQBAJ",
+        "etag": "vTr7NeMJstU",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/NFQ7DwAAQBAJ",
+        "volumeInfo": {
+          "title": "The Power of Now",
+          "subtitle": "A Guide to Spiritual Enlightenment",
+          "authors": ["Eckhart Tolle"],
+          "publisher": "New World Library",
+          "publishedDate": "2004",
+          "description": "Donation Jan/03 Forward by Russell E. DiCarlo replaced Sept.05.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781577314806"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1577314808"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 258,
+          "printType": "BOOK",
+          "categories": ["Body, Mind & Spirit"],
+          "averageRating": 5,
+          "ratingsCount": 2,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.1.1.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=NFQ7DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=NFQ7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=NFQ7DwAAQBAJ&printsec=frontcover&dq=intitle:The%2BPower%2Bof%2BNow%2Binauthor:Eckhart%2BTolle&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=NFQ7DwAAQBAJ&dq=intitle:The%2BPower%2Bof%2BNow%2Binauthor:Eckhart%2BTolle&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Power_of_Now.html?hl=&id=NFQ7DwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/The_Power_of_Now-sample-pdf.acsm?id=NFQ7DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=NFQ7DwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Donation Jan/03 Forward by Russell E. DiCarlo replaced Sept.05."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "AbKWzgEACAAJ",
+        "etag": "P0XRdUpRcfo",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/AbKWzgEACAAJ",
+        "volumeInfo": {
+          "title": "The Subtle Art of Not Giving a F*ck Journal",
+          "authors": ["Mark Manson"],
+          "publisher": "Harper Design",
+          "publishedDate": "2022-05-03",
+          "description": "From New York Times bestseller author Mark Manson, comes an irreverent, interactive journal based on the internationally bestselling phenomenon The Subtle Art of Not Giving A F*ck and the New York Times bestseller Everything is F*cked, providing questions and sharp insights in his inimitable voice. In classic Mark Manson style, this journal isn't a \"once a day\" or \"once a week\" thing. You can use it any time. Or not. Leave it and come back. Or not. The Subtle Art of Not Giving a F*ck Journal is divided into five sections that mirror the themes of The Subtle Art of Not Giving A F*ck and include guided prompts that help you consider the deepest questions around emotions, values and purpose. Manson's wisdom is complimented with exercises to make you laugh, think, and grow, and his in-your-face attitude is only matched by his sincerity in wanting you to really wrestle with yourself and the things that matter. When it comes to the big topics--things like happiness, values, and responsibility--life is punctuated by seemingly endless questions. Manson addresses these issues with his unique irreverence, offering insights and observations to help you find your own answers. The Subtle Art of Not Giving a F*ck Journal provides ample space for contemplating life's ups and downs and guides you to see how key moments in your life--both the tragic and the comic--are opportunities for growth (and sometimes just a good laugh). The Subtle Art of Not Giving a F*ck Journal is illustrated with color images throughout.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "0063228254"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9780063228252"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 192,
+          "printType": "BOOK",
+          "categories": ["Self-Help"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=AbKWzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=AbKWzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=AbKWzgEACAAJ&dq=intitle:The%2BSubtle%2BArt%2Bof%2BNot%2BGiving%2Ba%2BFuck%2Binauthor:Mark%2BManson&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=AbKWzgEACAAJ&dq=intitle:The%2BSubtle%2BArt%2Bof%2BNot%2BGiving%2Ba%2BFuck%2Binauthor:Mark%2BManson&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Subtle_Art_of_Not_Giving_a_F_ck_Jour.html?hl=&id=AbKWzgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=AbKWzgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "&quot;Divided into five sections that mirror the themes and include guided prompts that help you consider the deepest questions around emotions, values and purpose."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "FJmDoAEACAAJ",
+        "etag": "s77eh13STQU",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/FJmDoAEACAAJ",
+        "volumeInfo": {
+          "title": "Daring Greatly",
+          "subtitle": "How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead by Brene Brown - a 30-minute Summary & Analysis",
+          "authors": ["Instaread Summaries"],
+          "publisher": "CreateSpace",
+          "publishedDate": "2014-03-25",
+          "description": "With InstaRead Summaries, you can get the essence of a book in 30 minutes or less. We read every chapter and summarize it in one or two paragraphs so you can get the information contained in the book at a faster rate. This is an InstaRead Summary of Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead by Brene Brown.Below is a preview of the earlier sections of the summary: What It Means to Dare GreatlyThe author has always been inspired by Theodore Roosevelt's speech, “Citizenship in a Republic”. The speech spoke of vulnerability and of trying, even if success is not guaranteed. To the author, this speech is about the reward of trying, not about winning or losing. It is for this reason that the author chose the phrase “Daring Greatly” for the title of this book.Introduction: My Adventures in the ArenaThe author is a social worker who specializes in research. She has previously done extensive research and writing on the topics of shame and living a Wholehearted life, a life filled with courage, engagement, and purpose. In doing this research, the author recognized problems in her own life that prevented her from following her own advice. One of these problems was a fear of being vulnerable. It reached a critical point in 2010 when the author was asked to speak at TEDxHouston, an independently organized event modeled after TED (Technology, Entertainment, and Design), a nonprofit organization devoted to “Ideas Worth Spreading.” The author gave a speech in which she opened up about her personal life and allowed the audience to interact freely with her. She was surprised by the response she received at the event, and later when her speech was placed on the main TED website. This led to the author making many speeches about vulnerability, and those speeches became this book.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1497446481"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781497446489"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 32,
+          "printType": "BOOK",
+          "categories": ["Self-Help"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=FJmDoAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=FJmDoAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=FJmDoAEACAAJ&dq=intitle:Daring%2BGreatly%2Binauthor:Brene%2BBrown&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=FJmDoAEACAAJ&dq=intitle:Daring%2BGreatly%2Binauthor:Brene%2BBrown&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Daring_Greatly.html?hl=&id=FJmDoAEACAAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=FJmDoAEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "PLEASE NOTE: This is a summary of the book and NOT the original book."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "H8k4JLZu6AsC",
+        "etag": "92aMxS83upw",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/H8k4JLZu6AsC",
+        "volumeInfo": {
+          "title": "Man S Search For Meaning",
+          "authors": ["Viktor Emil Frankl"],
+          "publisher": "Ratna Sagar",
+          "publishedDate": "2003",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "8171082114"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9788171082117"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 124,
+          "printType": "BOOK",
+          "categories": ["Holocaust, Jewish (1939-1945)"],
+          "averageRating": 3,
+          "ratingsCount": 2,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.4.5.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=H8k4JLZu6AsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=H8k4JLZu6AsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=H8k4JLZu6AsC&printsec=frontcover&dq=intitle:Man%27s%2BSearch%2Bfor%2BMeaning%2Binauthor:Viktor%2BFrankl&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=H8k4JLZu6AsC&dq=intitle:Man%27s%2BSearch%2Bfor%2BMeaning%2Binauthor:Viktor%2BFrankl&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Man_S_Search_For_Meaning.html?hl=&id=H8k4JLZu6AsC"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Man_S_Search_For_Meaning-sample-pdf.acsm?id=H8k4JLZu6AsC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=H8k4JLZu6AsC&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "KeFdEQAAQBAJ",
+        "etag": "LgF5O0LPbU0",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/KeFdEQAAQBAJ",
+        "volumeInfo": {
+          "title": "The Four Agreements",
+          "subtitle": "A Practical Guide to Personal Freedom",
+          "authors": ["Don Miguel Ruiz"],
+          "publisher": "Penguin Group",
+          "publishedDate": "2025-09-30",
+          "description": "Now in hardcover, this beloved classic is an enduring keepsake, offering longtime fans and newcomers alike a roadmap for life-changing transformation. “This book by don Miguel Ruiz, simple yet so powerful, has made a tremendous difference in how I think and act in every encounter.”—Oprah Winfrey In The Four Agreements, a perennial bestseller published in dozens of languages worldwide, don Miguel Ruiz reveals the source of self-limiting beliefs that rob us of joy and create needless suffering. Based on ancient Toltec wisdom, The Four Agreements offer a powerful code of conduct that can rapidly transform our lives to a new experience of freedom, true happiness, and love. “Don Miguel Ruiz’s book is a roadmap to enlightenment and freedom.”—Deepak Chopra, Author, The Seven Spiritual Laws of Success “An inspiring book with many great lessons.”—Wayne Dyer, Author, Real Magic “In the tradition of Castaneda, Ruiz distills essential Toltec wisdom, expressing with clarity and impeccability what it means for men and women to live as peaceful warriors in the modern world.”—Dan Millman, Author, Way of the Peaceful Warrior",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781934408650"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1934408654"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 161,
+          "printType": "BOOK",
+          "categories": ["Self-Help"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.2.1.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=KeFdEQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=KeFdEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=KeFdEQAAQBAJ&printsec=frontcover&dq=intitle:The%2BFour%2BAgreements%2Binauthor:Don%2BMiguel%2BRuiz&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=KeFdEQAAQBAJ&dq=intitle:The%2BFour%2BAgreements%2Binauthor:Don%2BMiguel%2BRuiz&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Four_Agreements.html?hl=&id=KeFdEQAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/The_Four_Agreements-sample-pdf.acsm?id=KeFdEQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=KeFdEQAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Now in hardcover, this beloved classic is an enduring keepsake, offering longtime fans and newcomers alike a roadmap for life-changing transformation. “This book by don Miguel Ruiz, simple yet so powerful, has made a tremendous difference ..."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "kRqeDwAAQBAJ",
+        "etag": "DW8flOmvxxQ",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/kRqeDwAAQBAJ",
+        "volumeInfo": {
+          "title": "Rich Dad Poor Dad - What the Rich Teach Their Kids About Money",
+          "authors": ["Robert T. Kiyosaki"],
+          "publisher": "Lulu.com",
+          "publishedDate": "2021",
+          "description": "In Rich Dad Poor Dad, the #1 Personal Finance book of all time, Robert Kiyosaki shares the story of his two dad: his real father and his rich dad. One was educated and an employee all his life, the other's education was street smarts\" over traditional classroom education and he took the path of entrepreneurship?a road that led him to become one of the wealthiest men in Hawaii. Robert's poor dad struggled financially all his life. and these two dads had varying points of view of money and investing.Rich Dad Poor Dad will?? explode the myth that you need to earn a high income to become rich? challenge the belief that your house is an asset? show parents why they can't rely on the school system to teach their kids about money? define, once and for all, an asset and a liability? explain the difference between good debt and bad debt? teach you to see the world of money from different perspectives? discuss the shift in mindset that can put you on the road to financial freedom",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780359727896"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "0359727891"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 196,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "averageRating": 4,
+          "ratingsCount": 6,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.3.2.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=kRqeDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=kRqeDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=kRqeDwAAQBAJ&printsec=frontcover&dq=intitle:Rich%2BDad%2BPoor%2BDad%2Binauthor:Robert%2BKiyosaki&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=kRqeDwAAQBAJ&dq=intitle:Rich%2BDad%2BPoor%2BDad%2Binauthor:Robert%2BKiyosaki&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Rich_Dad_Poor_Dad_What_the_Rich_Teach_Th.html?hl=&id=kRqeDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Rich_Dad_Poor_Dad_What_the_Rich_Teach_Th-sample-pdf.acsm?id=kRqeDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=kRqeDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "In Rich Dad Poor Dad, the #1 Personal Finance book of all time, Robert Kiyosaki shares the story of his two dad: his real father and his rich dad."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "6zF-zQEACAAJ",
+        "etag": "7J0j9d4CeTM",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/6zF-zQEACAAJ",
+        "volumeInfo": {
+          "title": "The Richest Man in Babylon",
+          "authors": ["George S. Clason"],
+          "publishedDate": "2020-04-28",
+          "description": "The secret of the rich isn't a secret at all. The Richest Man in Babylon has been a favorite of Dave Ramsey's for years. Set in ancient Babylon, this book is an inspiring collection of stories about people who have struggled with--and overcome--the same money problems most Americans face: feeling trapped by debt, living paycheck to paycheck, with little to no savings. In this exclusive edition of George Clason's classic, George gives his timeless principles for building lasting wealth, while Dave shares his proven money advice using quotes directly from The Dave Ramsey Show. With powerful storytelling, The Richest Man in Babylon gives fresh perspective and encouragement to all who want to change their lives and win with money. Join George and Dave as they share how to: Get out of debt Budget Live on less than you make Invest wisely Save for the future Enjoy your life and money As George says, \"Money is plentiful for those who understand the simple rules of its acquisition.\" If you follow the wisdom of Babylon, financial peace--and a life of freedom--are just seven steps away.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1942121288"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781942121282"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 208,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=6zF-zQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=6zF-zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=6zF-zQEACAAJ&dq=intitle:The%2BRichest%2BMan%2Bin%2BBabylon%2Binauthor:George%2BClason&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=6zF-zQEACAAJ&dq=intitle:The%2BRichest%2BMan%2Bin%2BBabylon%2Binauthor:George%2BClason&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Richest_Man_in_Babylon.html?hl=&id=6zF-zQEACAAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=6zF-zQEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "&quot;In this exclusive edition of George Clason&#39;s classic, George gives his timeless principles for building lasting wealth, while Dave [Ramsey] shares his proven money advice using quotes directly from The Dave Ramsey Show."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "T6sjDAAAQBAJ",
+        "etag": "MaFJx+vlsVw",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/T6sjDAAAQBAJ",
+        "volumeInfo": {
+          "title": "You Only Live Once",
+          "subtitle": "The Roadmap to Financial Wellness and a Purposeful Life",
+          "authors": ["Jason Vitug"],
+          "publisher": "John Wiley & Sons",
+          "publishedDate": "2016-06-07",
+          "description": "Get your finances in order with smart budgeting and money mindfulness You Only Live Once is the guide to achieving your best life through smart money moves. Before you even begin making a budget, you need to think about why. Where do you see yourself financially in ten years? Five years? This time next year? What does money do for you? Once you know your destination, you can begin charting your course. Step-by-step guidance walks you through the budgeting process, and shows you how to plan your financial path to point toward your goals. You'll learn how to prioritize spending, how to save efficiently, and how to take advantage of simple tools you didn't know you had. Next comes the most important part: taking control. You need to really look at how you perceive and use money day-to-day. Chances are, changing a few habits could give you some breathing room and help you reach your goals sooner. You work hard for your money, yet there never seems to be enough. You don't need to live like a pauper, but you need to be truly aware of just where your money is going, and why. Financial awareness is the key to a financially secure future, and this book unpacks it all to help you get where you want to go. Accept past decisions and articulate your financial goals Align your lifestyle with your budget Explore your relationship with money Re-evaluate financial habits and behaviors You know you need a budget, but you never seem to get around to doing it. Or maybe you did, but you can never seem to stick to it. Smart planning is a major factor in financial security, and it involves just as much introspection as math. You Only Live Once is more than a budgeting guide—it's a guide to revamping your financial behaviors to achieve the life you want.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781119267362"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1119267366"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 194,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "averageRating": 5,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.4.3.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=T6sjDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=T6sjDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=T6sjDAAAQBAJ&printsec=frontcover&dq=intitle:You%2BOnly%2BLive%2BOnce%2Binauthor:Jason%2BVitug&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=T6sjDAAAQBAJ&dq=intitle:You%2BOnly%2BLive%2BOnce%2Binauthor:Jason%2BVitug&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/You_Only_Live_Once.html?hl=&id=T6sjDAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/You_Only_Live_Once-sample-pdf.acsm?id=T6sjDAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=T6sjDAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Get your finances in order with smart budgeting and money mindfulness You Only Live Once is the guide to achieving your best life through smart money moves."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "A-hrDwAAQBAJ",
+        "etag": "1xmaOeHKU1Q",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/A-hrDwAAQBAJ",
+        "volumeInfo": {
+          "title": "I Will Teach You to Be Rich",
+          "subtitle": "No Guilt. No Excuses. Just a 6-Week Program That Works (Second Edition)",
+          "authors": ["Ramit Sethi"],
+          "publisher": "Workman Publishing Company",
+          "publishedDate": "2019-05-14",
+          "description": "As seen on the new NETFLIX series! The groundbreaking NEW YORK TIMES and WALL STREET JOURNAL BESTSELLER that taught a generation how to earn more, save more, and live a rich life—now in a revised 2nd edition. Buy as many lattes as you want. Choose the right accounts and investments so your money grows for you—automatically. Best of all, spend guilt-free on the things you love. Personal finance expert Ramit Sethi has been called a “wealth wizard” by Forbes and the “new guru on the block” by Fortune. Now he’s updated and expanded his modern money classic for a new age, delivering a simple, powerful, no-BS 6-week program that just works. I Will Teach You to Be Rich will show you: • How to crush your debt and student loans faster than you thought possible • How to set up no-fee, high-interest bank accounts that won’t gouge you for every penny • How Ramit automates his finances so his money goes exactly where he wants it to—and how you can do it too • How to talk your way out of late fees (with word-for-word scripts) • How to save hundreds or even thousands per month (and still buy what you love) • A set-it-and-forget-it investment strategy that’s dead simple and beats financial advisors at their own game • How to handle buying a car or a house, paying for a wedding, having kids, and other big expenses—stress free • The exact words to use to negotiate a big raise at work Plus, this 10th anniversary edition features over 80 new pages, including: • New tools • New insights on money and psychology • Amazing stories of how previous readers used the book to create their rich lives Master your money—and then get on with your life.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781523507870"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "152350787X"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 354,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "2.17.13.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=A-hrDwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=A-hrDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=A-hrDwAAQBAJ&dq=intitle:I%2BWill%2BTeach%2BYou%2BTo%2BBe%2BRich%2Binauthor:Ramit%2BSethi&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=A-hrDwAAQBAJ&dq=intitle:I%2BWill%2BTeach%2BYou%2BTo%2BBe%2BRich%2Binauthor:Ramit%2BSethi&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/I_Will_Teach_You_to_Be_Rich.html?hl=&id=A-hrDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=A-hrDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Plus, this 10th anniversary edition features over 80 new pages, including: New tools New tools on money and psychology Amazing stories of how previous readers used the book to create their rich lives Master your money—and then get on with ..."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "zO8AzgEACAAJ",
+        "etag": "zsE+HJ+VRQY",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/zO8AzgEACAAJ",
+        "volumeInfo": {
+          "title": "The Psychology of Money",
+          "authors": ["MORGAN. HOUSEL"],
+          "publishedDate": "2020-09-18",
+          "description": "Timeless lessons on wealth, greed, and happiness doing well with money is not necessarily about what you know. It is about how you behave. And behavior is hard to teach, even to really smart people. How to manage money, invest it, and make business decisions are typically considered to involve a lot of mathematical calculations, where data and formulae tell us exactly what to do. But in the real world, people do not make financial decisions on a spreadsheet. They make them at the dinner table, or in a meeting room, where personal history, your unique view of the world, ego, pride, marketing, and odd incentives are scrambled together. In the psychology of money, the author shares 19 short stories exploring the strange ways people think about money and teaches you how to make better sense of one of life's most important matters.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "9390166268"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9789390166268"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 0,
+          "printType": "BOOK",
+          "categories": ["Psychology"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=zO8AzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=zO8AzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=zO8AzgEACAAJ&dq=intitle:The%2BPsychology%2Bof%2BMoney%2Binauthor:Morgan%2BHousel&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=zO8AzgEACAAJ&dq=intitle:The%2BPsychology%2Bof%2BMoney%2Binauthor:Morgan%2BHousel&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Psychology_of_Money.html?hl=&id=zO8AzgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=zO8AzgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "In the psychology of money, the author shares 19 short stories exploring the strange ways people think about money and teaches you how to make better sense of one of life&#39;s most important matters."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "q3NsuMd7gK0C",
+        "etag": "0whB6KjOu1A",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/q3NsuMd7gK0C",
+        "volumeInfo": {
+          "title": "The Millionaire Next Door",
+          "authors": ["Thomas J. Stanley"],
+          "publisher": "Simon and Schuster",
+          "publishedDate": "1996-10-25",
+          "description": "\"Why aren't I as wealthy as I should be?\" Many people ask this question of themselves all the time. Often they are hard-working, well educated middle- to high-income people. Why, then, are so few affluent. For nearly two decades the answer has been foundin the bestselling The Millionaire Next Door: The Surprising Secrets of America's Wealthy, reissued with a new foreword for the twenty-first century by Dr. Thomas J. Stanley. According to the authors, most people have it all wrong about how you become wealthy in America. Wealth in America is more often the result of hard work, diligent savings, and living below your means than it is about inheritance, advance degrees, and even intelligence. The Millionaire Next Door identifies seven common traits that show up again and again among those who have accumulated wealth. You will learn, for example, that millionaires bargain shop for used cars, pay a tiny fraction of their wealth in income tax, raise children who are often unaware of their family'swealth until they are adults, and, above all, reject the big-spending lifestyles most of us associate with rich people. In fact, you will learn that the flashy millionaires glamorized in the media represent only a tiny minority of America's rich. Most ofthe truly wealthy in this country don't live in Beverly Hills or on Park Avenue-they live next door.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781589794870"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1589794877"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 340,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "averageRating": 3.5,
+          "ratingsCount": 4,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "2.4.4.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=q3NsuMd7gK0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=q3NsuMd7gK0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=q3NsuMd7gK0C&printsec=frontcover&dq=intitle:The%2BMillionaire%2BNext%2BDoor%2Binauthor:Thomas%2BStanley&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=q3NsuMd7gK0C&dq=intitle:The%2BMillionaire%2BNext%2BDoor%2Binauthor:Thomas%2BStanley&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Millionaire_Next_Door.html?hl=&id=q3NsuMd7gK0C"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/The_Millionaire_Next_Door-sample-epub.acsm?id=q3NsuMd7gK0C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=q3NsuMd7gK0C&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Most of the truly wealthy in this country don&#39;t live in Beverly Hills or on Park Avenue-they live next door. This new edition, the first since 1998, includes a new foreword for the twenty-first century by Dr. Thomas J. Stanley."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "y8nNCwAAQBAJ",
+        "etag": "b9j5hxChhdY",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/y8nNCwAAQBAJ",
+        "volumeInfo": {
+          "title": "MONEY Master the Game",
+          "subtitle": "7 Simple Steps to Financial Freedom",
+          "authors": ["Anthony Robbins", "Tony Robbins"],
+          "publisher": "Simon and Schuster",
+          "publishedDate": "2016-03-29",
+          "description": "\"Bibliography found online at tonyrobbins.com/masterthegame\"--Page [643].",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781476757865"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1476757860"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 688,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.11.4.0.preview.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=y8nNCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=y8nNCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=y8nNCwAAQBAJ&printsec=frontcover&dq=intitle:Money%2BMaster%2Bthe%2BGame%2Binauthor:Tony%2BRobbins&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=y8nNCwAAQBAJ&dq=intitle:Money%2BMaster%2Bthe%2BGame%2Binauthor:Tony%2BRobbins&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/MONEY_Master_the_Game.html?hl=&id=y8nNCwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=y8nNCwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Based on extensive research and one-on-one interviews with more than 50 of the most legendary financial experts in the world -- from Carl Icahn and Warren Buffett to Ray Dalio and Steve Forbes -- Tony Robbins has created a simple 7-step ..."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "QVel-1diQkEC",
+        "etag": "IgT4Av7HYfM",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/QVel-1diQkEC",
+        "volumeInfo": {
+          "title": "The Total Money Makeover",
+          "subtitle": "A Proven Plan for Financial Fitness",
+          "authors": ["Dave Ramsey"],
+          "publisher": "Thomas Nelson Inc",
+          "publishedDate": "2003-09-11",
+          "description": "Respected financial expert Dave Ramsey offers a comprehensive plan for getting out of debt and achieving financial health. Against a playful backdrop of fitness terminology, Dave gives solid, hard-hitting advice needed to make your goals a reality. Filled with both the \"hope\" and the \"how-to,\" The Total Money Makeover includes: Useful worksheets and forms Readable and informative charts and graphs The four factors that keep people from getting in shape financially Photos and amazing stories from people who have succeeded following The Total Money Makeover plan The Total Money Makeover is a necessity for everyone in need of a financial makeover. Readers will learn to live by the The Total Money Makeover motto: \"If you will live like no one else, later you can live like no one else.\"",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781418529994"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1418529990"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 289,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.6.7.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=QVel-1diQkEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=QVel-1diQkEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=QVel-1diQkEC&printsec=frontcover&dq=intitle:The%2BTotal%2BMoney%2BMakeover%2Binauthor:Dave%2BRamsey&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=QVel-1diQkEC&dq=intitle:The%2BTotal%2BMoney%2BMakeover%2Binauthor:Dave%2BRamsey&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Total_Money_Makeover.html?hl=&id=QVel-1diQkEC"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/The_Total_Money_Makeover-sample-epub.acsm?id=QVel-1diQkEC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=QVel-1diQkEC&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Respected financial expert Dave Ramsey offers a comprehensive plan for getting out of debt and achieving financial health."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "BZdYEQAAQBAJ",
+        "etag": "18RoSE8Igmg",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/BZdYEQAAQBAJ",
+        "volumeInfo": {
+          "title": "The Simple Path to Wealth (Revised & Expanded 2025 Edition)",
+          "subtitle": "Your Road Map to Financial Independence and a Rich, Free Life (College Graduation Gift)",
+          "authors": ["JL Collins"],
+          "publisher": "Simon and Schuster",
+          "publishedDate": "2025-05-20",
+          "description": "\"This comprehensive guide covers everything from debt elimination to optimizing retirement accounts, all while exposing the marketing myths and investment industry practices that keep most people from building real wealth. Collins shares specific, actionable strategies for both wealth-building and wealth-preservation phases, with a straightforward approach to asset allocation that anyone can implement\"--",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9798893310474"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 320,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.0.1.0.preview.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=BZdYEQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=BZdYEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=BZdYEQAAQBAJ&pg=PA270&dq=intitle:The%2BSimple%2BPath%2Bto%2BWealth%2Binauthor:JL%2BCollins&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=BZdYEQAAQBAJ&dq=intitle:The%2BSimple%2BPath%2Bto%2BWealth%2Binauthor:JL%2BCollins&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Simple_Path_to_Wealth_Revised_Expand.html?hl=&id=BZdYEQAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=BZdYEQAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Your Road Map to Financial Independence and a <b>Rich</b>, Free Life J L <b>Collins</b>. 1.2 % annual average over the past ten years . The most recent five years have been even worse : -0.32 % . 2022 had the big- gest drop in history for bonds , and&nbsp;..."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "hCf-DwAAQBAJ",
+        "etag": "xRSVkKU2N5s",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/hCf-DwAAQBAJ",
+        "volumeInfo": {
+          "title": "How to Win Friends and Influence People",
+          "authors": ["Dale Carnegie"],
+          "publisher": "Sristhi Publishers & Distributors",
+          "publishedDate": "2020-10-12",
+          "description": "Do you feel stuck in life, not knowing how to make it more successful? Do you wish to become more popular? Are you craving to earn more? Do you wish to expand your horizon, earn new clients and win people over with your ideas? How to Win Friends and Influence People is a well-researched and comprehensive guide that will help you through these everyday problems and make success look easier. You can learn to expand your social circle, polish your skill set, find ways to put forward your thoughts more clearly, and build mental strength to counter all hurdles that you may come across on the path to success. Having helped millions of readers from the world over achieve their goals, the clearly listed techniques and principles will be the answers to all your questions.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9788194790891"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "8194790891"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 240,
+          "printType": "BOOK",
+          "categories": ["Self-Help"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "0.1.2.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=hCf-DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=hCf-DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=hCf-DwAAQBAJ&printsec=frontcover&dq=intitle:How%2Bto%2BWin%2BFriends%2Band%2BInfluence%2BPeople%2Binauthor:Dale%2BCarnegie&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=hCf-DwAAQBAJ&dq=intitle:How%2Bto%2BWin%2BFriends%2Band%2BInfluence%2BPeople%2Binauthor:Dale%2BCarnegie&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/How_to_Win_Friends_and_Influence_People.html?hl=&id=hCf-DwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/How_to_Win_Friends_and_Influence_People-sample-pdf.acsm?id=hCf-DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=hCf-DwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Do you feel stuck in life, not knowing how to make it more successful?"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "sGQjjwEACAAJ",
+        "etag": "DE9V4qgTasc",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/sGQjjwEACAAJ",
+        "volumeInfo": {
+          "title": "Emotional Intelligence",
+          "publishedDate": "1995",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "9382563792"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9789382563792"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 352,
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=sGQjjwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=sGQjjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=sGQjjwEACAAJ&dq=intitle:Emotional%2BIntelligence%2Binauthor:Daniel%2BGoleman&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=sGQjjwEACAAJ&dq=intitle:Emotional%2BIntelligence%2Binauthor:Daniel%2BGoleman&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Emotional_Intelligence.html?hl=&id=sGQjjwEACAAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=sGQjjwEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "5dfv0HJ1TEoC",
+        "etag": "m0ihGDqshRA",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/5dfv0HJ1TEoC",
+        "volumeInfo": {
+          "title": "Influence",
+          "subtitle": "The Psychology of Persuasion",
+          "authors": ["Robert B. Cialdini, PhD"],
+          "publisher": "Harper Collins",
+          "publishedDate": "2009-06-02",
+          "description": "The foundational and wildly popular go-to resource for influence and persuasion—a renowned international bestseller, with over 5 million copies sold—now revised adding: new research, new insights, new examples, and online applications. In the new edition of this highly acclaimed bestseller, Robert Cialdini—New York Times bestselling author of Pre-Suasion and the seminal expert in the fields of influence and persuasion—explains the psychology of why people say yes and how to apply these insights ethically in business and everyday settings. Using memorable stories and relatable examples, Cialdini makes this crucially important subject surprisingly easy. With Cialdini as a guide, you don’t have to be a scientist to learn how to use this science. You’ll learn Cialdini’s Universal Principles of Influence, including new research and new uses so you can become an even more skilled persuader—and just as importantly, you’ll learn how to defend yourself against unethical influence attempts. You may think you know these principles, but without understanding their intricacies, you may be ceding their power to someone else. Cialdini’s Principles of Persuasion: Reciprocation Commitment and Consistency Social Proof Liking Authority Scarcity Unity, the newest principle for this edition Understanding and applying the principles ethically is cost-free and deceptively easy. Backed by Dr. Cialdini’s 35 years of evidence-based, peer-reviewed scientific research—including a three-year field study on what leads people to change—Influence is a comprehensive guide to using these principles to move others in your direction.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780061899874"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "0061899879"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 338,
+          "printType": "BOOK",
+          "categories": ["Self-Help"],
+          "averageRating": 4,
+          "ratingsCount": 15,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "2.10.6.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=5dfv0HJ1TEoC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=5dfv0HJ1TEoC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=5dfv0HJ1TEoC&dq=intitle:Influence%2Binauthor:Robert%2BCialdini&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=5dfv0HJ1TEoC&dq=intitle:Influence%2Binauthor:Robert%2BCialdini&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Influence.html?hl=&id=5dfv0HJ1TEoC"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=5dfv0HJ1TEoC&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Influence, the classic book on persuasion, explains the psychology of why people say &quot;yes&quot;—and how to apply these understandings. Dr. Robert Cialdini is the seminal expert in the rapidly expanding field of influence and persuasion."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "KPIdif2ZRmsC",
+        "etag": "agNuMlOqVpY",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/KPIdif2ZRmsC",
+        "volumeInfo": {
+          "title": "Crucial Conversations Tools for Talking When Stakes Are High, Second Edition",
+          "authors": [
+            "Kerry Patterson",
+            "Joseph Grenny",
+            "Ron McMillan",
+            "Al Switzler"
+          ],
+          "publisher": "McGraw Hill Professional",
+          "publishedDate": "2011-09-16",
+          "description": "Learn to communicate best when it matters most; 16 exclusive videos demonstrating crucial conversation techniques show you how! The classic guide to conversing in high-impact situations, Crucial Conversations helps you get constructive results when emotions run high and opinions vary, in the workplace and beyond. It explains how to: Transform negative feelings into powerful dialog Make it safe to talk about almost anything Be persuasive, not abrasive Improve professional and personal relationships Impact productivity, quality, and safety in a positive way The exclusive videos illustrate the effectiveness of the crucial conversations method. These clips feature crucial conversation techniques in action, through case studies, reader stories, and interviews with the authors.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780071784948"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "0071784942"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 256,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "averageRating": 5,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "5.23.21.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=KPIdif2ZRmsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=KPIdif2ZRmsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=KPIdif2ZRmsC&printsec=frontcover&dq=intitle:Crucial%2BConversations%2Binauthor:Joseph%2BGrenny&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=KPIdif2ZRmsC&dq=intitle:Crucial%2BConversations%2Binauthor:Joseph%2BGrenny&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Crucial_Conversations_Tools_for_Talking.html?hl=&id=KPIdif2ZRmsC"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Crucial_Conversations_Tools_for_Talking-sample-epub.acsm?id=KPIdif2ZRmsC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Crucial_Conversations_Tools_for_Talking-sample-pdf.acsm?id=KPIdif2ZRmsC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=KPIdif2ZRmsC&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The classic guide to conversing in high-impact situations, Crucial Conversations helps you get constructive results when emotions run high and opinions vary, in the workplace and beyond."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "PkPRswEACAAJ",
+        "etag": "Txx17Z137V4",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/PkPRswEACAAJ",
+        "volumeInfo": {
+          "title": "Never Split the Difference",
+          "subtitle": "Negotiating As If Your Life Depended On It",
+          "authors": ["Chris Voss", "Tahl Raz"],
+          "publisher": "HarperBusiness",
+          "publishedDate": "2018-06-05",
+          "description": "From policing the rough streets of Kansas City, Missouri, to becoming the FBI’s lead international kidnapping negotiator to teaching negotiation at leading universities, Chris Voss has tested the techniques in Never Split the Difference across the full spectrum of human endeavor and proved their effectiveness. Those who have benefited from these techniques include business clients generating millions in additional profits, MBA students getting better jobs, and even parents dealing with their kids. Never Split the Difference provides a gripping, behind-the-scenes recounting of dramatic scenarios from the gang-infested streets of Haiti to a Brooklyn bank robbery gone horribly wrong, revealing the negotiation strategies that helped Voss and his colleagues succeed where it mattered most: saving lives. Whether buying a car, getting a better raise, buying a home, renegotiating rent, or deliberating with your partner, Voss shows you how to use these skills in the workplace and in every other realm of your life.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "0062872303"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9780062872302"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 288,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=PkPRswEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=PkPRswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=PkPRswEACAAJ&dq=intitle:Never%2BSplit%2Bthe%2BDifference%2Binauthor:Chris%2BVoss&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=PkPRswEACAAJ&dq=intitle:Never%2BSplit%2Bthe%2BDifference%2Binauthor:Chris%2BVoss&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Never_Split_the_Difference.html?hl=&id=PkPRswEACAAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=PkPRswEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Never Split the Difference provides a gripping, behind-the-scenes recounting of dramatic scenarios from the gang-infested streets of Haiti to a Brooklyn bank robbery gone horribly wrong, revealing the negotiation strategies that helped Voss ..."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "OFSTEAAAQBAJ",
+        "etag": "gJ15OpELeSI",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/OFSTEAAAQBAJ",
+        "volumeInfo": {
+          "title": "Thinking, Fast and Slow",
+          "authors": ["Daniel Kahneman"],
+          "publisher": "Anchor Canada",
+          "publishedDate": "2013-04-02",
+          "description": "NEW YORK TIMES BESTSELLER A GLOBE AND MAIL BEST BOOK OF THE YEAR Two systems drive the way we think and make choices, Daniel Kahneman explains: System One is fast, intuitive, and emotional; System Two is slower, more deliberative, and more logical. Examining how both systems function within the mind, Kahneman exposes the extraordinary capabilities as well as the biases of fast thinking and the pervasive influence of intuitive impressions on our thoughts and our choices. Engaging the reader in a lively conversation about how we think, he shows where we can trust our intuitions and how we can tap into the benefits of slow thinking, contrasting the two-system view of the mind with the standard model of the rational economic agent. Kahneman's singularly influential work has transformed cognitive psychology and launched the new fields of behavioral economics and happiness studies. In this path-breaking book, Kahneman shows how the mind works, and offers practical and enlightening insights into how choices are made in both our business and personal lives--and how we can guard against the mental glitches that often get us into trouble.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780385676533"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "0385676530"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 513,
+          "printType": "BOOK",
+          "categories": ["Psychology"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.1.1.0.preview.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=OFSTEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=OFSTEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=OFSTEAAAQBAJ&dq=intitle:Thinking%2BFast%2Band%2BSlow%2Binauthor:Daniel%2BKahneman&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=OFSTEAAAQBAJ&dq=intitle:Thinking%2BFast%2Band%2BSlow%2Binauthor:Daniel%2BKahneman&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Thinking_Fast_and_Slow.html?hl=&id=OFSTEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=OFSTEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "In this path-breaking book, Kahneman shows how the mind works, and offers practical and enlightening insights into how choices are made in both our business and personal lives--and how we can guard against the mental glitches that often get ..."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "iAOUEAAAQBAJ",
+        "etag": "l4Fltq8oJWQ",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/iAOUEAAAQBAJ",
+        "volumeInfo": {
+          "title": "The Laws of Human Nature",
+          "subtitle": "Summary and Illustration",
+          "authors": ["Robert Greene"],
+          "publisher": "Robert Greene",
+          "description": "SUMMARY: This book is If you’ve ever wondered about human behavior, wonder no more. In The Laws of Human Nature, Greene takes a look at 18 laws that reveal who we are and why we do the things we do. Humans are complex beings, but Greene uses these laws to strip human nature down to its bare bones. Every law that he presents is supported by a real-life historical account, with an insightful twist to drive the point home. As you read the book, don’t be surprised if you get the feeling that everyone you know, including yourself, is described in the book! DISCLAIMER: This is an UNOFFICIAL summary and not the original book. It is designed to record all the key points of the original book.",
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 73,
+          "printType": "BOOK",
+          "categories": ["Self-Help"],
+          "averageRating": 5,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "0.1.1.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=iAOUEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=iAOUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=iAOUEAAAQBAJ&printsec=frontcover&dq=intitle:The%2BLaws%2Bof%2BHuman%2BNature%2Binauthor:Robert%2BGreene&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=iAOUEAAAQBAJ&dq=intitle:The%2BLaws%2Bof%2BHuman%2BNature%2Binauthor:Robert%2BGreene&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Laws_of_Human_Nature.html?hl=&id=iAOUEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/The_Laws_of_Human_Nature-sample-epub.acsm?id=iAOUEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/The_Laws_of_Human_Nature-sample-pdf.acsm?id=iAOUEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=iAOUEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "As you read the book, don’t be surprised if you get the feeling that everyone you know, including yourself, is described in the book! DISCLAIMER: This is an UNOFFICIAL summary and not the original book."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "_LVynQEACAAJ",
+        "etag": "9I7hvJVcyh0",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/_LVynQEACAAJ",
+        "volumeInfo": {
+          "title": "The Art of Communicating",
+          "authors": ["Thich Nhat Hanh"],
+          "publisher": "HarperOne",
+          "publishedDate": "2014-09-02",
+          "description": "Zen master Thich Nhat Hanh, bestselling author of Peace Is Every Step and one of the most respected and celebrated religious leaders in the world, delivers a powerful path to happiness through mastering life's most important skill. In this precise and practical guide, Buddhist monk Thich Nhat Hanh reveals how to listen mindfully and express your fullest and most authentic self. With examples from his work with couples, families, and international conflicts, The Art of Communicating helps us move beyond the perils and frustrations of misrepresentation and misunderstanding to learn the listening and speaking skills that will forever change how we experience and impact the world. A portion of the proceeds from your book purchase supports Thich Nhat Hanh's peace work and mindfulness teachings around the world. For more information on how you can help, visit www.thichnhathanhfoundation.org.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "0062224662"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9780062224668"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 176,
+          "printType": "BOOK",
+          "categories": ["Religion"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=_LVynQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=_LVynQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=_LVynQEACAAJ&dq=intitle:The%2BArt%2Bof%2BCommunicating%2Binauthor:Thich%2BNhat%2BHanh&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=_LVynQEACAAJ&dq=intitle:The%2BArt%2Bof%2BCommunicating%2Binauthor:Thich%2BNhat%2BHanh&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Art_of_Communicating.html?hl=&id=_LVynQEACAAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=_LVynQEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Zen master Thich Nhat Hanh, bestselling author of Peace Is Every Step and one of the most respected and celebrated religious leaders in the world, delivers a powerful path to happiness through mastering life&#39;s most important skill."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "A3qACgAAQBAJ",
+        "etag": "5g4jjHr5KRU",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/A3qACgAAQBAJ",
+        "volumeInfo": {
+          "title": "Nonviolent Communication: A Language of Life",
+          "subtitle": "Life-Changing Tools for Healthy Relationships",
+          "authors": ["Marshall B. Rosenberg", "Deepak Chopra"],
+          "publisher": "PuddleDancer Press",
+          "publishedDate": "2015-09-01",
+          "description": "5,000,000 COPIES SOLD WORLDWIDE • TRANSLATED IN MORE THAN 35 LANGUAGES What is Violent Communication? If \"violent\" means acting in ways that result in hurt or harm, then much of how we communicate—judging others, bullying, having racial bias, blaming, finger pointing, discriminating, speaking without listening, criticizing others or ourselves, name-calling, reacting when angry, using political rhetoric, being defensive or judging who's \"good/bad\" or what's \"right/wrong\" with people—could indeed be called \"violent communication.\" What is Nonviolent Communication? Nonviolent Communication is the integration of four things: • Consciousness: a set of principles that support living a life of compassion, collaboration, courage, and authenticity • Language: understanding how words contribute to connection or distance • Communication: knowing how to ask for what we want, how to hear others even in disagreement, and how to move toward solutions that work for all • Means of influence: sharing \"power with others\" rather than using \"power over others\" Nonviolent Communication serves our desire to do three things: • Increase our ability to live with choice, meaning, and connection • Connect empathically with self and others to have more satisfying relationships • Sharing of resources so everyone is able to benefit",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781892005540"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1892005549"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 233,
+          "printType": "BOOK",
+          "categories": ["Psychology"],
+          "averageRating": 5,
+          "ratingsCount": 2,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.7.7.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=A3qACgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=A3qACgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=A3qACgAAQBAJ&printsec=frontcover&dq=intitle:Nonviolent%2BCommunication%2Binauthor:Marshall%2BRosenberg&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=A3qACgAAQBAJ&dq=intitle:Nonviolent%2BCommunication%2Binauthor:Marshall%2BRosenberg&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Nonviolent_Communication_A_Language_of_L.html?hl=&id=A3qACgAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Nonviolent_Communication_A_Language_of_L-sample-epub.acsm?id=A3qACgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Nonviolent_Communication_A_Language_of_L-sample-pdf.acsm?id=A3qACgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=A3qACgAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Nonviolent Communication is the integration of four things: • Consciousness: a set of principles that support living a life of compassion, collaboration, courage, and authenticity • Language: understanding how words contribute to ..."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "pYc-DwAAQBAJ",
+        "etag": "/s8aTdS1M4I",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/pYc-DwAAQBAJ",
+        "volumeInfo": {
+          "title": "Drive",
+          "subtitle": "The Surprising Truth About What Motivates Us",
+          "authors": ["Daniel H. Pink"],
+          "publisher": "Penguin",
+          "publishedDate": "2011-04-05",
+          "description": "The New York Times bestseller that gives readers a paradigm-shattering new way to think about motivation from the author of When: The Scientific Secrets of Perfect Timing Most people believe that the best way to motivate is with rewards like money—the carrot-and-stick approach. That's a mistake, says Daniel H. Pink (author of To Sell Is Human: The Surprising Truth About Motivating Others). In this provocative and persuasive new book, he asserts that the secret to high performance and satisfaction-at work, at school, and at home—is the deeply human need to direct our own lives, to learn and create new things, and to do better by ourselves and our world. Drawing on four decades of scientific research on human motivation, Pink exposes the mismatch between what science knows and what business does—and how that affects every aspect of life. He examines the three elements of true motivation—autonomy, mastery, and purpose-and offers smart and surprising techniques for putting these into action in a unique book that will change how we think and transform how we live.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781594484803"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1594484805"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 289,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.6.3.0.preview.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=pYc-DwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=pYc-DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=pYc-DwAAQBAJ&dq=intitle:Drive%2Binauthor:Daniel%2BPink&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=pYc-DwAAQBAJ&dq=intitle:Drive%2Binauthor:Daniel%2BPink&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Drive.html?hl=&id=pYc-DwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=pYc-DwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "That&#39;s a mistake, says Daniel H. Pink (author of To Sell Is Human: The Surprising Truth About Motivating Others)."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "tvfyz-4JILwC",
+        "etag": "n+HKqfo/J4Q",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/tvfyz-4JILwC",
+        "volumeInfo": {
+          "title": "The Lean Startup",
+          "subtitle": "How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses",
+          "authors": ["Eric Ries"],
+          "publisher": "Crown Currency",
+          "publishedDate": "2011-09-13",
+          "description": "Most startups fail. But many of those failures are preventable. The Lean Startup is a new approach being adopted across the globe, changing the way companies are built and new products are launched. Eric Ries defines a startup as an organization dedicated to creating something new under conditions of extreme uncertainty. This is just as true for one person in a garage or a group of seasoned professionals in a Fortune 500 boardroom. What they have in common is a mission to penetrate that fog of uncertainty to discover a successful path to a sustainable business. The Lean Startup approach fosters companies that are both more capital efficient and that leverage human creativity more effectively. Inspired by lessons from lean manufacturing, it relies on “validated learning,” rapid scientific experimentation, as well as a number of counter-intuitive practices that shorten product development cycles, measure actual progress without resorting to vanity metrics, and learn what customers really want. It enables a company to shift directions with agility, altering plans inch by inch, minute by minute. Rather than wasting time creating elaborate business plans, The Lean Startup offers entrepreneurs—in companies of all sizes—a way to test their vision continuously, to adapt and adjust before it’s too late. Ries provides a scientific approach to creating and managing successful startups in a age when companies need to innovate more than ever.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780307887917"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "030788791X"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 337,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "averageRating": 3,
+          "ratingsCount": 35,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "3.43.29.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=tvfyz-4JILwC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=tvfyz-4JILwC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=tvfyz-4JILwC&dq=intitle:The%2BLean%2BStartup%2Binauthor:Eric%2BRies&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=tvfyz-4JILwC&dq=intitle:The%2BLean%2BStartup%2Binauthor:Eric%2BRies&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Lean_Startup.html?hl=&id=tvfyz-4JILwC"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=tvfyz-4JILwC&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Eric Ries defines a startup as an organization dedicated to creating something new under conditions of extreme uncertainty. This is just as true for one person in a garage or a group of seasoned professionals in a Fortune 500 boardroom."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "xw-PEAAAQBAJ",
+        "etag": "zpjSs8zaHLc",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/xw-PEAAAQBAJ",
+        "volumeInfo": {
+          "title": "Zero to One",
+          "subtitle": "Notes on Startups, or How to Build the Future",
+          "authors": ["Peter Thiel", "Blake Masters"],
+          "publisher": "National Geographic Books",
+          "publishedDate": "2014-09-16",
+          "description": "#1 NEW YORK TIMES BESTSELLER • “This book delivers completely new and refreshing ideas on how to create value in the world.”—Mark Zuckerberg, CEO of Meta “Peter Thiel has built multiple breakthrough companies, and Zero to One shows how.”—Elon Musk, CEO of SpaceX and Tesla The great secret of our time is that there are still uncharted frontiers to explore and new inventions to create. In Zero to One, legendary entrepreneur and investor Peter Thiel shows how we can find singular ways to create those new things. Thiel begins with the contrarian premise that we live in an age of technological stagnation, even if we’re too distracted by shiny mobile devices to notice. Information technology has improved rapidly, but there is no reason why progress should be limited to computers or Silicon Valley. Progress can be achieved in any industry or area of business. It comes from the most important skill that every leader must master: learning to think for yourself. Doing what someone else already knows how to do takes the world from 1 to n, adding more of something familiar. But when you do something new, you go from 0 to 1. The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won’t make a search engine. Tomorrow’s champions will not win by competing ruthlessly in today’s marketplace. They will escape competition altogether, because their businesses will be unique. Zero to One presents at once an optimistic view of the future of progress in America and a new way of thinking about innovation: it starts by learning to ask the questions that lead you to find value in unexpected places.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780804139298"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "0804139296"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 0,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=xw-PEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=xw-PEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=xw-PEAAAQBAJ&dq=intitle:Zero%2Bto%2BOne%2Binauthor:Peter%2BThiel&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=xw-PEAAAQBAJ&dq=intitle:Zero%2Bto%2BOne%2Binauthor:Peter%2BThiel&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Zero_to_One.html?hl=&id=xw-PEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=xw-PEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "In Zero to One, legendary entrepreneur and investor Peter Thiel shows how we can find singular ways to create those new things."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "7io-2eqxSS0C",
+        "etag": "j1/QxVrTF1Q",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/7io-2eqxSS0C",
+        "volumeInfo": {
+          "title": "Good to Great",
+          "subtitle": "Why Some Companies Make the Leap...And Others Don't",
+          "authors": ["Jim Collins"],
+          "publisher": "Harper Collins",
+          "publishedDate": "2011-07-19",
+          "description": "The Challenge Built to Last, the defining management study of the nineties, showed how great companies triumph over time and how long-term sustained performance can be engineered into the DNA of an enterprise from the verybeginning. But what about the company that is not born with great DNA? How can good companies, mediocre companies, even bad companies achieve enduring greatness? The Study For years, this question preyed on the mind of Jim Collins. Are there companies that defy gravity and convert long-term mediocrity or worse into long-term superiority? And if so, what are the universal distinguishing characteristics that cause a company to go from good to great? The Standards Using tough benchmarks, Collins and his research team identified a set of elite companies that made the leap to great results and sustained those results for at least fifteen years. How great? After the leap, the good-to-great companies generated cumulative stock returns that beat the general stock market by an average of seven times in fifteen years, better than twice the results delivered by a composite index of the world's greatest companies, including Coca-Cola, Intel, General Electric, and Merck. The Comparisons The research team contrasted the good-to-great companies with a carefully selected set of comparison companies that failed to make the leap from good to great. What was different? Why did one set of companies become truly great performers while the other set remained only good? Over five years, the team analyzed the histories of all twenty-eight companies in the study. After sifting through mountains of data and thousands of pages of interviews, Collins and his crew discovered the key determinants of greatness -- why some companies make the leap and others don't. The Findings The findings of the Good to Great study will surprise many readers and shed light on virtually every area of management strategy and practice. The findings include: Level 5 Leaders: The research team was shocked to discover the type of leadership required to achieve greatness. The Hedgehog Concept (Simplicity within the Three Circles): To go from good to great requires transcending the curse of competence. A Culture of Discipline: When you combine a culture of discipline with an ethic of entrepreneurship, you get the magical alchemy of great results. Technology Accelerators: Good-to-great companies think differently about the role of technology. The Flywheel and the Doom Loop: Those who launch radical change programs and wrenching restructurings will almost certainly fail to make the leap. “Some of the key concepts discerned in the study,” comments Jim Collins, \"fly in the face of our modern business culture and will, quite frankly, upset some people.” Perhaps, but who can afford to ignore these findings?",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780062119209"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "0062119206"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 320,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "averageRating": 4.5,
+          "ratingsCount": 13,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "0.11.8.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=7io-2eqxSS0C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=7io-2eqxSS0C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=7io-2eqxSS0C&dq=intitle:Good%2Bto%2BGreat%2Binauthor:Jim%2BCollins&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=7io-2eqxSS0C&dq=intitle:Good%2Bto%2BGreat%2Binauthor:Jim%2BCollins&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Good_to_Great.html?hl=&id=7io-2eqxSS0C"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=7io-2eqxSS0C&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "After the leap, the good-to-great companies generated cumulative stock returns that beat the general stock market by an average of seven times in fifteen years, better than twice the results delivered by a composite index of the world&#39;s ..."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "tUaNDQAAQBAJ",
+        "etag": "zLneKoTS2HA",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/tUaNDQAAQBAJ",
+        "volumeInfo": {
+          "title": "Start with Why",
+          "subtitle": "How Great Leaders Inspire Everyone to Take Action",
+          "authors": ["Simon Sinek"],
+          "publisher": "Penguin",
+          "publishedDate": "2009-10-29",
+          "description": "The inspirational bestseller that ignited a movement and asked us to find our WHY Discover the book that is captivating millions on TikTok and that served as the basis for one of the most popular TED Talks of all time—with more than 56 million views and counting. Over a decade ago, Simon Sinek started a movement that inspired millions to demand purpose at work, to ask what was the WHY of their organization. Since then, millions have been touched by the power of his ideas, and these ideas remain as relevant and timely as ever. START WITH WHY asks (and answers) the questions: why are some people and organizations more innovative, more influential, and more profitable than others? Why do some command greater loyalty from customers and employees alike? Even among the successful, why are so few able to repeat their success over and over? People like Martin Luther King Jr., Steve Jobs, and the Wright Brothers had little in common, but they all started with WHY. They realized that people won't truly buy into a product, service, movement, or idea until they understand the WHY behind it. START WITH WHY shows that the leaders who have had the greatest influence in the world all think, act and communicate the same way—and it's the opposite of what everyone else does. Sinek calls this powerful idea The Golden Circle, and it provides a framework upon which organizations can be built, movements can be led, and people can be inspired. And it all starts with WHY.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781591842804"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1591842808"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 258,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "averageRating": 5,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.7.1.0.preview.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=tUaNDQAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=tUaNDQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=tUaNDQAAQBAJ&dq=intitle:Start%2Bwith%2BWhy%2Binauthor:Simon%2BSinek&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=tUaNDQAAQBAJ&dq=intitle:Start%2Bwith%2BWhy%2Binauthor:Simon%2BSinek&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Start_with_Why.html?hl=&id=tUaNDQAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=tUaNDQAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The inspirational bestseller that ignited a movement and asked us to find our WHY Discover the book that is captivating millions on TikTok and that served as the basis for one of the most popular TED Talks of all time—with more than 56 ..."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "3JnBAgAAQBAJ",
+        "etag": "E3Ul3BtBu88",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/3JnBAgAAQBAJ",
+        "volumeInfo": {
+          "title": "The Innovator's Dilemma",
+          "subtitle": "When New Technologies Cause Great Firms to Fail",
+          "authors": ["Clayton Christensen"],
+          "publisher": "Harvard Business Review Press",
+          "publishedDate": "2013-11-19",
+          "description": "An innovation classic. From Steve Jobs to Jeff Bezos, Clay Christensen’s work continues to underpin today’s most innovative leaders and organizations. The bestselling classic on disruptive innovation, by renowned author Clayton M. Christensen. His work is cited by the world’s best-known thought leaders, from Steve Jobs to Malcolm Gladwell. In this classic bestseller—one of the most influential business books of all time—innovation expert Clayton Christensen shows how even the most outstanding companies can do everything right—yet still lose market leadership. Christensen explains why most companies miss out on new waves of innovation. No matter the industry, he says, a successful company with established products will get pushed aside unless managers know how and when to abandon traditional business practices. Offering both successes and failures from leading companies as a guide, The Innovator’s Dilemma gives you a set of rules for capitalizing on the phenomenon of disruptive innovation. Sharp, cogent, and provocative—and consistently noted as one of the most valuable business ideas of all time—The Innovator’s Dilemma is the book no manager, leader, or entrepreneur should be without.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781422196021"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "142219602X"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 283,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "averageRating": 3,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.3.4.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=3JnBAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=3JnBAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=3JnBAgAAQBAJ&printsec=frontcover&dq=intitle:The%2BInnovator%27s%2BDilemma%2Binauthor:Clayton%2BChristensen&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=3JnBAgAAQBAJ&dq=intitle:The%2BInnovator%27s%2BDilemma%2Binauthor:Clayton%2BChristensen&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Innovator_s_Dilemma.html?hl=&id=3JnBAgAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/The_Innovator_s_Dilemma-sample-pdf.acsm?id=3JnBAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=3JnBAgAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Sharp, cogent, and provocative—and consistently noted as one of the most valuable business ideas of all time—The Innovator’s Dilemma is the book no manager, leader, or entrepreneur should be without."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "qNNmDwAAQBAJ",
+        "etag": "Jm1+P1zrJ0k",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/qNNmDwAAQBAJ",
+        "volumeInfo": {
+          "title": "Principles",
+          "authors": ["Ray Dalio"],
+          "publisher": "Simon and Schuster",
+          "publishedDate": "2018-08-07",
+          "description": "#1 New York Times Bestseller “Significant...The book is both instructive and surprisingly moving.” —The New York Times Ray Dalio, one of the world’s most successful investors and entrepreneurs, shares the unconventional principles that he’s developed, refined, and used over the past forty years to create unique results in both life and business—and which any person or organization can adopt to help achieve their goals. In 1975, Ray Dalio founded an investment firm, Bridgewater Associates, out of his two-bedroom apartment in New York City. Forty years later, Bridgewater has made more money for its clients than any other hedge fund in history and grown into the fifth most important private company in the United States, according to Fortune magazine. Dalio himself has been named to Time magazine’s list of the 100 most influential people in the world. Along the way, Dalio discovered a set of unique principles that have led to Bridgewater’s exceptionally effective culture, which he describes as “an idea meritocracy that strives to achieve meaningful work and meaningful relationships through radical transparency.” It is these principles, and not anything special about Dalio—who grew up an ordinary kid in a middle-class Long Island neighborhood—that he believes are the reason behind his success. In Principles, Dalio shares what he’s learned over the course of his remarkable career. He argues that life, management, economics, and investing can all be systemized into rules and understood like machines. The book’s hundreds of practical lessons, which are built around his cornerstones of “radical truth” and “radical transparency,” include Dalio laying out the most effective ways for individuals and organizations to make decisions, approach challenges, and build strong teams. He also describes the innovative tools the firm uses to bring an idea meritocracy to life, such as creating “baseball cards” for all employees that distill their strengths and weaknesses, and employing computerized decision-making systems to make believability-weighted decisions. While the book brims with novel ideas for organizations and institutions, Principles also offers a clear, straightforward approach to decision-making that Dalio believes anyone can apply, no matter what they’re seeking to achieve. Here, from a man who has been called both “the Steve Jobs of investing” and “the philosopher king of the financial universe” (CIO magazine), is a rare opportunity to gain proven advice unlike anything you’ll find in the conventional business press.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781982112387"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1982112387"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 560,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.9.8.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=qNNmDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=qNNmDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=qNNmDwAAQBAJ&printsec=frontcover&dq=intitle:Principles%2Binauthor:Ray%2BDalio&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=qNNmDwAAQBAJ&dq=intitle:Principles%2Binauthor:Ray%2BDalio&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Principles.html?hl=&id=qNNmDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Principles-sample-epub.acsm?id=qNNmDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=qNNmDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The book is both instructive and surprisingly moving.” —The New York Times Ray Dalio, one of the world’s most successful investors and entrepreneurs, shares the unconventional principles that he’s developed, refined, and used over ..."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "620pAgAAQBAJ",
+        "etag": "hlWyPdu9EhA",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/620pAgAAQBAJ",
+        "volumeInfo": {
+          "title": "The Hard Thing About Hard Things",
+          "subtitle": "Building a Business When There Are No Easy Answers",
+          "authors": ["Ben Horowitz"],
+          "publisher": "Harper Collins",
+          "publishedDate": "2014-03-04",
+          "description": "Ben Horowitz, cofounder of Andreessen Horowitz and one of Silicon Valley's most respected and experienced entrepreneurs, offers essential advice on building and running a startup—practical wisdom for managing the toughest problems business school doesn’t cover, based on his popular ben’s blog. While many people talk about how great it is to start a business, very few are honest about how difficult it is to run one. Ben Horowitz analyzes the problems that confront leaders every day, sharing the insights he’s gained developing, managing, selling, buying, investing in, and supervising technology companies. A lifelong rap fanatic, he amplifies business lessons with lyrics from his favorite songs, telling it straight about everything from firing friends to poaching competitors, cultivating and sustaining a CEO mentality to knowing the right time to cash in. Filled with his trademark humor and straight talk, The Hard Thing About Hard Things is invaluable for veteran entrepreneurs as well as those aspiring to their own new ventures, drawing from Horowitz's personal and often humbling experiences.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780062273215"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "0062273213"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 232,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "averageRating": 3.5,
+          "ratingsCount": 2,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "2.8.11.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=620pAgAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=620pAgAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=620pAgAAQBAJ&dq=intitle:The%2BHard%2BThing%2BAbout%2BHard%2BThings%2Binauthor:Ben%2BHorowitz&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=620pAgAAQBAJ&dq=intitle:The%2BHard%2BThing%2BAbout%2BHard%2BThings%2Binauthor:Ben%2BHorowitz&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Hard_Thing_About_Hard_Things.html?hl=&id=620pAgAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=620pAgAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "This is no polished victory lap; he analyzes issues with no easy answers through his trials, including demoting (or firing) a loyal friend; whether you should incorporate titles and promotions, and how to handle them; if it&#39;s OK to hire ..."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "dqI_PgAACAAJ",
+        "etag": "cLLUCW/L3X0",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/dqI_PgAACAAJ",
+        "volumeInfo": {
+          "title": "The E-myth Revisited",
+          "authors": ["Michael E. Gerber"],
+          "publisher": "Harperbusiness",
+          "publishedDate": "2005-11",
+          "description": "The totally revised edition of a groundbreaking bestseller, first published in 1986, provides information and guidance in starting and maintaining a small business or franchise. Original.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "0060766611"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9780060766610"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 288,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=dqI_PgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=dqI_PgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=dqI_PgAACAAJ&dq=intitle:The%2BE-Myth%2BRevisited%2Binauthor:Michael%2BGerber&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=dqI_PgAACAAJ&dq=intitle:The%2BE-Myth%2BRevisited%2Binauthor:Michael%2BGerber&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_E_myth_Revisited.html?hl=&id=dqI_PgAACAAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=dqI_PgAACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The totally revised edition of a groundbreaking bestseller, first published in 1986, provides information and guidance in starting and maintaining a small business or franchise. Original."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "z6-RBQAAQBAJ",
+        "etag": "nmF/09D9Ce0",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/z6-RBQAAQBAJ",
+        "volumeInfo": {
+          "title": "Blue Ocean Strategy, Expanded Edition",
+          "subtitle": "How to Create Uncontested Market Space and Make the Competition Irrelevant",
+          "authors": ["W. Chan Kim", "Renee Mauborgne"],
+          "publisher": "Harvard Business Review Press",
+          "publishedDate": "2015-01-20",
+          "description": "Argues against common competitive practices while outlining recommendations based on the creation of untapped market spaces with growth potential.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781625274496"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1625274491"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 317,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "averageRating": 4,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.5.1.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=z6-RBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=z6-RBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=z6-RBQAAQBAJ&printsec=frontcover&dq=intitle:Blue%2BOcean%2BStrategy%2Binauthor:W%2BChan%2BKim&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=z6-RBQAAQBAJ&dq=intitle:Blue%2BOcean%2BStrategy%2Binauthor:W%2BChan%2BKim&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Blue_Ocean_Strategy_Expanded_Edition.html?hl=&id=z6-RBQAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Blue_Ocean_Strategy_Expanded_Edition-sample-pdf.acsm?id=z6-RBQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=z6-RBQAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Argues against common competitive practices while outlining recommendations based on the creation of untapped market spaces with growth potential."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "u2NDDwAAQBAJ",
+        "etag": "U27WuN7I/IA",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/u2NDDwAAQBAJ",
+        "volumeInfo": {
+          "title": "Measure What Matters",
+          "subtitle": "How Google, Bono, and the Gates Foundation Rock the World with OKRs",
+          "authors": ["John Doerr"],
+          "publisher": "Penguin",
+          "publishedDate": "2018-04-24",
+          "description": "#1 New York Times Bestseller Legendary venture capitalist John Doerr reveals how the goal-setting system of Objectives and Key Results (OKRs) has helped tech giants from Intel to Google achieve explosive growth—and how it can help any organization thrive. In the fall of 1999, John Doerr met with the founders of a start-up whom he'd just given $12.5 million, the biggest investment of his career. Larry Page and Sergey Brin had amazing technology, entrepreneurial energy, and sky-high ambitions, but no real business plan. For Google to change the world (or even to survive), Page and Brin had to learn how to make tough choices on priorities while keeping their team on track. They'd have to know when to pull the plug on losing propositions, to fail fast. And they needed timely, relevant data to track their progress—to measure what mattered. Doerr taught them about a proven approach to operating excellence: Objectives and Key Results. He had first discovered OKRs in the 1970s as an engineer at Intel, where the legendary Andy Grove (\"the greatest manager of his or any era\") drove the best-run company Doerr had ever seen. Later, as a venture capitalist, Doerr shared Grove's brainchild with more than fifty companies. Wherever the process was faithfully practiced, it worked. In this goal-setting system, objectives define what we seek to achieve; key results are how those top-priority goals will be attained with specific, measurable actions within a set time frame. Everyone's goals, from entry level to CEO, are transparent to the entire organization. The benefits are profound. OKRs surface an organization's most important work. They focus effort and foster coordination. They keep employees on track. They link objectives across silos to unify and strengthen the entire company. Along the way, OKRs enhance workplace satisfaction and boost retention. In Measure What Matters, Doerr shares a broad range of first-person, behind-the-scenes case studies, with narrators including Bono and Bill Gates, to demonstrate the focus, agility, and explosive growth that OKRs have spurred at so many great organizations. This book will help a new generation of leaders capture the same magic.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780525536239"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "052553623X"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 322,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "2.9.8.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=u2NDDwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=u2NDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=u2NDDwAAQBAJ&dq=intitle:Measure%2BWhat%2BMatters%2Binauthor:John%2BDoerr&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=u2NDDwAAQBAJ&dq=intitle:Measure%2BWhat%2BMatters%2Binauthor:John%2BDoerr&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Measure_What_Matters.html?hl=&id=u2NDDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=u2NDDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "This book will help a new generation of leaders capture the same magic."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "lZpFCgAAQBAJ",
+        "etag": "NhoaBGD15nQ",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/lZpFCgAAQBAJ",
+        "volumeInfo": {
+          "title": "Deep Work",
+          "subtitle": "Rules for Focused Success in a Distracted World",
+          "authors": ["Cal Newport"],
+          "publisher": "Hachette UK",
+          "publishedDate": "2016-01-05",
+          "description": "One of the most valuable skills in our economy is becoming increasingly rare. If you master this skill, you'll achieve extraordinary results. Deep Work is an indispensable guide to anyone seeking focused success in a distracted world. 'Cal Newport is exceptional in the realm of self-help authors' New York Times 'Deep work' is the ability to focus without distraction on a cognitively demanding task. Coined by author and professor Cal Newport on his popular blog Study Hacks, deep work will make you better at what you do, let you achieve more in less time and provide the sense of true fulfilment that comes from the mastery of a skill. In short, deep work is like a superpower in our increasingly competitive economy. And yet most people, whether knowledge workers in noisy open-plan offices or creatives struggling to sharpen their vision, have lost the ability to go deep - spending their days instead in a frantic blur of email and social media, not even realising there's a better way. A mix of cultural criticism and actionable advice, Deep Work takes the reader on a journey through memorable stories -- from Carl Jung building a stone tower in the woods to focus his mind, to a social media pioneer buying a round-trip business class ticket to Tokyo to write a book free from distraction in the air -- and surprising suggestions, such as the claim that most serious professionals should quit social media and that you should practice being bored. Put simply: developing and cultivating a deep work practice is one of the best decisions you can make in an increasingly distracted world. This book will point the way.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780349411910"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "0349411913"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 190,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "averageRating": 5,
+          "ratingsCount": 1,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "2.7.9.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=lZpFCgAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=lZpFCgAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=lZpFCgAAQBAJ&dq=intitle:Deep%2BWork%2Binauthor:Cal%2BNewport&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=lZpFCgAAQBAJ&dq=intitle:Deep%2BWork%2Binauthor:Cal%2BNewport&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Deep_Work.html?hl=&id=lZpFCgAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=lZpFCgAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "This book will point the way. One of the most valuable skills in our economy is becoming increasingly rare. If you master this skill, you&#39;ll achieve extraordinary results. Deep Work will show you how."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "ORJrngEACAAJ",
+        "etag": "0xavMb6I+zg",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/ORJrngEACAAJ",
+        "volumeInfo": {
+          "title": "Essentialism",
+          "subtitle": "The Disciplined Pursuit of Less",
+          "authors": ["Greg McKeown"],
+          "publisher": "Currency",
+          "publishedDate": "2014",
+          "description": "Discusses a systematic discipline for discerning what is absolutely essential, then eliminating everything that is not, so you can make the highest possible contribution towards the things that really matter.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "0804140839"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9780804140836"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 0,
+          "printType": "BOOK",
+          "categories": ["Choice (Psychology)."],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=ORJrngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=ORJrngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=ORJrngEACAAJ&dq=intitle:Essentialism%2Binauthor:Greg%2BMcKeown&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=ORJrngEACAAJ&dq=intitle:Essentialism%2Binauthor:Greg%2BMcKeown&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Essentialism.html?hl=&id=ORJrngEACAAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=ORJrngEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Discusses a systematic discipline for discerning what is absolutely essential, then eliminating everything that is not, so you can make the highest possible contribution towards the things that really matter."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "3M7dzQEACAAJ",
+        "etag": "D99Fnc4V7PM",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/3M7dzQEACAAJ",
+        "volumeInfo": {
+          "title": "The One Thing (Summary)",
+          "authors": ["Jay Papasan"],
+          "publishedDate": "2013",
+          "description": "GetAbstract Summary: Get the key points from this book in less than 10 minutes. Gary Keller, co-founder of Keller Williams Realty and a best-selling author, overcame his own issues about focus, which makes his claims about cultivating better habits even more compelling. Multitasking isn't fruitful, he says, since success requires long periods of laser-like concentration, not scattershot swats. If you find your \"ONE Thing,\" Keller says, everything else will fall into place. Keller, writing with co-author Jay Papasan, breaks his approach down into manageable steps based on research and experience. With an engaging writing style and plenty of bullet points, this reads much faster than its 200-plus pages. getAbstract recommends Keller's methods to new managers, time-strapped executives and anyone seeking habits that build success. Book Publisher: Bard Press.",
+          "industryIdentifiers": [
+            {
+              "type": "OTHER",
+              "identifier": "OCLC:1050315690"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=3M7dzQEACAAJ&dq=intitle:The%2BOne%2BThing%2Binauthor:Gary%2BKeller&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=3M7dzQEACAAJ&dq=intitle:The%2BOne%2BThing%2Binauthor:Gary%2BKeller&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_One_Thing_Summary.html?hl=&id=3M7dzQEACAAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=3M7dzQEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "GetAbstract Summary: Get the key points from this book in less than 10 minutes."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "MRbVRdmP630C",
+        "etag": "W4rtGtf5Z90",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/MRbVRdmP630C",
+        "volumeInfo": {
+          "title": "Eat That Frog!",
+          "subtitle": "21 Great Ways to Stop Procrastinating and Get More Done in Less Time",
+          "authors": ["Brian Tracy"],
+          "publisher": "ReadHowYouWant.com",
+          "publishedDate": "2008",
+          "description": "Every idea in this book is focused on increasing overall levels of productivity, performance, and output, and many can be applied to one's personal life as well. Each of the 21 methods and techniques is complete in itself.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781427085757"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1427085757"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 174,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "averageRating": 3.5,
+          "ratingsCount": 7,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "2.3.3.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=MRbVRdmP630C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=MRbVRdmP630C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=MRbVRdmP630C&printsec=frontcover&dq=intitle:Eat%2BThat%2BFrog%2Binauthor:Brian%2BTracy&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=MRbVRdmP630C&dq=intitle:Eat%2BThat%2BFrog%2Binauthor:Brian%2BTracy&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Eat_That_Frog.html?hl=&id=MRbVRdmP630C"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Eat_That_Frog-sample-pdf.acsm?id=MRbVRdmP630C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=MRbVRdmP630C&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Every idea in this book is focused on increasing overall levels of productivity, performance, and output, and many can be applied to one&#39;s personal life as well. Each of the 21 methods and techniques is complete in itself."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "iykLVJAK49kC",
+        "etag": "aYvu+4HIdLY",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/iykLVJAK49kC",
+        "volumeInfo": {
+          "title": "Getting Things Done",
+          "subtitle": "The Art of Stress-Free Productivity",
+          "authors": ["David Allen"],
+          "publisher": "Penguin",
+          "publishedDate": "2002-12-31",
+          "description": "In today's world, yesterday's methods just don't work. Veteran coach and management consultant David Allen recognizes that time management is useless the minute your schedule is interrupted; setting priorities isn't relevant when your e-mail is down; procrastination solutions won't help if your goals aren't clear. Instead, Allen shares with readers the proven methods he has already introduced in seminars and at top organizations across the country. The key to Getting Things Done? Relaxation. Allen's premise is simple: our ability to be productive is directly proportional to our ability to relax. Only when our minds are clear and our thoughts are organized can we achieve stress-free productivity. His seamless system teaches us how to identify, track, and-most important-choose the next action on all our tasks, commitments, and projects and thus master all the demands on our time while unleashing our creative potential. The book's stylish, dynamic design makes it easy to follow Allen's tips, examples, and inspiration to achieve what we all seek-energy, focus, and relaxed control.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781101128497"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1101128496"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 292,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "averageRating": 4.5,
+          "ratingsCount": 18,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "4.5.3.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=iykLVJAK49kC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=iykLVJAK49kC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=iykLVJAK49kC&dq=intitle:Getting%2BThings%2BDone%2Binauthor:David%2BAllen&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=iykLVJAK49kC&dq=intitle:Getting%2BThings%2BDone%2Binauthor:David%2BAllen&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Getting_Things_Done.html?hl=&id=iykLVJAK49kC"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=iykLVJAK49kC&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The book&#39;s stylish, dynamic design makes it easy to follow Allen&#39;s tips, examples, and inspiration to achieve what we all seek-energy, focus, and relaxed control."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "AknnDwAAQBAJ",
+        "etag": "QxRxPQyixtc",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/AknnDwAAQBAJ",
+        "volumeInfo": {
+          "title": "The Power of Full Engagement",
+          "subtitle": "Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal",
+          "authors": ["James E. Loehr", "Jim Loehr", "Tony Schwartz"],
+          "publisher": "Simon and Schuster",
+          "publishedDate": "2005-01-03",
+          "description": "The number of hours in a day is fixed, but the quantity and quality of energy available to us is not. This fundamental insight has the power to revolutionize the way you live. As Jim Loehr and Tony Schwartz demonstrate in their groundbreaking New York Times bestseller, managing energy, not time, is the key to enduring high performance as well as to health, happiness, and life balance. Their Full Engagement Training System is grounded in twenty-five years of working with great athletes -- tennis champ Monica Seles and speed-skating gold medalist Dan Jansen, to name just two -- to help them perform more effectively under brutal competitive pressures. Now this powerful, step-by-step program will help you to: · Mobilize four key sources of energy · Balance energy expenditure with intermittent energy renewal · Expand capacity in the same systematic way that elite athletes do · Create highly specific, positive energy management rituals The Power of Full Engagement is a highly practical, scientifically based approach to managing your energy more skillfully. It provides a clear road map to becoming more physically energized, emotionally connected, mentally focused, and spiritually aligned -- both on and off the job.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780743226752"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "0743226755"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 256,
+          "printType": "BOOK",
+          "categories": ["Biography & Autobiography"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.1.2.0.preview.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=AknnDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=AknnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=AknnDwAAQBAJ&printsec=frontcover&dq=intitle:The%2BPower%2Bof%2BFull%2BEngagement%2Binauthor:Jim%2BLoehr&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=AknnDwAAQBAJ&dq=intitle:The%2BPower%2Bof%2BFull%2BEngagement%2Binauthor:Jim%2BLoehr&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Power_of_Full_Engagement.html?hl=&id=AknnDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=AknnDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Now this powerful, step-by-step program will help you to: · Mobilize four key sources of energy · Balance energy expenditure with intermittent energy renewal · Expand capacity in the same systematic way that elite athletes do · Create ..."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "XnmZxQEACAAJ",
+        "etag": "MrGefYHbNvA",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/XnmZxQEACAAJ",
+        "volumeInfo": {
+          "title": "The 5 Am Club",
+          "subtitle": "Own Your Morning, Elevate Your Life",
+          "authors": ["Robin Sharma"],
+          "publisher": "HarperCollins Publishers",
+          "publishedDate": "2020-01-07",
+          "description": "The #1 international bestseller, now in paperback! For more than four decades, Robin Sharma has crossed the globe helping people lead lives that inspire the world. Now, in The 5 AM Club, he shares his original insights and the battle-tested tools he has developed by working with the most successful people on the planet. Based on the key insight that winning starts at the beginning of the day, Sharma shows how you can reduce stress, improve focus, unleash uncommon creativity, achieve exponential productivity and restore balance. Just one hour a day can change your life.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1443460710"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781443460712"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 336,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=XnmZxQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=XnmZxQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=XnmZxQEACAAJ&dq=intitle:The%2B5%2BAM%2BClub%2Binauthor:Robin%2BSharma&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=XnmZxQEACAAJ&dq=intitle:The%2B5%2BAM%2BClub%2Binauthor:Robin%2BSharma&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_5_Am_Club.html?hl=&id=XnmZxQEACAAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=XnmZxQEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "&quot;-- The 5 am Club is the trailblazing--and astonishing--story of two everyday human beings seeking greater productivity, prosperity and serenity in this age of digital distraction and overwhelming complexity who meet a most weird and ..."
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "kcP-zgEACAAJ",
+        "etag": "COb44jU3e2s",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/kcP-zgEACAAJ",
+        "volumeInfo": {
+          "title": "The Compound Effect, a Companion Guide",
+          "subtitle": "By Darren Hardy",
+          "authors": ["Darren Hardy"],
+          "publishedDate": "2015",
+          "description": "This companion to The Compound Effect includes: |Overview of the book |Important People |Key Takeaways |Analysis of Key Takeaways |and much more!",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1943427925"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781943427925"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "printType": "BOOK",
+          "categories": ["Self-improvement"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=kcP-zgEACAAJ&dq=intitle:The%2BCompound%2BEffect%2Binauthor:Darren%2BHardy&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=kcP-zgEACAAJ&dq=intitle:The%2BCompound%2BEffect%2Binauthor:Darren%2BHardy&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Compound_Effect_a_Companion_Guide.html?hl=&id=kcP-zgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=kcP-zgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "This companion to The Compound Effect includes: |Overview of the book |Important People |Key Takeaways |Analysis of Key Takeaways |and much more!"
+        }
+      }
+    ]
+  },
+  {
+    "kind": "books#volumes",
+    "totalItems": 1000000,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "puFqDwAAQBAJ",
+        "etag": "OdCcsg6Iw0k",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/puFqDwAAQBAJ",
+        "volumeInfo": {
+          "title": "Make Time",
+          "subtitle": "How to Focus on What Matters Every Day",
+          "authors": ["Jake Knapp", "John Zeratsky"],
+          "publisher": "Crown Currency",
+          "publishedDate": "2018-09-25",
+          "description": "From the New York Times bestselling authors of Sprint comes “a unique and engaging read about a proven habit framework [that] readers can apply to each day” (Insider, Best Books to Form New Habits). “If you want to achieve more (without going nuts), read this book.”—Charles Duhigg, author of The Power of Habit Nobody ever looked at an empty calendar and said, \"The best way to spend this time is by cramming it full of meetings!\" or got to work in the morning and thought, Today I'll spend hours on Facebook! Yet that's exactly what we do. Why? In a world where information refreshes endlessly and the workday feels like a race to react to other people's priorities faster, frazzled and distracted has become our default position. But what if the exhaustion of constant busyness wasn't mandatory? What if you could step off the hamster wheel and start taking control of your time and attention? That's what this book is about. As creators of Google Ventures' renowned \"design sprint,\" Jake and John have helped hundreds of teams solve important problems by changing how they work. Building on the success of these sprints and their experience designing ubiquitous tech products from Gmail to YouTube, they spent years experimenting with their own habits and routines, looking for ways to help people optimize their energy, focus, and time. Now they've packaged the most effective tactics into a four-step daily framework that anyone can use to systematically design their days. Make Time is not a one-size-fits-all formula. Instead, it offers a customizable menu of bite-size tips and strategies that can be tailored to individual habits and lifestyles. Make Time isn't about productivity, or checking off more to-dos. Nor does it propose unrealistic solutions like throwing out your smartphone or swearing off social media. Making time isn't about radically overhauling your lifestyle; it's about making small shifts in your environment to liberate yourself from constant busyness and distraction. A must-read for anyone who has ever thought, If only there were more hours in the day..., Make Time will help you stop passively reacting to the demands of the modern world and start intentionally making time for the things that matter.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780525572428"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "0525572422"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 306,
+          "printType": "BOOK",
+          "categories": ["Business & Economics"],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.5.0.0.preview.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=puFqDwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=puFqDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=puFqDwAAQBAJ&dq=intitle:Make%2BTime%2Binauthor:Jake%2BKnapp&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=puFqDwAAQBAJ&dq=intitle:Make%2BTime%2Binauthor:Jake%2BKnapp&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Make_Time.html?hl=&id=puFqDwAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "NG",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "NG",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=puFqDwAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "From the New York Times bestselling authors of Sprint comes “a unique and engaging read about a proven habit framework [that] readers can apply to each day” (Insider, Best Books to Form New Habits). “If you want to achieve more ..."
+        }
+      }
+    ]
+  }
+]

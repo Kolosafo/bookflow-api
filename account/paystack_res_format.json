@@ -1,0 +1,72 @@
+{
+  "event": "charge.success",
+  "data": {
+    "id": 5361254829,
+    "domain": "test",
+    "status": "success",
+    "reference": "T763611108607815",
+    "amount": 3050000,
+    "message": null,
+    "gateway_response": "Successful",
+    "paid_at": "2025-09-22T16:34:49.000Z",
+    "created_at": "2025-09-22T16:34:45.000Z",
+    "channel": "card",
+    "currency": "NGN",
+    "ip_address": "102.91.102.162",
+    "metadata": {
+      "custom_fields": [
+        {
+          "display_name": "undefined undefined",
+          "variable_name": "undefined",
+          "value": ""
+        }
+      ],
+      "referrer": "about:blank"
+    },
+    "fees_breakdown": null,
+    "log": null,
+    "fees": 55750,
+    "fees_split": null,
+    "authorization": {
+      "authorization_code": "AUTH_588vhgs1cj",
+      "bin": "408408",
+      "last4": "4081",
+      "exp_month": "12",
+      "exp_year": "2030",
+      "channel": "card",
+      "card_type": "visa ",
+      "bank": "TEST BANK",
+      "country_code": "NG",
+      "brand": "visa",
+      "reusable": true,
+      "signature": "SIG_iqZGbLsD6ZZ3hK4H07RS",
+      "account_name": null,
+      "receiver_bank_account_number": null,
+      "receiver_bank": null
+    },
+    "customer": {
+      "id": 307316900,
+      "first_name": "",
+      "last_name": "",
+      "email": "kolosafo@gmail.com",
+      "customer_code": "CUS_f4d08ewbc1esr36",
+      "phone": "",
+      "metadata": null,
+      "risk_action": "default",
+      "international_format_phone": null
+    },
+    "plan": {},
+    "subaccount": {},
+    "split": {},
+    "order_id": null,
+    "paidAt": "2025-09-22T16:34:49.000Z",
+    "requested_amount": 3050000,
+    "pos_transaction_data": null,
+    "source": {
+      "type": "web",
+      "source": "checkout",
+      "entry_point": "request_inline",
+      "identifier": null
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "kind": "books#volume",
+  "id": "AQi9EAAAQBAJ",
+  "etag": "5BK4ctP4dbc",
+  "selfLink": "https://www.googleapis.com/books/v1/volumes/AQi9EAAAQBAJ",
+  "volumeInfo": {
+    "title": "The Diary of a CEO",
+    "subtitle": "The 33 Laws of Business and Life",
+    "authors": ["Steven Bartlett"],
+    "publisher": "Penguin",
+    "publishedDate": "2023-08-29",
+    "description": "A galvanizing playbook for success from Steven Bartlett, one of the world's most exciting entrepreneurs and the host of the No. 1 podcast The Diary of a CEO \"This is a must-read for anyone dreaming of doing something audacious.\" Jay Shetty \"Valuable lessons about the importance of following a different and unconventional path to power.” Robert Greene At the very heart of all the success and failure I've been exposed to - both my own entrepreneurial journey and through the thousands of interviews I’ve conducted on my chart-topping podcast - are a set of principles that ensure excellence. These fundamental laws underpinned my meteoric rise, and they will fuel yours too, whether you want to build something great or become someone great. The laws are rooted in psychology and behavioral science, in my own experiences, and those of the world's most successful entrepreneurs, entertainers, artists, writers, and athletes, who I’ve interviewed on my podcast. These laws will stand the test of time and will help anyone master their life and unleash their potential, no matter the field. They are the secret sauce to success.",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9780593715840"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "0593715845"
+      }
+    ],
+    "readingModes": {
+      "text": true,
+      "image": false
+    },
+    "pageCount": 369,
+    "printType": "BOOK",
+    "categories": ["Business & Economics"],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "2.4.2.0.preview.2",
+    "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+    },
+    "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=AQi9EAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=AQi9EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=AQi9EAAAQBAJ&dq=diary+of+a+CEO&hl=&cd=3&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=AQi9EAAAQBAJ&dq=diary+of+a+CEO&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Diary_of_a_CEO.html?hl=&id=AQi9EAAAQBAJ"
+  },
+  "saleInfo": {
+    "country": "NG",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+  },
+  "accessInfo": {
+    "country": "NG",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+      "isAvailable": true
+    },
+    "pdf": {
+      "isAvailable": true
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=AQi9EAAAQBAJ&hl=&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+  },
+  "searchInfo": {
+    "textSnippet": "A galvanizing playbook for success from Steven Bartlett, one of the world's most exciting entrepreneurs and the host of the No. 1 podcast The Diary of a CEO &quot;This is a must-read for anyone dreaming of doing something audacious."
+  }
+}

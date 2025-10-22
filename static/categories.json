@@ -1,0 +1,38 @@
+{
+  "Business & Career": [
+    "Entrepreneurship",
+    "Leadership & Management",
+    "Economics",
+    "Finance & Investing",
+    "Marketing & Sales",
+    "Startups & Innovation",
+    "Productivity & Time Management",
+    "Career Development"
+  ],
+  "Self-Improvement & Psychology": [
+    "Personal Growth",
+    "Motivation & Inspiration",
+    "Habits & Discipline",
+    "Mental Health",
+    "Emotional Intelligence",
+    "Relationships & Communication",
+    "Decision-Making & Critical Thinking",
+    "Confidence & Mindset"
+  ],
+  "Health & Wellness": [
+    "Fitness & Exercise",
+    "Nutrition & Diet",
+    "Mindfulness & Meditation",
+    "Sleep & Recovery",
+    "Stress Management",
+    "Medical & Health Science",
+    "Addiction Recovery",
+    "Longevity & Aging"
+  ],
+  "Personal Finance & Wealth": [
+    "Money Management",
+    "Saving & Budgeting",
+    "Investing",
+    "Financial Independence"
+  ]
+}
