@@ -61,7 +61,7 @@ def register(request):
             
             OTP = generate_otp()
             save_otp(data["email"], str(OTP), "email_verification")
-            # send_verification_email(data["email"], str(OTP))
+            send_verification_email(data["email"], str(OTP))
             
             # # TRY STORYING USER PUSH NOTIFICATION
             # try:
@@ -196,7 +196,6 @@ def resend_OTP(request):
     save_otp(email, str(OTP), "email_verification")
     send_verification_email(email, username, str(OTP))
     
-
     return Response({
                 "data": None,
                 "errors": None,
@@ -227,8 +226,8 @@ def forgot_password(request):
 
         email_message = f"Reset your password \nHere is your One Time Password (OTP): {otp} \n\nIF YOU DIDN'T REQUEST TO CHANGE YOUR PASSWORD, PLEASE IGNORE THIS MESSAGE AND DO NOT SHARE THIS CODE WITH ANYONE, INCLUDING US. \n\nSincerely, \BookFlow Team"
 
-        # send_mail("Change Password", email_message, settings.EMAIL_HOST_USER, [
-        #     email], fail_silently=False)
+        send_mail("Change Password", email_message, settings.EMAIL_HOST_USER, [
+            email], fail_silently=False)
         return Response({
                 "data": None,
                 "errors": None,
