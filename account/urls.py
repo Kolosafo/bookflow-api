@@ -13,7 +13,7 @@ app_name = 'account'
 urlpatterns = [
     path('register/',
          views.register, name="register"),
-    # path('bio_login/', views.biometric_login, name='bio_login'),
+    path('bio_login/', views.biometric_login, name='bio_login'),
     path('login/', views.MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('confirm_email/',
          views.confirm_email, name="confirm_email"),

@@ -330,3 +330,30 @@ def update_user_interests(request):
         },
         status=status.HTTP_200_OK
     )
+    
+    
+@api_view(['POST'])
+def biometric_login(request):
+    data= request.data
+    try:
+        user = User.objects.get(email = data['email'])
+        if(user.status == "blocked"):
+            raise Exception("account blocked")
+        refresh = RefreshToken.for_user(user)
+        access_token = str(refresh.access_token)
+        serializer = BioAuthSerializer(user)
+        return Response({
+                "refresh": str(refresh), 
+                "access": access_token,
+                "data": serializer.data,
+                "errors": None,
+                "message": "success",
+                "status": status.HTTP_200_OK,
+                }, status=status.HTTP_200_OK)
+    except Exception as e:
+        return Response({
+                "data": [],
+                "errors": str(e),
+                "message": "not found",
+                "status": status.HTTP_404_NOT_FOUND,
+                }, status=status.HTTP_404_NOT_FOUND)
