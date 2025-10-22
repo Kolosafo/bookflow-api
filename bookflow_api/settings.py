@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 APP_SECRET_KEY = os.getenv("APP_SECRET_KEY", default="")
 SECRET_KEY = APP_SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['b2efc4a69051.ngrok-free.app', 'bookflow-api-bcke.onrender.com']
 
