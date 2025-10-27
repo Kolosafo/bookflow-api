@@ -131,6 +131,6 @@ class NotesSerializer(serializers.ModelSerializer):
             'title',
             'book_author',
             'note_type',
-            'date_created',
+            'created_at',
         ]
-        read_only_fields = ['id', 'date_created']
+        read_only_fields = ['id', 'created_at']
