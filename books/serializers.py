@@ -122,4 +122,15 @@ class BookmarkBookSerializer(serializers.ModelSerializer):
 class NotesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Notes
-        fields = "__all__"
+        fields = [
+            'id',
+            'user',
+            'book_id',
+            'book_title',
+            'content',
+            'title',
+            'book_author',
+            'note_type',
+            'date_created',
+        ]
+        read_only_fields = ['id', 'date_created']
