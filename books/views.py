@@ -309,7 +309,11 @@ def get_user_extracted_books(request):
 def save_note(request):
     try:
         data = request.data
-        bookmark_book, created = Notes.objects.get_or_create(content=data['content'], title=data['title'], book_id=data['book_id'], book_title=data['book_title'], book_author=data['book_author'], user=request.user)
+        try:
+            note_type = data['note_type']
+        except:
+            note_type = "note"
+        bookmark_book, created = Notes.objects.get_or_create(content=data['content'], title=data['title'], book_id=data['book_id'], book_title=data['book_title'], book_author=data['book_author'], note_type=note_type, user=request.user)
         serializer = BookmarkBookSerializer(bookmark_book)
         return Response({   
             "data": serializer.data, 
