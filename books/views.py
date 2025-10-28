@@ -11,7 +11,7 @@ from .save_summary import save_book_analysis
 from .summary_response_example import test_response
 from .models import BookAnalysisResponse, UserExtractedBooks, BookmarkBook, Notes
 from .serializers import BookAnalysisResponseSerializer, BookmarkBookSerializer, UserExtractedBooksSerializer, NotesSerializer
-from .tasks import SCHEDULE_BOOK_SUMMARY
+from .tasks import SCHEDULE_BOOK_SUMMARY, handle_search_book
 import os 
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -365,6 +365,35 @@ def remove_note(request):
         user_notes.delete()
         return Response({   
             "data": None, 
+            "message":"success",
+            "status": status.HTTP_200_OK,
+            }, status=status.HTTP_200_OK)
+            
+    except Exception as e:
+        return Response(
+            {
+                "message": f"Error deleting note: {str(e)}",
+                "status": status.HTTP_400_BAD_REQUEST,
+            },
+            status=status.HTTP_400_BAD_REQUEST
+        )
+
+
+
+
+@ratelimit(key='ip', rate='30/1d')
+@api_view(["POST"])
+@permission_classes([IsAuthenticated])
+def ai_search_book(request):
+    try:
+        data = request.data
+        try:
+            author = data['author']
+        except:
+            author = None
+        search_result = handle_search_book(data['title'], author)
+        return Response({   
+            "data": search_result['books'], 
             "message":"success",
             "status": status.HTTP_200_OK,
             }, status=status.HTTP_200_OK)

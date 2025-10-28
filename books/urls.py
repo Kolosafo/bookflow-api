@@ -37,6 +37,11 @@ urlpatterns = [
          views.remove_note, name="remove_note"),
      path('get_notes/',
          views.get_notes, name="get_notes"),
+     
+     # BOOK SEARCH
+    path('ai_search_book/',
+         views.ai_search_book, name="ai_search_book"),
+     
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

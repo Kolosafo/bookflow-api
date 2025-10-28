@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from .scheduler import scheduler
 from .save_summary import save_book_analysis
 from apscheduler.triggers.date import DateTrigger
-from .gemini import generate_summary_keypoints
+from .gemini import generate_summary_keypoints, generate_book_search
 import json
 
 
@@ -23,4 +23,16 @@ def SCHEDULE_BOOK_SUMMARY(book_title, book_author, book_id):
         id=f"book_summary_{int(run_at.timestamp())}",  # unique ID
         replace_existing=False
     )
+    
+
+
+
+
+
+def handle_search_book(book_title, book_author=None):
+    search_result = generate_book_search(book_title, book_author)
+    parseResponse = json.loads(search_result)
+    return parseResponse
+
+
     

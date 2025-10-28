@@ -1,0 +1,10 @@
+{
+  "books": [
+    {
+      "title": "The Third Door: The Wild Quest to Uncover How the World's Most Successful People Launched Their Careers",
+      "author": "Alex Banayan",
+      "description": "A book about entrepreneurship, unconventional success, and the stories of Bill Gates, Lady Gaga, and Steven Spielberg.",
+      "categories": ["Business", "Self-Help", "Biography"]
+    }
+  ]
+}
