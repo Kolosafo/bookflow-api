@@ -1,4 +1,4 @@
-search_main_prompt = "You're a book search expert. You know how to find books based on book name and author name. Return one item if you know the exact book and a maximum of 5 items if you can't figure out the exact book being searched"
+search_main_prompt = "You're a book search expert. If you find that there are many variants of a book with the same title where the author is not passed to specify which one, return the top 5 of them. Otherwise return the exact book."
 
 def book_search_prompt (book_title, author=None):
     if author:
