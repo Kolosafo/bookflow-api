@@ -338,7 +338,7 @@ def save_note(request):
 @permission_classes([IsAuthenticated])
 def get_notes(request):
     try:
-        user_notes = Notes.objects.filter(user=request.user)
+        user_notes = Notes.objects.filter(user=request.user).order_by('-created_at')
         serializer = NotesSerializer(user_notes, many=True)
         return Response({   
             "data": serializer.data, 
