@@ -11,7 +11,9 @@ from .save_summary import save_book_analysis
 from .summary_response_example import test_response
 from .models import BookAnalysisResponse, UserExtractedBooks, BookmarkBook, Notes
 from .serializers import BookAnalysisResponseSerializer, BookmarkBookSerializer, UserExtractedBooksSerializer, NotesSerializer
+from account.subscription_utils import update_subscription_usage, subscription_limit_required
 from .tasks import SCHEDULE_BOOK_SUMMARY, handle_search_book
+from django.views.decorators.cache import cache_page
 import os 
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -19,6 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
+@subscription_limit_required('summaries')
 def summarize_book(request):
     try:
         data = request.data
@@ -31,8 +35,9 @@ def summarize_book(request):
         try:
             UserExtractedBooks.objects.get_or_create(user=request.user, book_id=book_id, book_author=book_author, book_title=book_title, book_img=book_img)
         except Exception as E:
-            print("ERROR CREATING EXTRACT: ", E)
+            # print("ERROR CREATING EXTRACT: ", E)
             pass
+        update_subscription_usage(request.user, "summaries")
         try:
             # CHECK IF BOOK ALREADY SUMMARIZED
             get_book = BookAnalysisResponse.objects.get(book_id=book_id)
@@ -45,7 +50,6 @@ def summarize_book(request):
                 }, status=status.HTTP_200_OK)
         except:
             pass
-        
         SCHEDULE_BOOK_SUMMARY(book_title, book_author, book_id)
         # gemini_response = generate_summary_keypoints(book_title, book_author)
         # parseResponse = json.loads(gemini_response)
@@ -70,6 +74,7 @@ def summarize_book(request):
             }, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def get_summarized_book(request, id):
     try:
         get_book = BookAnalysisResponse.objects.get(book_id=id)
@@ -90,6 +95,7 @@ def get_summarized_book(request, id):
         
         
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def search_books_by_category_api(request, category):
     try:
         books = search_books_by_categroy(40,category)
@@ -111,6 +117,7 @@ def search_books_by_category_api(request, category):
         
 
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def search_books_api(request):
     try:
         data = request.data
@@ -133,6 +140,7 @@ def search_books_api(request):
 
 
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def get_book_by_id_api(request, id):
     try:
         
@@ -306,6 +314,7 @@ def get_user_extracted_books(request):
 @ratelimit(key='ip', rate='30/1d')
 @api_view(["POST"])
 @permission_classes([IsAuthenticated])
+@subscription_limit_required('note')
 def save_note(request):
     try:
         data = request.data
@@ -315,6 +324,7 @@ def save_note(request):
             note_type = "note"
         bookmark_book, created = Notes.objects.get_or_create(content=data['content'], title=data['title'], book_id=data['book_id'], book_title=data['book_title'], book_author=data['book_author'], note_type=note_type, user=request.user)
         serializer = BookmarkBookSerializer(bookmark_book)
+        update_subscription_usage(request.user, "notes")
         return Response({   
             "data": serializer.data, 
             "message":"success",
@@ -384,6 +394,7 @@ def remove_note(request):
 @ratelimit(key='ip', rate='30/1d')
 @api_view(["POST"])
 @permission_classes([IsAuthenticated])
+@subscription_limit_required('smart_search')
 def ai_search_book(request):
     try:
         data = request.data
@@ -392,6 +403,7 @@ def ai_search_book(request):
         except:
             author = None
         search_result = handle_search_book(data['title'], author)
+        update_subscription_usage(request.user, "smart_search")
         return Response({   
             "data": search_result['books'], 
             "message":"success",
@@ -406,3 +418,4 @@ def ai_search_book(request):
             },
             status=status.HTTP_400_BAD_REQUEST
         )
+

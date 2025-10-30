@@ -7,16 +7,17 @@ from rest_framework.response import Response
 from rest_framework import exceptions, status
 from rest_framework.permissions import IsAuthenticated
 from .models import User
-from .serializers import SignUpSerializer, SupportSerializer, BioAuthSerializer, PrivacyPolicySerializer, TermsOfUsSerializer
+from .serializers import SignUpSerializer, SupportSerializer, BioAuthSerializer, PrivacyPolicySerializer, TermsOfUsSerializer, SubscriptionUsageSerializer
 from django.utils import timezone
 from rest_framework.permissions import IsAuthenticated
 
-from .models import OTPService, DeleteAccount, PrivacyPolicy, TermsOfUse
+from .models import OTPService, DeleteAccount, PrivacyPolicy, TermsOfUse, UserSubscriptionUsage
 from .emailFunc import send_verification_email, send_free_trial_email
 from .utils import generate_otp
 from .actions import save_otp, validate_otp
 from django.core.mail import send_mail
 from django.conf import settings
+from .subscription_utils import getSubcriptionUsage, create_subscription, allowedUsage
 # from notification.models import UserNotification
 import json
 import os
@@ -58,7 +59,7 @@ def register(request):
             user = serializer.save()
             refresh = RefreshToken.for_user(user)
             access_token = str(refresh.access_token)
-            
+            create_subscription(user)
             OTP = generate_otp()
             save_otp(data["email"], str(OTP), "email_verification")
             send_verification_email(data["email"], str(OTP))
@@ -357,3 +358,38 @@ def biometric_login(request):
                 "message": "not found",
                 "status": status.HTTP_404_NOT_FOUND,
                 }, status=status.HTTP_404_NOT_FOUND)
+        
+
+
+
+@ratelimit(key='ip', rate='10/60m')
+# @cache_page(60 * 60)
+@api_view(["GET"])
+def load_pricing(request):
+    pricing_path = os.path.join(BASE_DIR, 'static', "pricing.json")
+    load_pricing = open(pricing_path, 'r')
+    pricing = json.load(load_pricing)
+    return Response({   
+        "data": pricing, 
+        "message":"success",
+        "status": status.HTTP_200_OK,
+        }, status=status.HTTP_200_OK)
+    
+    
+
+@ratelimit(key='ip', rate='10/60m')
+# @cache_page(60 * 60)
+@permission_classes([IsAuthenticated])
+@api_view(["GET"])
+def load_subscription_usage(request):
+    user = request.user
+    get_user_obj = User.objects.get(id=user.id)
+    subscription_usage = UserSubscriptionUsage.objects.get(user=user)
+    usage = getSubcriptionUsage(subscription_usage.summaries, subscription_usage.notes, subscription_usage.reminders, subscription_usage.smart_search)
+    _allowedUsage =allowedUsage(get_user_obj.subscription)
+    return Response({   
+        "data": {"allowedUsage": _allowedUsage, "currentUsage":usage}, 
+        "message":"success",
+        "status": status.HTTP_200_OK,
+        }, status=status.HTTP_200_OK)
+    

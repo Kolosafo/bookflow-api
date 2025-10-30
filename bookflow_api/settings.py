@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'books',
     'account',
     "django_apscheduler",
+    "notifications"
     
 ]
 

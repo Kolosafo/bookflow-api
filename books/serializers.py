@@ -130,6 +130,7 @@ class NotesSerializer(serializers.ModelSerializer):
             'content',
             'title',
             'book_author',
+            'has_notification',
             'note_type',
             'created_at',
         ]

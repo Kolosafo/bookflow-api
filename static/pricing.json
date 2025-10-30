@@ -1,0 +1,73 @@
+[
+  {
+    "id": "free",
+    "period": "",
+    "name": "Free Plan",
+    "oldMonthlyPrice": 0,
+    "currencyType": "USD",
+    "price": 0,
+    "usdRate": 1525,
+    "features": [
+      "1 Book Summary",
+      "Create up to 3 notes",
+      "2 Custom Reminders",
+      "3 Smart Searches"
+    ],
+    "buttonText": "Free Plan",
+    "isPopular": false
+  },
+  {
+    "id": "basic",
+    "period": "monthly",
+    "packageAppleId": "BookFlowBasic",
+    "name": "Basic Plan",
+    "oldMonthlyPrice": 8,
+    "currencyType": "USD",
+    "price": 4.99,
+    "usdRate": 1525,
+    "features": [
+      "5 Book Summaries",
+      "Create up to 15 notes",
+      "5 Custom Reminders",
+      "10 Smart Searches"
+    ],
+    "buttonText": "Basic to Premium",
+    "isPopular": false
+  },
+  {
+    "id": "premium",
+    "period": "monthly",
+    "packageAppleId": "BookFlowPremium",
+    "name": "Premium Plan",
+    "oldMonthlyPrice": 15,
+    "currencyType": "USD",
+    "price": 9.99,
+    "usdRate": 1525,
+    "features": [
+      "15 Book Summaries",
+      "Create up to 30 notes",
+      "10 Custom Reminders",
+      "25 Smart Searches"
+    ],
+    "buttonText": "Upgrade to Premium",
+    "isPopular": true
+  },
+  {
+    "id": "scholar",
+    "packageAppleId": "BookFlowScholar",
+    "period": "monthly",
+    "name": "Scholar Plan",
+    "oldMonthlyPrice": 45,
+    "currencyType": "USD",
+    "price": 29.99,
+    "usdRate": 1525,
+    "features": [
+      "50 Book Summaries",
+      "Create unlimited notes",
+      "Unlimited Custom Reminders",
+      "70 Smart Searches"
+    ],
+    "buttonText": "Upgrade to Premium",
+    "isPopular": false
+  }
+]

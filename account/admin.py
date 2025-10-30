@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import User, OTPService, SubscribeInApp, DeleteAccount, PrivacyPolicy, TermsOfUse, SupportMessage, PaystackResponse
+from .models import User, OTPService, SubscribeInApp, DeleteAccount, PrivacyPolicy, TermsOfUse, SupportMessage, PaystackResponse, UserSubscriptionUsage
 # Register your models here.
 admin.site.register(OTPService)
 admin.site.register(SubscribeInApp)
@@ -8,6 +8,7 @@ admin.site.register(PaystackResponse)
 admin.site.register(PrivacyPolicy)
 admin.site.register(TermsOfUse)
 admin.site.register(SupportMessage)
+admin.site.register(UserSubscriptionUsage)
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):

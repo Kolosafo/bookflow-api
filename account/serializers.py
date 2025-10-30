@@ -1,6 +1,6 @@
 # yourapp/serializers.py
 from rest_framework import serializers
-from .models import User, PrivacyPolicy, TermsOfUse, SupportMessage
+from .models import User, PrivacyPolicy, TermsOfUse, SupportMessage, UserSubscriptionUsage
 
 class SignUpSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
@@ -76,3 +76,10 @@ class SupportSerializer(serializers.ModelSerializer):
         model = SupportMessage
         fields = ['id', 'email', 'message', 'isResolved']
       
+      
+
+class SubscriptionUsageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserSubscriptionUsage
+        fields = '__all__'
+   

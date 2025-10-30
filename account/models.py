@@ -14,10 +14,10 @@ account_status = (
 )
 
 subscription_choices = (
-    ("free trial", "free trial"),
-    ("apprentice", "apprentice"),
+    ("free", "free"),
+    ("basic", "basic"),
+    ("premium", "premium"),
     ("scholar", "scholar"),
-    ("sage", "sage"),
 )
 
 
@@ -28,6 +28,7 @@ class User(AbstractUser, PermissionsMixin):
     deviceId = models.CharField(max_length=255,blank=True, null = True, unique=True)
     date_joined = models.DateTimeField(auto_now_add = True, blank=True)
     subscription= models.CharField(max_length=100, choices=subscription_choices, default="free trial")
+    notification_token= models.CharField(max_length=100, null=True, blank=True)
     date_subscribed = models.DateField(blank=True, null=True)
     date_subscription_ends = models.DateField(blank=True, null=True)
     free_trail = models.BooleanField(default=False)
@@ -52,6 +53,16 @@ otp_service_type = [
 ]
 
 
+class UserSubscriptionUsage(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user_subscription_usage')
+    summaries =  models.IntegerField(default=1)
+    notes = models.IntegerField(default=3)
+    reminders = models.IntegerField(default=2)
+    smart_search = models.IntegerField(default=3)
+
+    def __str__(self):
+        return self.user.email
+
 class OTPService(models.Model):
     type =  models.CharField(max_length=100, choices=otp_service_type)
     email = models.CharField(max_length=255)
@@ -69,14 +80,14 @@ class PaystackResponse(models.Model):
 class SubscribeInApp(models.Model):
     id = models.CharField(primary_key=True, default=generate_id(), editable=False, blank=True, max_length=100)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user_in_app_subscription')
-    type = models.CharField(max_length=100, choices=subscription_choices, default="free")
+    productId = models.CharField(max_length=150, blank=True, null=True)
     amount = models.FloatField(default=0)
     transactionRef = models.CharField(max_length=255)
     status = models.CharField(max_length=100, blank=True, null=True)
     data = models.JSONField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     def __str__(self):
-        return self.user.username
+        return self.user.email
     
     
 

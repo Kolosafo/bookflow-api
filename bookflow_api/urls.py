@@ -22,4 +22,5 @@ urlpatterns = [
     path("20001029/", admin.site.urls),
     path('books/', include('books.urls')),
     path('account/', include('account.urls')),
+    path('notifications/', include('notifications.urls')),
 ]

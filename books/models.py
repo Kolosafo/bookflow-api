@@ -116,6 +116,7 @@ class BookmarkBook(models.Model):
 class Notes(models.Model):
     id = models.CharField(primary_key=True, default=generate_id(), editable=False, blank=True, max_length=100)
     book_id = models.CharField(max_length=255)
+    has_notification = models.BooleanField(default=False)
     book_title = models.CharField(max_length=255)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user_note')
     content = models.TextField(blank=True, null=True)

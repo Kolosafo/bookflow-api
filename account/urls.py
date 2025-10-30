@@ -25,6 +25,9 @@ urlpatterns = [
          views.password_reset, name="reset_password"),
      path('update_user_interests/',
          views.update_user_interests, name="update_user_interests"),   
+    path('new-pricing/', views.load_pricing, name='load_pricing'),
+    path('sub_usage/', views.load_subscription_usage, name='sub_usage'),
+     
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
