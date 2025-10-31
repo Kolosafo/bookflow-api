@@ -11,7 +11,7 @@ from .serializers import SignUpSerializer, SupportSerializer, BioAuthSerializer,
 from django.utils import timezone
 from rest_framework.permissions import IsAuthenticated
 
-from .models import OTPService, DeleteAccount, PrivacyPolicy, TermsOfUse, UserSubscriptionUsage
+from .models import OTPService, DeleteAccount, PrivacyPolicy, TermsOfUse, UserSubscriptionUsage, SubscribeInApp
 from .emailFunc import send_verification_email, send_free_trial_email
 from .utils import generate_otp
 from .actions import save_otp, validate_otp
@@ -393,3 +393,39 @@ def load_subscription_usage(request):
         "status": status.HTTP_200_OK,
         }, status=status.HTTP_200_OK)
     
+    
+
+
+@ratelimit(key='ip', rate='10/60m')
+@api_view(["POST"])
+@permission_classes([IsAuthenticated])
+def subscribe(request):
+    try:
+        user = request.user
+        data = request.data
+        get_user = User.objects.get(id=user.id)
+        SubscribeInApp.objects.create(user=get_user, productId=data['productId'], status=data['status'], amount=data['amount'], transactionRef=data['transactionRef'], data=data['data'])
+        get_user.subscription=data['type']
+        get_user.date_subscribed= timezone.now()
+        get_user.date_subscription_ends = timezone.now().date() + timezone.timedelta(days=30)
+            
+        get_user.save()
+        
+        return Response({   
+            "data": {
+                     "subscription": get_user.subscription,
+                     "date_subscribed":get_user.date_subscribed,
+                     "date_subscription_ends": get_user.date_subscription_ends
+                     }, 
+            "message":"success",
+            "status": status.HTTP_200_OK,
+            }, status=status.HTTP_200_OK)
+    except Exception as E:
+        print("ERROR: ", E)
+        return Response({   
+            "data": None, 
+            "message":"error",
+            "status": status.HTTP_400_BAD_REQUEST,
+            }, status=status.HTTP_400_BAD_REQUEST)
+        
+ 

@@ -27,7 +27,7 @@ class User(AbstractUser, PermissionsMixin):
     interests = models.JSONField(default=list)
     deviceId = models.CharField(max_length=255,blank=True, null = True, unique=True)
     date_joined = models.DateTimeField(auto_now_add = True, blank=True)
-    subscription= models.CharField(max_length=100, choices=subscription_choices, default="free trial")
+    subscription= models.CharField(max_length=100, choices=subscription_choices, default="free")
     notification_token= models.CharField(max_length=100, null=True, blank=True)
     date_subscribed = models.DateField(blank=True, null=True)
     date_subscription_ends = models.DateField(blank=True, null=True)
