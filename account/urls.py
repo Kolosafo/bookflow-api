@@ -8,6 +8,7 @@ from django.conf.urls.static import static
 from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
+from . import paystack_webhook
 
 app_name = 'account'
 urlpatterns = [
@@ -28,7 +29,13 @@ urlpatterns = [
     path('new-pricing/', views.load_pricing, name='load_pricing'),
     path('subscribe/', views.subscribe, name='load_pricing'),
     path('sub_usage/', views.load_subscription_usage, name='sub_usage'),
-     
+ 
+ 
+    path('delete_account/', views.delete_account, name='delete_account'),
+    path('get_legal/', views.get_legal, name='get_legal'),
+    path('support/', views.contact_support, name='support'),
+    path('20001029/webhook/', paystack_webhook.payment_webook, name='webhook'),
+        
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

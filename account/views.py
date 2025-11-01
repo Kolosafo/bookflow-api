@@ -429,3 +429,75 @@ def subscribe(request):
             }, status=status.HTTP_400_BAD_REQUEST)
         
  
+ 
+ 
+@api_view(["POST"])
+@permission_classes([IsAuthenticated])
+def delete_account(request):
+    data = request.data
+    DeleteAccount.objects.create(reason=data['reason'], additionalFeedback=data['additionalFeedback'])
+    user = User.objects.get(id=request.user.id)
+    user.delete()
+    
+    return Response({   
+        "data": None, 
+        "message":"account successfully deleted",
+        "status": status.HTTP_200_OK,
+        }, status=status.HTTP_200_OK)
+    
+
+
+@ratelimit(key='ip', rate='10/30m')
+@cache_page(60 * 60)
+@api_view(['GET'])
+def get_legal(request):
+    try:
+        policy = PrivacyPolicy.objects.filter(is_active=True).latest('created_at')
+        terms = TermsOfUse.objects.filter(is_active=True).latest('created_at')
+        privacy_serializer = PrivacyPolicySerializer(policy)
+        terms_serializer = TermsOfUsSerializer(terms)
+        return Response({
+            "data": {
+                "privacy": privacy_serializer.data,
+                "terms": terms_serializer.data
+                },
+            "message": "Privacy policy retrieved successfully",
+            "status": status.HTTP_200_OK
+        })
+    except PrivacyPolicy.DoesNotExist:
+        return Response({
+            "data": None,
+            "message": "Privacy policy not found",
+            "status": status.HTTP_404_NOT_FOUND
+        }, status=status.HTTP_404_NOT_FOUND)
+        
+        
+
+@ratelimit(key='ip', rate='10/1d')
+@api_view(['POST'])
+def contact_support(request):
+    data = request.data
+    try:
+        serializer = SupportSerializer(data=data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            
+            send_mail("HAQPAY SUPPORT", f"From: {data['email']} \nMessage: {data['message']}", settings.EMAIL_HOST_USER, [
+            "kolosafo@gmail.com"], fail_silently=False)
+            
+            send_mail("HAQPAY SUPPORT", f"Thanks for contacting support, your message has been recieved! \nOne of our support members will get back to you shortly. \nRegards, \Jahid team", settings.EMAIL_HOST_USER, [
+                data['email']], fail_silently=False)
+
+            return Response({
+                    "data": None,
+                    "errors": False,
+                    "message": "success",
+                    "status": status.HTTP_200_OK,
+                    }, status=status.HTTP_200_OK)
+    except Exception as e:
+        return Response({
+                "data": [],
+                "errors": str(e),
+                "message": "not found",
+                "status": status.HTTP_400_BAD_REQUEST,
+                }, status=status.HTTP_400_BAD_REQUEST)
