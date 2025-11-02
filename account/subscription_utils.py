@@ -87,6 +87,7 @@ def subscription_limit_required(usage_type: str):
             try:
                 subscription = UserSubscriptionUsage.objects.get(user=user)
             except UserSubscriptionUsage.DoesNotExist:
+                # print("USER CANT USE THIS CUS OF SUB")
                 return Response({
                     "errors": "NoSubscription",
                     "message": "No active subscription found.",

@@ -311,10 +311,10 @@ def get_user_extracted_books(request):
 
 
 
-@ratelimit(key='ip', rate='30/1d')
+@ratelimit(key='ip', rate='40/60m')
 @api_view(["POST"])
 @permission_classes([IsAuthenticated])
-@subscription_limit_required('note')
+# @subscription_limit_required('note')
 def save_note(request):
     try:
         data = request.data

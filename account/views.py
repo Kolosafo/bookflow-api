@@ -377,7 +377,7 @@ def load_pricing(request):
     
     
 
-@ratelimit(key='ip', rate='10/60m')
+@ratelimit(key='ip', rate='1000/1d')
 # @cache_page(60 * 60)
 @permission_classes([IsAuthenticated])
 @api_view(["GET"])
