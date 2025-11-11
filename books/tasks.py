@@ -56,7 +56,7 @@ def handle_give_free_trial():
         user.subscription = "basic"
         user.free_trail_end_date = timezone.now().date() + timezone.timedelta(days=3)
         user.save()
-        send_free_trial_email(get_users.email)
+        send_free_trial_email(user.email)
         try:
             pass
             # send_notiifcation(
