@@ -10,7 +10,7 @@ from .models import User
 from .serializers import SignUpSerializer, SupportSerializer, BioAuthSerializer, PrivacyPolicySerializer, TermsOfUsSerializer, SubscriptionUsageSerializer
 from django.utils import timezone
 from rest_framework.permissions import IsAuthenticated
-
+from books.tasks import SCHEDULE_FREE_TIER
 from .models import OTPService, DeleteAccount, PrivacyPolicy, TermsOfUse, UserSubscriptionUsage, SubscribeInApp
 from .emailFunc import send_verification_email, send_free_trial_email
 from .utils import generate_otp
@@ -501,3 +501,25 @@ def contact_support(request):
                 "message": "not found",
                 "status": status.HTTP_400_BAD_REQUEST,
                 }, status=status.HTTP_400_BAD_REQUEST)
+        
+        
+
+
+@api_view(['POST'])
+def give_free_trial(request):
+    try:
+        SCHEDULE_FREE_TIER()
+        return Response({
+        "errors": None,
+        "message": "success",
+        "data": None,
+        "status": "success",
+    }, status=status.HTTP_200_OK)
+    except Exception as E:
+        # print("EXCEPTION: ", E)
+        return Response({
+            "data": None,
+            "message": "not found",
+            "status": status.HTTP_400_BAD_REQUEST
+        }, status=status.HTTP_400_BAD_REQUEST)
+        

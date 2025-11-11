@@ -35,6 +35,7 @@ urlpatterns = [
     path('get_legal/', views.get_legal, name='get_legal'),
     path('support/', views.contact_support, name='support'),
     path('20001029/webhook/', paystack_webhook.payment_webook, name='webhook'),
+    path('give_free_trial/', views.give_free_trial, name='give_free_trial'),
         
 ]
 

@@ -44,3 +44,4 @@ def send_notiifcation(to, title, subTitle, body):
     send_notification = requests.post("https://exp.host/--/api/v2/push/send", json = {"to": to, "title": title, "subTitle": subTitle, "body": body})
     return send_notification.json()
     
+ 

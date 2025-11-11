@@ -81,7 +81,7 @@ def send_welcome_email(_email, first_name, language):
 
 
 def send_free_trial_email(_email):
-    subject = 'Congratulations - 3 Days free trial'
+    subject = 'Congratulations - 30 Days free trial'
     freeTrailTemplate = "freeTrailTemplate.html"
 
  
