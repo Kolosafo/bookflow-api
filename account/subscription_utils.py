@@ -5,12 +5,12 @@ from rest_framework import status
 
 
 def getSubcriptionUsage(summaries, notes, reminders, smart_search):
-    return{
+    return {
       "summaries": summaries,
       "notes": notes,
       "reminders": reminders,
       "smart_search": smart_search
-      },
+      }
       
 
 
