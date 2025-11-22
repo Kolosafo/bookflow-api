@@ -28,7 +28,7 @@ SECRET_KEY = APP_SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['bookflow-api-bcke.onrender.com']
+ALLOWED_HOSTS = ['bookflow-api-bcke.onrender.com', '127.0.0.1']
 
 
 EMAIL_HOST = 'smtp.gmail.com'
@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'books',
     'account',
     "django_apscheduler",
+    'blog',
     "notifications"
     
 ]
@@ -158,6 +159,15 @@ DATABASES = {
         'HOST': os.getenv("DB_HOST_NAME", default=""),
         'PORT': '5432'
     }
+}
+
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': os.getenv("CLOUDINARY_CLOUD_NAME", default=""),
+    'API_KEY': os.getenv("CLOUDINARY_API_KEY", default=""),
+    'API_SECRET': os.getenv("CLOUDINARY_API_SECRET", default="")
 }
 
 
