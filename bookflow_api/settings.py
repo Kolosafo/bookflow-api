@@ -28,7 +28,7 @@ SECRET_KEY = APP_SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['bookflow-api-bcke.onrender.com', '127.0.0.1', 'getbookflow.com']
+ALLOWED_HOSTS = ['bookflow-api-bcke.onrender.com', '127.0.0.1']
 
 
 EMAIL_HOST = 'smtp.gmail.com'
@@ -132,6 +132,8 @@ TEMPLATES = [
 
 CORS_ALLOWED_ORIGINS = [
     "https://bookflowapp.vercel.app",  # your production web app
+    "https://getbookflow.com",
+    "https://www.getbookflow.com",
     "https://expo.dev",                # Expo website
     "https://*.expo.dev",              # Expo previews (wildcard)
     "http://localhost:19006",          # local Expo web preview
