@@ -10,7 +10,7 @@ from django_apscheduler.jobstores import DjangoJobStore
 from django_apscheduler.models import DjangoJobExecution
 from django_apscheduler import util
 from apscheduler.triggers.interval import IntervalTrigger
-from account.tasks import clear_otps
+from account.tasks import clear_otps, test_scheduler_job
 # from postgen_ai.views import run_create_ai_post
 logger = logging.getLogger(__name__)
 
@@ -67,6 +67,17 @@ class Command(BaseCommand):
       replace_existing=True,
     )
     logger.info("✓ Added job: 'delete_old_job_executions' - Runs every Monday at midnight UTC")
+
+
+    # TEST JOB - Runs daily at 3:45 PM UTC for testing
+    scheduler.add_job(
+      test_scheduler_job,
+      trigger=CronTrigger(hour="15", minute="45"),  # 3:45 PM UTC daily
+      id="test_scheduler_job",
+      max_instances=1,
+      replace_existing=True,
+    )
+    logger.info("✓ Added job: 'test_scheduler_job' - Runs daily at 3:45 PM UTC (FOR TESTING)")
 
     # List all registered jobs
     logger.info("=" * 50)
