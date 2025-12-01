@@ -54,7 +54,7 @@ def handle_give_free_trial():
     #     pass
     for user in get_users:
         user.subscription = "basic"
-        user.free_trail_end_date = timezone.now().date() + timezone.timedelta(days=3)
+        user.free_trail_end_date = timezone.now().date() + timezone.timedelta(days=30)
         user.save()
         send_free_trial_email(user.email)
         try:
@@ -67,6 +67,14 @@ def handle_give_free_trial():
             # )
         except:
             pass
+        
+def single_free_trial(user: User):
+    if user.subscription == "free":
+        user.subscription = "basic"
+        user.free_trail_end_date = timezone.now().date() + timezone.timedelta(days=30)
+        user.save()
+        send_free_trial_email(user.email)
+        return True
         
 
 def SCHEDULE_FREE_TIER():

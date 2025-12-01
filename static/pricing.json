@@ -26,9 +26,9 @@
     "price": 4.99,
     "usdRate": 1525,
     "features": [
-      "5 Book Summaries",
-      "Create up to 15 notes",
-      "5 Custom Reminders",
+      "10 Book Summaries",
+      "Create up to 25 notes",
+      "10 Custom Reminders",
       "10 Smart Searches"
     ],
     "buttonText": "Basic to Premium",
@@ -44,9 +44,9 @@
     "price": 9.99,
     "usdRate": 1525,
     "features": [
-      "15 Book Summaries",
-      "Create up to 30 notes",
-      "10 Custom Reminders",
+      "25 Book Summaries",
+      "Create up to 50 notes",
+      "20 Custom Reminders",
       "25 Smart Searches"
     ],
     "buttonText": "Upgrade to Premium",
@@ -62,7 +62,7 @@
     "price": 29.99,
     "usdRate": 1525,
     "features": [
-      "50 Book Summaries",
+      "60 Book Summaries",
       "Create unlimited notes",
       "Unlimited Custom Reminders",
       "70 Smart Searches"

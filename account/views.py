@@ -14,6 +14,7 @@ from books.tasks import SCHEDULE_FREE_TIER
 from .models import OTPService, DeleteAccount, PrivacyPolicy, TermsOfUse, UserSubscriptionUsage, SubscribeInApp
 from .emailFunc import send_verification_email, send_free_trial_email
 from .utils import generate_otp
+from books.tasks import single_free_trial
 from .actions import save_otp, validate_otp
 from django.core.mail import send_mail
 from django.conf import settings
@@ -109,6 +110,8 @@ def confirm_email(request):
  
         check_user.status = "activated"
         check_user.save()
+        single_free_trial(check_user)
+        
 
     except Exception as E:
         # print("ERROR", E)

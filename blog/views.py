@@ -17,8 +17,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # GET all posts, POST create new post
-@ratelimit(key='ip', rate='50/1d')
-@cache_page(60 * 60)
+# @ratelimit(key='ip', rate='50/1d')
+# @cache_page(60 * 60)
 @api_view(["GET", "POST"])
 def posts_list(request):
     if request.method == "GET":
@@ -41,7 +41,7 @@ def posts_list(request):
 
 # GET single post, PUT update, DELETE
 @ratelimit(key='ip', rate='50/1d')
-@cache_page(60 * 60)
+# @cache_page(60 * 60)
 @api_view(["GET", "PUT", "DELETE"])
 def post_detail(request, pk):
     try:
