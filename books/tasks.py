@@ -1,6 +1,5 @@
-    
+
 from datetime import datetime, timedelta
-from .scheduler import scheduler
 from .save_summary import save_book_analysis
 from apscheduler.triggers.date import DateTrigger
 from .gemini import generate_summary_keypoints, generate_book_search
@@ -10,6 +9,15 @@ from django.utils import timezone
 from account.emailFunc import send_verification_email, send_free_trial_email
 from account.helpers import send_notiifcation
 
+
+def get_scheduler():
+    """
+    Lazy-load the scheduler to avoid import-time initialization issues.
+    This ensures the scheduler is only accessed when needed, not at module import.
+    """
+    from .scheduler import scheduler
+    return scheduler
+
 def summarize_and_save(book_title, book_author, book_id):
     summary = generate_summary_keypoints(book_title, book_author)
     parseResponse = json.loads(summary)
@@ -18,6 +26,7 @@ def summarize_and_save(book_title, book_author, book_id):
 
 def SCHEDULE_BOOK_SUMMARY(book_title, book_author, book_id):
     run_at = datetime.now() + timedelta(seconds=2)
+    scheduler = get_scheduler()
     scheduler.add_job(
         summarize_and_save,
         trigger=DateTrigger(run_date=run_at),
@@ -79,11 +88,12 @@ def single_free_trial(user: User):
 
 def SCHEDULE_FREE_TIER():
     run_at = datetime.now() + timedelta(seconds=5)
+    scheduler = get_scheduler()
     scheduler.add_job(
         handle_give_free_trial,
         trigger=DateTrigger(run_date=run_at),
         args=[],
-        id=f"give_trial_{int(run_at.timestamp())}", 
+        id=f"give_trial_{int(run_at.timestamp())}",
         replace_existing=False
     )
      

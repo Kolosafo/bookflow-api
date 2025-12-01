@@ -1,0 +1,88 @@
+services:
+  # Web Service - Your main Django application
+  - type: web
+    name: bookflow-api
+    env: python
+    region: oregon
+    plan: starter  # Change to 'standard' or 'pro' as needed
+    branch: master
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn bookflow_api.wsgi:application --bind 0.0.0.0:$PORT"
+    healthCheckPath: /admin/  # Health check endpoint
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.18
+      - key: DATABASE_URL
+        fromDatabase:
+          name: bookflow-db
+          property: connectionString
+      - key: APP_SECRET_KEY
+        sync: false
+      - key: MAIL_SMTP_PASSWORD
+        sync: false
+      - key: DB_NAME
+        sync: false
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_HOST_NAME
+        sync: false
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: GOOGLE_BOOKS_API_KEY
+        sync: false
+      - key: GOOGLE_API_KEY
+        sync: false
+
+  # Background Worker - APScheduler for recurring cron jobs
+  - type: worker
+    name: bookflow-scheduler
+    env: python
+    region: oregon
+    plan: starter  # Change to 'standard' or 'pro' as needed
+    branch: master
+    buildCommand: "./build.sh"
+    startCommand: "python manage.py scheduler"
+    # Auto-deploy when web service deploys
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.18
+      - key: DATABASE_URL
+        fromDatabase:
+          name: bookflow-db
+          property: connectionString
+      - key: APP_SECRET_KEY
+        sync: false
+      - key: MAIL_SMTP_PASSWORD
+        sync: false
+      - key: DB_NAME
+        sync: false
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_HOST_NAME
+        sync: false
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: GOOGLE_BOOKS_API_KEY
+        sync: false
+      - key: GOOGLE_API_KEY
+        sync: false
+
+databases:
+  - name: bookflow-db
+    plan: starter  # PostgreSQL plan - change to 'standard' or 'pro' as needed
+    databaseName: bookflow_db_lei6
+    user: bookflow_db_lei6_user
+    region: frankfurt
