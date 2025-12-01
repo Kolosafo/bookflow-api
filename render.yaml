@@ -47,7 +47,7 @@ services:
     plan: starter  # Change to 'standard' or 'pro' as needed
     branch: master
     buildCommand: "./build.sh"
-    startCommand: "python manage.py scheduler"
+    startCommand: "./scheduler.sh"
     # Auto-deploy when web service deploys
     autoDeploy: true
     envVars:
