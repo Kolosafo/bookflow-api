@@ -54,18 +54,41 @@ Booting worker with pid: ...
 Listening at: http://0.0.0.0:10000
 ```
 
-**Check Background Worker Logs:**
+**Check Background Worker Logs (IMPORTANT):**
 ```
-INFO ... Added job 'delete_otps'.
-INFO ... Added daily job: 'delete_old_job_executions'.
-INFO ... Starting scheduler...
+==================================================
+APScheduler is starting...
+==================================================
+✓ Added job: 'daily_otp_cleanup' - Runs daily at 2:00 AM UTC
+✓ Added job: 'delete_old_job_executions' - Runs every Monday at midnight UTC
+==================================================
+Total jobs registered: 2
+  - Job ID: daily_otp_cleanup, Next run: 2025-12-02 02:00:00+00:00
+  - Job ID: delete_old_job_executions, Next run: 2025-12-02 00:00:00+00:00
+==================================================
+Starting scheduler... Press Ctrl+C to exit
 ```
 
-### Step 5: Test
+**If you see "No Jobs" in the database:**
+- This is normal! Jobs appear when the **worker starts**
+- Check background worker logs (above)
+- If logs show jobs registered, everything is working
+- See [SCHEDULER_TROUBLESHOOTING.md](SCHEDULER_TROUBLESHOOTING.md) for details
+
+### Step 5: Verify Jobs Are Registered
+
+In Render Shell (Web Service), run:
+```bash
+python manage.py list_jobs
+```
+
+You should see 2 jobs listed. If not, see troubleshooting guide.
+
+### Step 6: Test
 
 1. Visit your web service URL
 2. Test API endpoints
-3. Verify scheduled jobs in worker logs
+3. Monitor worker logs for job executions
 
 ---
 

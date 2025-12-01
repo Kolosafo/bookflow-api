@@ -44,31 +44,39 @@ class Command(BaseCommand):
     scheduler = BlockingScheduler(timezone=settings.TIME_ZONE)
     scheduler.add_jobstore(DjangoJobStore(), "default")
 
+    logger.info("=" * 50)
+    logger.info("APScheduler is starting...")
+    logger.info("=" * 50)
 
-    # DAILY AUTO SAVINGS DEPOSIT
+    # DAILY OTP CLEANUP JOB
     scheduler.add_job(
       clear_otps,
       trigger=CronTrigger(hour="02", minute="00"),  # 2:00AM EVERYDAY
-      id="daily_deposit_job",  # The `id` assigned to each job MUST be unique
+      id="daily_otp_cleanup",  # The `id` assigned to each job MUST be unique
       max_instances=1,
       replace_existing=True,
     )
-    logger.info("Added job 'delete_otps'.")
-    
-  
+    logger.info("✓ Added job: 'daily_otp_cleanup' - Runs daily at 2:00 AM UTC")
+
+
     scheduler.add_job(
       delete_old_job_executions,
-      trigger=CronTrigger(day_of_week="mon", hour="00", minute="00"),  #Monday Midnight everyday
+      trigger=CronTrigger(day_of_week="mon", hour="00", minute="00"),  # Monday Midnight
       id="delete_old_job_executions",
       max_instances=1,
       replace_existing=True,
     )
-    logger.info(
-      "Added daily job: 'delete_old_job_executions'."
-    )
+    logger.info("✓ Added job: 'delete_old_job_executions' - Runs every Monday at midnight UTC")
+
+    # List all registered jobs
+    logger.info("=" * 50)
+    logger.info(f"Total jobs registered: {len(scheduler.get_jobs())}")
+    for job in scheduler.get_jobs():
+      logger.info(f"  - Job ID: {job.id}, Next run: {job.next_run_time}")
+    logger.info("=" * 50)
 
     try:
-      logger.info("Starting scheduler...")
+      logger.info("Starting scheduler... Press Ctrl+C to exit")
       scheduler.start()
     except KeyboardInterrupt:
       logger.info("Stopping scheduler...")

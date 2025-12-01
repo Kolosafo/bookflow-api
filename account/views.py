@@ -485,10 +485,10 @@ def contact_support(request):
         if serializer.is_valid(raise_exception=True):
             serializer.save()
             
-            send_mail("HAQPAY SUPPORT", f"From: {data['email']} \nMessage: {data['message']}", settings.EMAIL_HOST_USER, [
+            send_mail("BookFlow SUPPORT", f"From: {data['email']} \nMessage: {data['message']}", settings.EMAIL_HOST_USER, [
             "kolosafo@gmail.com"], fail_silently=False)
             
-            send_mail("HAQPAY SUPPORT", f"Thanks for contacting support, your message has been recieved! \nOne of our support members will get back to you shortly. \nRegards, \Jahid team", settings.EMAIL_HOST_USER, [
+            send_mail("BookFlow SUPPORT", f"Thanks for contacting support, your message has been recieved! \nOne of our support members will get back to you shortly. \nRegards, \BookFlow team", settings.EMAIL_HOST_USER, [
                 data['email']], fail_silently=False)
 
             return Response({
