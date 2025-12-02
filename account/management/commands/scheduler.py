@@ -68,7 +68,7 @@ class Command(BaseCommand):
         # TEST JOB - Runs daily at 5:55 PM UTC for testing
         scheduler.add_job(
             test_scheduler_job,
-            trigger=CronTrigger(hour="17", minute="55"),  # 5:55 PM UTC daily
+            trigger=CronTrigger(hour="07", minute="05"),  # 5:55 PM UTC daily
             id="test_scheduler_job",
             max_instances=1,
             replace_existing=True,
