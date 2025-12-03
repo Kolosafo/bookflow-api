@@ -23,19 +23,19 @@ def allowedUsage(plan):
       "smart_search": 3
       },
     "basic":{
-       "summaries": 5,
-      "notes": 15,
-      "reminders": 5,
+       "summaries": 10,
+      "notes": 25,
+      "reminders": 10,
       "smart_search": 10
       },
     "premium":{
-       "summaries": 15,
-      "notes": 30,
-      "reminders": 10,
+       "summaries": 25,
+      "notes": 50,
+      "reminders": 20,
       "smart_search": 25
       },
     "scholar":{
-      "summaries": 50,
+      "summaries": 60,
       "notes": 150,
       "reminders": 150,
       "smart_search": 70
