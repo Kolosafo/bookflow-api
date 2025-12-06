@@ -56,20 +56,36 @@ def handle_search_book(book_title, book_author=None):
 
 def handle_give_free_trial():
     get_users = User.objects.filter(subscription="free")
-    # try:
-    #     get_subscription_model = UserSubscriptionUsage.objects.get(user=get_users)
-    #     get_subscription_model
-    # except:
-    #     pass
+
     for user in get_users:
         user.subscription = "basic"
         user.free_trail_end_date = timezone.now().date() + timezone.timedelta(days=30)
         user.save()
         send_free_trial_email(user.email)
+
+        # Create or update UserSubscriptionUsage for the user
+        usage, created = UserSubscriptionUsage.objects.get_or_create(
+            user=user,
+            defaults={
+                'summaries': 10,
+                'notes': 25,
+                'reminders': 10,
+                'smart_search': 10,
+            }
+        )
+
+        # If usage already exists, update the values
+        if not created:
+            usage.summaries = 10
+            usage.notes = 25
+            usage.reminders = 10
+            usage.smart_search = 10
+            usage.save()
+
         try:
             pass
             # send_notiifcation(
-            #     get_users.notification_token,
+            #     user.notification_token,
             #     "Congratulations - 30 Days free trial",
             #     "Congratulations - 30 Days free trial",
             #     "",
@@ -83,6 +99,26 @@ def single_free_trial(user: User):
         user.free_trail_end_date = timezone.now().date() + timezone.timedelta(days=30)
         user.save()
         send_free_trial_email(user.email)
+
+        # Create or update UserSubscriptionUsage for the user
+        usage, created = UserSubscriptionUsage.objects.get_or_create(
+            user=user,
+            defaults={
+                'summaries': 10,
+                'notes': 25,
+                'reminders': 10,
+                'smart_search': 10,
+            }
+        )
+
+        # If usage already exists, update the values
+        if not created:
+            usage.summaries = 10
+            usage.notes = 25
+            usage.reminders = 10
+            usage.smart_search = 10
+            usage.save()
+
         return True
         
 

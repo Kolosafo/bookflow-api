@@ -36,7 +36,8 @@ urlpatterns = [
     path('support/', views.contact_support, name='support'),
     path('20001029/webhook/', paystack_webhook.payment_webook, name='webhook'),
     path('give_free_trial/', views.give_free_trial, name='give_free_trial'),
-        
+#     path('update_subscription_usage/', views.update_subscription_usage, name='update_subscription_usage'),
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

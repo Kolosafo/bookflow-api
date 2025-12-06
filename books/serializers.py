@@ -11,7 +11,8 @@ from .models import (
     ImplementationMeta,
     OnePageSummary,
     BookAnalysisResponse,
-    Notes
+    Notes,
+    ChatHistory
 )
 
 
@@ -135,3 +136,21 @@ class NotesSerializer(serializers.ModelSerializer):
             'created_at',
         ]
         read_only_fields = ['id', 'created_at']
+
+
+class ChatHistorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ChatHistory
+        fields = [
+            'id',
+            'user',
+            'book_id',
+            'book_title',
+            'book_author',
+            'user_message',
+            'ai_response',
+            'noteable',
+            'created_at',
+            'updated_at'
+        ]
+        read_only_fields = ['id', 'created_at', 'updated_at']

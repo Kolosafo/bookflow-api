@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from .chat_ai import views as chat_views
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -41,7 +42,13 @@ urlpatterns = [
      # BOOK SEARCH
     path('ai_search_book/',
          views.ai_search_book, name="ai_search_book"),
-     
+
+    # CHAT AI ENDPOINTS
+    path('chat/',
+         chat_views.chat_with_book_ai, name="chat_with_book_ai"),
+    path('chat-history/<str:book_id>/',
+         chat_views.get_chat_history, name="get_chat_history"),
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

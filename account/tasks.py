@@ -1,4 +1,4 @@
-from .models import OTPService
+from .models import OTPService, User, UserSubscriptionUsage
 import logging
 from django.core.mail import send_mail
 from django.conf import settings
@@ -72,3 +72,94 @@ BookFlow API - Automated Scheduler
         pass
 
     return "TEST_JOB_COMPLETED"
+
+
+def update_all_user_subscription_usage():
+    """
+    Updates all users' subscription usage values to new limits:
+    - summaries: 10
+    - notes: 25
+    - reminders: 10
+    - smart_search: 10
+
+    This function will:
+    1. Loop through all User objects
+    2. Get or create UserSubscriptionUsage for each user
+    3. Update the usage values
+
+    Returns:
+        dict: Summary of the operation (total users, updated count, created count, errors)
+    """
+    logger.info("=" * 60)
+    logger.info("Starting update_all_user_subscription_usage task")
+    logger.info("=" * 60)
+
+    total_users = 0
+    updated_count = 0
+    created_count = 0
+    errors = []
+
+    try:
+        all_users = User.objects.all()
+        total_users = all_users.count()
+
+        logger.info(f"Found {total_users} users to process")
+
+        for user in all_users:
+            try:
+                # Get or create UserSubscriptionUsage for this user
+                usage, created = UserSubscriptionUsage.objects.get_or_create(
+                    user=user,
+                    defaults={
+                        'summaries': 10,
+                        'notes': 25,
+                        'reminders': 10,
+                        'smart_search': 10,
+                    }
+                )
+
+                if created:
+                    created_count += 1
+                    logger.info(f"✓ Created new subscription usage for {user.email}")
+                else:
+                    # Update existing record
+                    usage.summaries = 10
+                    usage.notes = 25
+                    usage.reminders = 10
+                    usage.smart_search = 10
+                    usage.save()
+                    updated_count += 1
+                    logger.info(f"✓ Updated subscription usage for {user.email}")
+
+            except Exception as e:
+                error_msg = f"Error processing user {user.email}: {str(e)}"
+                logger.error(f"✗ {error_msg}")
+                errors.append(error_msg)
+
+        # Summary
+        logger.info("=" * 60)
+        logger.info("Update completed!")
+        logger.info(f"Total users: {total_users}")
+        logger.info(f"Created: {created_count}")
+        logger.info(f"Updated: {updated_count}")
+        logger.info(f"Errors: {len(errors)}")
+        logger.info("=" * 60)
+
+        result = {
+            'status': 'SUCCESS',
+            'total_users': total_users,
+            'created_count': created_count,
+            'updated_count': updated_count,
+            'errors_count': len(errors),
+            'errors': errors
+        }
+
+        return result
+
+    except Exception as e:
+        error_msg = f"Fatal error in update_all_user_subscription_usage: {str(e)}"
+        logger.error(error_msg)
+        return {
+            'status': 'FAILED',
+            'error': error_msg
+        }

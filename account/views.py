@@ -389,7 +389,7 @@ def load_subscription_usage(request):
     get_user_obj = User.objects.get(id=user.id)
     subscription_usage = UserSubscriptionUsage.objects.get(user=user)
     usage = getSubcriptionUsage(subscription_usage.summaries, subscription_usage.notes, subscription_usage.reminders, subscription_usage.smart_search)
-    _allowedUsage =allowedUsage(get_user_obj.subscription)
+    _allowedUsage = allowedUsage(get_user_obj.subscription)
     return Response({   
         "data": {"allowedUsage": _allowedUsage, "currentUsage":usage}, 
         "message":"success",
@@ -525,4 +525,63 @@ def give_free_trial(request):
             "message": "not found",
             "status": status.HTTP_400_BAD_REQUEST
         }, status=status.HTTP_400_BAD_REQUEST)
-        
+
+
+@api_view(['POST'])
+# @permission_classes([IsAuthenticated])
+def update_subscription_usage(request):
+    """
+    Endpoint to update all users' subscription usage values.
+    Updates all UserSubscriptionUsage records to:
+    - summaries: 10
+    - notes: 25
+    - reminders: 10
+    - smart_search: 10
+
+    Requires authentication (staff/admin users only recommended).
+    """
+    try:
+        # Optional: Restrict to admin/staff users only
+        # if not request.user.is_staff:
+        #     return Response({
+        #         "errors": "Unauthorized. Admin access required.",
+        #         "message": "Permission denied",
+        #         "status": status.HTTP_403_FORBIDDEN,
+        #     }, status=status.HTTP_403_FORBIDDEN)
+
+        # Import the function
+        from .tasks import update_all_user_subscription_usage
+
+        # Execute the update
+        result = update_all_user_subscription_usage()
+
+        # Return success response
+        if result['status'] == 'SUCCESS':
+            return Response({
+                "errors": None,
+                "message": "Subscription usage updated successfully",
+                "data": {
+                    "total_users": result['total_users'],
+                    "created_count": result['created_count'],
+                    "updated_count": result['updated_count'],
+                    "errors_count": result['errors_count'],
+                    "errors": result['errors']
+                },
+                "status": "success",
+            }, status=status.HTTP_200_OK)
+        else:
+            return Response({
+                "errors": result.get('error', 'Unknown error'),
+                "message": "Update failed",
+                "data": None,
+                "status": "error",
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    except Exception as e:
+        return Response({
+            "data": None,
+            "errors": str(e),
+            "message": "Internal server error",
+            "status": status.HTTP_500_INTERNAL_SERVER_ERROR
+        }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
