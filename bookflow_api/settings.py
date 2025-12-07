@@ -41,24 +41,26 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # Application definition
 
 INSTALLED_APPS = [
+    "daphne",  # Must be at the top for WebSocket support
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    
+
+    'channels',
     'corsheaders',
     'rest_framework',
     'rest_framework_simplejwt.token_blacklist',
     'rest_framework.authtoken',
-    
+
     'books',
     'account',
     "django_apscheduler",
     'blog',
     "notifications"
-    
+
 ]
 
 MIDDLEWARE = [
@@ -143,6 +145,27 @@ CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOW_HEADERS = ['Content-Type', 'Authorization']
 CORS_ALLOW_METHODS = ['GET', 'POST']
 WSGI_APPLICATION = "bookflow_api.wsgi.application"
+
+# ASGI Application for WebSocket support
+ASGI_APPLICATION = "bookflow_api.asgi.application"
+
+# Channel Layers Configuration
+# For development, use in-memory channel layer
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer"
+    }
+}
+
+# For production with Redis, use:
+# CHANNEL_LAYERS = {
+#     "default": {
+#         "BACKEND": "channels_redis.core.RedisChannelLayer",
+#         "CONFIG": {
+#             "hosts": [("127.0.0.1", 6379)],
+#         },
+#     },
+# }
 
 
 # Database
@@ -257,6 +280,32 @@ LOGGING = {
         'django_apscheduler': {
             'handlers': ['console'],
             'level': 'INFO',
+            'propagate': False,
+        },
+        # Suppress verbose Google Gemini AI logs
+        'google': {
+            'handlers': ['console'],
+            'level': 'WARNING',
+            'propagate': False,
+        },
+        'google.generativeai': {
+            'handlers': ['console'],
+            'level': 'WARNING',
+            'propagate': False,
+        },
+        'google.api_core': {
+            'handlers': ['console'],
+            'level': 'WARNING',
+            'propagate': False,
+        },
+        'urllib3': {
+            'handlers': ['console'],
+            'level': 'WARNING',
+            'propagate': False,
+        },
+        'httpx': {
+            'handlers': ['console'],
+            'level': 'WARNING',
             'propagate': False,
         },
     },

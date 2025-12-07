@@ -135,12 +135,10 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
         'email',
         'deviceId',
         'id',
-        'interests',
         'status',
         'subscription',
         'free_trail',
         'date_subscription_ends',
-        'date_subscribed'
     ]
     
     @classmethod

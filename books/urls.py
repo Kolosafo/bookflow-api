@@ -27,8 +27,12 @@ urlpatterns = [
     # USER BOOK URLS
      path('get_extracted/',
          views.get_user_extracted_books, name="get_extracted"),
+    path('delete_extracted/',
+         views.delete_user_extracted_books, name="delete_user_extracted_books"),
      path('save_bookmark/',
          views.save_book_mark, name="save_bookmark"),
+    path('remove_bookmark/',
+         views.remove_book_mark, name="remove_book_mark"),
      path('get_bookmarks/',
          views.get_book_marks, name="get_bookmarks"),
      
@@ -39,12 +43,13 @@ urlpatterns = [
      path('get_notes/',
          views.get_notes, name="get_notes"),
      
+    
      # BOOK SEARCH
     path('ai_search_book/',
          views.ai_search_book, name="ai_search_book"),
 
     # CHAT AI ENDPOINTS
-    path('chat/',
+    path('chat_with_ai/',
          chat_views.chat_with_book_ai, name="chat_with_book_ai"),
     path('chat-history/<str:book_id>/',
          chat_views.get_chat_history, name="get_chat_history"),

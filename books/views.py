@@ -263,6 +263,30 @@ def save_book_mark(request):
         )
 
 
+
+@ratelimit(key='ip', rate='30/1d')
+@api_view(["POST"])
+@permission_classes([IsAuthenticated])
+def remove_book_mark(request):
+    try:
+        data = request.data
+        bookmark_book = BookmarkBook.objects.get(book_id=data['book_id'], user=request.user)
+        bookmark_book.delete()
+        return Response({   
+            "message":"success",
+            "status": status.HTTP_200_OK,
+            }, status=status.HTTP_200_OK)
+            
+    except Exception as e:
+        return Response(
+            {
+                "message": f"Error loading books: {str(e)}",
+                "status": status.HTTP_400_BAD_REQUEST,
+            },
+            status=status.HTTP_400_BAD_REQUEST
+        )
+
+
 @ratelimit(key='ip', rate='30/1d')
 @api_view(["GET"])
 @permission_classes([IsAuthenticated])
@@ -298,6 +322,31 @@ def get_user_extracted_books(request):
             "data": serializer.data, 
             "message":"success",
             "status": status.HTTP_201_CREATED,
+            }, status=status.HTTP_200_OK)
+            
+    except Exception as e:
+        return Response(
+            {
+                "message": f"Error loading books: {str(e)}",
+                "status": status.HTTP_400_BAD_REQUEST,
+            },
+            status=status.HTTP_400_BAD_REQUEST
+        )
+
+@ratelimit(key='ip', rate='300/1d')
+@api_view(["POST"])
+@permission_classes([IsAuthenticated])
+def delete_user_extracted_books(request):
+    data = request.data
+    book_id = data['book_id']
+    try:
+        get_book = UserExtractedBooks.objects.filter(user=request.user, book_id=book_id)
+        for book in get_book:
+            book.delete()
+            book.save()
+        return Response({   
+            "message":"success",
+            "status": status.HTTP_200_OK,
             }, status=status.HTTP_200_OK)
             
     except Exception as e:

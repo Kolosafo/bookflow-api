@@ -13,6 +13,7 @@ from ..serializers import ChatHistorySerializer
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def chat_with_book_ai(request):
+    print("FIRED!!")
     """
     POST view to chat with AI about a specific book
     Expected request data:
@@ -36,79 +37,79 @@ def chat_with_book_ai(request):
         practical_takeaways = data.get('practical_takeaways')
         user_message = data.get('user_message')
 
-        # Validate required fields
-        if not all([book_id, book_title, book_author, summary, user_message]):
-            return Response({
-                "errors": "book_id, book_title, book_author, summary, and user_message are required",
-                "message": "Missing required fields",
-                "status": "error",
-            }, status=status.HTTP_400_BAD_REQUEST)
+        # # Validate required fields
+        # if not all([book_id, book_title, book_author, summary, user_message]):
+        #     return Response({
+        #         "errors": "book_id, book_title, book_author, summary, and user_message are required",
+        #         "message": "Missing required fields",
+        #         "status": "error",
+        #     }, status=status.HTTP_400_BAD_REQUEST)
 
-        # Generate AI response with error handling
-        try:
-            ai_response_json = generate_ai_chat(
-                user_input=user_message,
-                book_title=book_title,
-                author=book_author,
-                summary=summary,
-                key_insights=key_insights or "",
-                practical_takeaways=practical_takeaways or ""
-            )
-        except Exception as ai_error:
-            print(f"AI Generation Error: {ai_error}")
-            return Response({
-                "errors": "AI generation failed",
-                "message": f"Failed to generate AI response: {str(ai_error)}",
-                "status": "error",
-            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        # # Generate AI response with error handling
+        # try:
+        #     ai_response_json = generate_ai_chat(
+        #         user_input=user_message,
+        #         book_title=book_title,
+        #         author=book_author,
+        #         summary=summary,
+        #         key_insights=key_insights or "",
+        #         practical_takeaways=practical_takeaways or ""
+        #     )
+        # except Exception as ai_error:
+        #     print(f"AI Generation Error: {ai_error}")
+        #     return Response({
+        #         "errors": "AI generation failed",
+        #         "message": f"Failed to generate AI response: {str(ai_error)}",
+        #         "status": "error",
+        #     }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-        # Parse the AI response
-        try:
-            ai_response_data = json.loads(ai_response_json)
-            ai_text = ai_response_data.get('text', '')
-            noteable = ai_response_data.get('noteable', '')
-        except json.JSONDecodeError as json_error:
-            print(f"JSON Parse Error: {json_error}")
-            print(f"Raw AI Response: {ai_response_json}")
-            return Response({
-                "errors": "Invalid AI response format",
-                "message": "Failed to parse AI response",
-                "status": "error",
-            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        # # Parse the AI response
+        # try:
+        #     ai_response_data = json.loads(ai_response_json)
+        #     ai_text = ai_response_data.get('text', '')
+        #     noteable = ai_response_data.get('noteable', '')
+        # except json.JSONDecodeError as json_error:
+        #     print(f"JSON Parse Error: {json_error}")
+        #     print(f"Raw AI Response: {ai_response_json}")
+        #     return Response({
+        #         "errors": "Invalid AI response format",
+        #         "message": "Failed to parse AI response",
+        #         "status": "error",
+        #     }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-        # Save chat history
-        try:
-            chat_history = ChatHistory.objects.create(
-                user=request.user,
-                book_id=book_id,
-                book_title=book_title,
-                book_author=book_author,
-                user_message=user_message,
-                ai_response=ai_text,
-                noteable=noteable
-            )
-        except Exception as db_error:
-            print(f"Database Error: {db_error}")
-            # Still return the AI response even if saving fails
-            return Response({
-                "data": {
-                    "user_message": user_message,
-                    "ai_response": ai_text,
-                    "noteable": noteable,
-                    "book_id": book_id,
-                    "book_title": book_title,
-                    "book_author": book_author
-                },
-                "errors": "Failed to save chat history",
-                "message": "Chat response generated but not saved",
-                "status": "partial_success",
-            }, status=status.HTTP_200_OK)
+        # # Save chat history
+        # try:
+        #     chat_history = ChatHistory.objects.create(
+        #         user=request.user,
+        #         book_id=book_id,
+        #         book_title=book_title,
+        #         book_author=book_author,
+        #         user_message=user_message,
+        #         ai_response=ai_text,
+        #         noteable=noteable
+        #     )
+        # except Exception as db_error:
+        #     print(f"Database Error: {db_error}")
+        #     # Still return the AI response even if saving fails
+        #     return Response({
+        #         "data": {
+        #             "user_message": user_message,
+        #             "ai_response": ai_text,
+        #             "noteable": noteable,
+        #             "book_id": book_id,
+        #             "book_title": book_title,
+        #             "book_author": book_author
+        #         },
+        #         "errors": "Failed to save chat history",
+        #         "message": "Chat response generated but not saved",
+        #         "status": "partial_success",
+        #     }, status=status.HTTP_200_OK)
 
-        # Serialize and return
-        serializer = ChatHistorySerializer(chat_history)
+        # # Serialize and return
+        # serializer = ChatHistorySerializer(chat_history)
 
         return Response({
-            "data": serializer.data,
+            "data": "serializer.data",
             "errors": "",
             "message": "Chat response generated successfully",
             "status": "success",
@@ -117,7 +118,7 @@ def chat_with_book_ai(request):
     except Exception as E:
         print(f"Unexpected Error: {E}")
         import traceback
-        traceback.print_exc()
+        # traceback.print_exc()
         return Response({
             "errors": str(E),
             "message": f"An error occurred: {E}",
