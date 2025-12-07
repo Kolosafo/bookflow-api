@@ -5,9 +5,7 @@ from rest_framework import exceptions, status
 import json
 from rest_framework.permissions import AllowAny,IsAuthenticated
 from .utils import search_books, get_book_by_id, search_books_by_categroy, extract_books_items
-from .gemini import generate_summary_keypoints
 from django_ratelimit.decorators import ratelimit
-from .save_summary import save_book_analysis
 from .summary_response_example import test_response
 from .models import BookAnalysisResponse, UserExtractedBooks, BookmarkBook, Notes
 from .serializers import BookAnalysisResponseSerializer, BookmarkBookSerializer, UserExtractedBooksSerializer, NotesSerializer
