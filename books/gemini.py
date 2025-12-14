@@ -3,6 +3,7 @@ from .keypoints_prompt import keypoints_prompt, main_prompt
 from .book_seach_prompt import search_main_prompt, book_search_prompt
 from .summary_response_format import BookAnalysisResponse
 from .book_search_response_format import BookSearchResponseFormat
+from .vendor_book_insights_prompt import BOOK_INSIGHTS_PROMPT, book_insight_prompt, BookInsights
 def add_content(book_title, author):
     converstaion = [
         {
@@ -69,4 +70,42 @@ def generate_book_search(book_title, author):
     return response.text
 
 
+
+
+
+
+# AI SEARCH
+def add_summary_keyinsights_content(book_title, author=None):
+    prompt = BOOK_INSIGHTS_PROMPT.format(
+        book_title=book_title,
+        author=author or "Unknown"
+    )
+    converstaion = [
+        {
+            "role": "model",
+            "parts": [
+                {"text": f"{prompt}"}
+            ]
+        },
+        {
+            "role": "user",
+            "parts": [
+                {"text": book_insight_prompt(book_title, author)}
+            ]
+        }
+    ]
+    
+    return converstaion
+
+def generate_book_insight(book_title, author):
+    response = GEMINI_CLIENT.models.generate_content(
+        model="gemini-2.5-flash",
+        contents=add_summary_keyinsights_content(book_title, author),
+        config={
+        "response_mime_type": "application/json",
+        "response_schema": BookInsights,
+    },
+    )
+
+    return response.text
 

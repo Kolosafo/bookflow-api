@@ -28,7 +28,7 @@ SECRET_KEY = APP_SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['bookflow-api-bcke.onrender.com', '127.0.0.1']
+ALLOWED_HOSTS = ['bookflow-api-bcke.onrender.com']
 
 
 EMAIL_HOST = 'smtp.gmail.com'
@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'account',
     "django_apscheduler",
     'blog',
+    'vendor',
     "notifications"
 
 ]
