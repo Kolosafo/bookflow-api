@@ -12,6 +12,9 @@ urlpatterns = [
     path('insights/<str:vendor_id>/<str:title>/',
          views.get_book_insight, name="get_insight"),
 
+    # Book ROI (Return on Investment) endpoint
+    path('book-rio/<str:vendor_id>/', views.get_book_rio, name='get_book_rio'),
+
     # Vendor CRUD endpoints
     path('', views.vendor_list, name='vendor_list'),
     path('single/<str:vendor_id>/', views.vendor_detail, name='vendor_detail'),

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import BookInsight, Vendor, VendorAccount
+from .models import BookInsight, Vendor, VendorAccount, BookROI
 
 
 class BookInsightSerializer(serializers.ModelSerializer):
@@ -158,3 +158,38 @@ class VendorAccountSerializer(serializers.ModelSerializer):
             'vendor_plan'
         ]
         read_only_fields = ['id', 'status', 'created_at']
+
+
+class BookROIRequestSerializer(serializers.Serializer):
+    """
+    Serializer for Book ROI request data
+    """
+    book_title = serializers.CharField(max_length=255)
+    author = serializers.CharField(max_length=255, required=False, allow_blank=True)
+    reader_goal = serializers.CharField()
+    reader_challenge = serializers.CharField()
+    available_time = serializers.CharField(max_length=100)
+
+
+class BookROISerializer(serializers.ModelSerializer):
+    """
+    Serializer for Book ROI response data
+    """
+    class Meta:
+        model = BookROI
+        fields = [
+            'id',
+            'book_title',
+            'author',
+            'reader_goal',
+            'reader_challenge',
+            'available_time',
+            'roi_score',
+            'match_reasoning',
+            'relevant_takeaways',
+            'time_analysis',
+            'estimated_reading_hours',
+            'recommendation',
+            'generated_at'
+        ]
+        read_only_fields = ['id', 'generated_at']

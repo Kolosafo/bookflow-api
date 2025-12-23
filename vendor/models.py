@@ -129,3 +129,35 @@ class VendorAccount(models.Model):
         Check if the provided password matches the stored hashed password
         """
         return check_password(raw_password, self.password)
+
+
+class BookROI(models.Model):
+    """
+    Model for saving Book ROI (Return on Investment) analysis
+    Helps readers gauge whether a book would help them achieve their goal
+    """
+    book_title = models.CharField(max_length=255)
+    author = models.CharField(max_length=255, blank=True, null=True)
+    reader_goal = models.TextField()
+    reader_challenge = models.TextField()
+    available_time = models.CharField(max_length=100)
+
+    roi_score = models.IntegerField(help_text="ROI Score from 0-100")
+    match_reasoning = models.TextField()
+    relevant_takeaways = models.JSONField(help_text="Array of relevant takeaways")
+    time_analysis = models.TextField()
+    estimated_reading_hours = models.FloatField()
+    recommendation = models.CharField(
+        max_length=50,
+        choices=[
+            ("highly_recommended", "Highly Recommended"),
+            ("recommended", "Recommended"),
+            ("moderately_recommended", "Moderately Recommended"),
+            ("not_recommended", "Not Recommended")
+        ]
+    )
+
+    generated_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.book_title} - ROI Score: {self.roi_score}"

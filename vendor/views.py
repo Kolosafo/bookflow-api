@@ -6,11 +6,11 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework_simplejwt.tokens import RefreshToken
-from books .gemini import generate_book_insight
+from books.gemini import generate_book_insight, generate_book_rio
 import json
 # Create your views here.
 
-from .models import Vendor, BookInsight, VendorAccount
+from .models import Vendor, BookInsight, VendorAccount, BookROI
 from .serializers import (
     VendorSerializer,
     VendorDetailSerializer,
@@ -19,7 +19,9 @@ from .serializers import (
     VendorSignUpSerializer,
     VendorSignInSerializer,
     VendorVerifyEmailSerializer,
-    VendorAccountSerializer
+    VendorAccountSerializer,
+    BookROIRequestSerializer,
+    BookROISerializer
 )
 
 # Import OTP utilities from account app
@@ -433,3 +435,108 @@ def vendor_resend_otp(request):
             "errors": str(e),
             "status": status.HTTP_500_INTERNAL_SERVER_ERROR
         }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+# Book ROI endpoint
+@ratelimit(key="ip", rate="1000/1d", block=True)
+@api_view(["POST"])
+def get_book_rio(request, vendor_id):
+    """
+    POST: Get Book ROI (Return on Investment) analysis
+    Helps readers determine if a book is worth their time based on their goals
+    """
+    if not vendor_id:
+        return Response(
+            {"error": "Vendor ID (api_key) is required"},
+            status=status.HTTP_401_UNAUTHORIZED
+        )
+
+    try:
+        vendor = Vendor.objects.get(id=vendor_id, is_active=True)
+    except Vendor.DoesNotExist:
+        return Response(
+            {"error": "Invalid or inactive vendor"},
+            status=status.HTTP_403_FORBIDDEN
+        )
+
+    # Check daily usage
+    if not vendor.can_use_api():
+        return Response(
+            {
+                "error": "Daily usage limit exceeded",
+                "plan": vendor.plan,
+                "daily_limit": vendor.daily_usage_limit,
+            },
+            status=status.HTTP_429_TOO_MANY_REQUESTS
+        )
+
+    # Validate request data
+    serializer = BookROIRequestSerializer(data=request.data)
+    if not serializer.is_valid():
+        return Response(
+            {
+                "error": "Invalid request data",
+                "details": serializer.errors
+            },
+            status=status.HTTP_400_BAD_REQUEST
+        )
+
+    validated_data = serializer.validated_data
+    book_title = validated_data['book_title']
+    author = validated_data.get('author', None)
+    reader_goal = validated_data['reader_goal']
+    reader_challenge = validated_data['reader_challenge']
+    available_time = validated_data['available_time']
+
+    try:
+        # Generate ROI analysis
+        ai_response = generate_book_rio(
+            book_title=book_title,
+            reader_goal=reader_goal,
+            reader_challenge=reader_challenge,
+            available_time=available_time,
+            author=author
+        )
+        parsed_response = json.loads(ai_response)
+
+        # Save to database
+        book_roi = BookROI.objects.create(
+            book_title=book_title,
+            author=author or "",
+            reader_goal=reader_goal,
+            reader_challenge=reader_challenge,
+            available_time=available_time,
+            roi_score=parsed_response['roi_score'],
+            match_reasoning=parsed_response['match_reasoning'],
+            relevant_takeaways=parsed_response['relevant_takeaways'],
+            time_analysis=parsed_response['time_analysis'],
+            estimated_reading_hours=parsed_response['estimated_reading_hours'],
+            recommendation=parsed_response['recommendation']
+        )
+
+        # Increment usage
+        vendor.increment_usage()
+
+        # Serialize and return response
+        response_serializer = BookROISerializer(book_roi)
+
+        return Response(
+            {
+                "data": response_serializer.data,
+                "usage": {
+                    "used_today": vendor.daily_usage_count,
+                    "daily_limit": vendor.daily_usage_limit,
+                    "plan": vendor.plan,
+                },
+            },
+            status=status.HTTP_200_OK
+        )
+
+    except Exception as e:
+        return Response(
+            {
+                "error": "Failed to generate ROI analysis",
+                "details": str(e)
+            },
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
