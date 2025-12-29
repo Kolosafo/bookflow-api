@@ -1,8 +1,10 @@
+from django.template.defaultfilters import default
 from django.db import models
 from django.contrib.auth.hashers import make_password, check_password
 import uuid
 import secrets
 from django.utils import timezone
+from account.models import User
 # Create your models here.
 
 
@@ -57,9 +59,10 @@ class Vendor(models.Model):
         default=VendorPlan.FREE
     )
 
-    daily_usage_limit = models.PositiveIntegerField(default=1000)
+    daily_usage_limit = models.PositiveIntegerField(default=100)
     daily_usage_count = models.PositiveIntegerField(default=0)
-
+    dropdown_preview_text = models.TextField(default="See how this book aligns with your goals and what it offers you.")
+    is_widget_open_by_default = models.BooleanField(default=False)
     last_usage_reset = models.DateField(default=timezone.now)
 
     is_active = models.BooleanField(default=True)
@@ -114,6 +117,15 @@ class VendorAccount(models.Model):
         null=True,
         blank=True
     )
+    
+    # Link to User model for JWT authentication
+    user = models.OneToOneField(
+        User,
+        on_delete=models.CASCADE,
+        related_name='vendor_account',
+        null=True,
+        blank=True
+    )
 
     def __str__(self):
         return f"{self.email} - {self.company_name}"
@@ -161,3 +173,51 @@ class BookROI(models.Model):
 
     def __str__(self):
         return f"{self.book_title} - ROI Score: {self.roi_score}"
+
+
+class WidgetTestUsage(models.Model):
+    """
+    Model for tracking global daily usage of the widget test endpoint.
+    Limits total analysis to 120 per day.
+    """
+    date = models.DateField(unique=True, default=timezone.now)
+    total_count = models.PositiveIntegerField(default=0)
+
+    def __str__(self):
+        return f"{self.date}: {self.total_count} analyses"
+
+    @classmethod
+    def get_count_for_today(cls):
+        today = timezone.now().date()
+        usage, created = cls.objects.get_or_create(date=today)
+        return usage.total_count
+
+    @classmethod
+    def increment_count(cls):
+        today = timezone.now().date()
+        usage, created = cls.objects.get_or_create(date=today)
+        usage.total_count += 1
+        usage.save()
+
+
+class VendorTestKey(models.Model):
+    """
+    Model for individual vendor test API keys.
+    Each key has a maximum lifetime usage of 5 analyses.
+    """
+    key = models.CharField(max_length=255, unique=True, default=secrets.token_urlsafe)
+    usage_count = models.PositiveIntegerField(default=0)
+    is_assigned = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        status = "Assigned" if self.is_assigned else "Unassigned"
+        return f"{self.key} ({self.usage_count}/5) - {status}"
+
+    def can_be_used(self):
+        return self.is_active and self.usage_count < 5
+
+    def increment_usage(self):
+        self.usage_count += 1
+        self.save()

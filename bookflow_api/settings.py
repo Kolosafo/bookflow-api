@@ -138,13 +138,15 @@ CORS_ALLOWED_ORIGINS = [
     "https://getbookflow.com",
     "https://www.getbookflow.com",
     "https://expo.dev",                # Expo website
-    "https://*.expo.dev",              # Expo previews (wildcard)
+    "https://*.expo.dev",   # Expo previews (wildcard)   
+    # "http://localhost:3000"
+    
     # "http://localhost:19006",          # local Expo web preview
     # "http://127.0.0.1:19006",          # alternative localhost for Expo
 ]
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOW_HEADERS = ['Content-Type', 'Authorization']
-CORS_ALLOW_METHODS = ['GET', 'POST']
+CORS_ALLOW_METHODS = ['GET', 'POST', 'PATCH']
 WSGI_APPLICATION = "bookflow_api.wsgi.application"
 
 # ASGI Application for WebSocket support

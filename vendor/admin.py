@@ -1,8 +1,7 @@
 from django.contrib import admin
-from .models import BookInsight, Vendor, VendorAccount
+from .models import BookInsight, Vendor, VendorAccount, VendorTestKey, WidgetTestUsage
 
 # Register your models here.
-
 
 @admin.register(BookInsight)
 class BookInsightAdmin(admin.ModelAdmin):
@@ -38,7 +37,7 @@ class VendorAdmin(admin.ModelAdmin):
             'fields': ('id', 'name', 'email')
         }),
         ('API Configuration', {
-            'fields': ( 'plan', 'is_active')
+            'fields': ( 'plan', 'is_active', 'dropdown_preview_text', 'is_widget_open_by_default')
         }),
         ('Usage Statistics', {
             'fields': ('daily_usage_count', 'daily_usage_limit', 'last_usage_reset')
@@ -76,3 +75,17 @@ class VendorAccountAdmin(admin.ModelAdmin):
             'fields': ('created_at', 'updated_at')
         }),
     )
+@admin.register(VendorTestKey)
+class VendorTestKeyAdmin(admin.ModelAdmin):
+    list_display = ['key', 'usage_count', 'is_assigned', 'is_active', 'created_at']
+    list_filter = ['is_assigned', 'is_active', 'created_at']
+    search_fields = ['key']
+    readonly_fields = ['created_at']
+    ordering = ['-created_at']
+
+
+@admin.register(WidgetTestUsage)
+class WidgetTestUsageAdmin(admin.ModelAdmin):
+    list_display = ['date', 'total_count']
+    list_filter = ['date']
+    ordering = ['-date']

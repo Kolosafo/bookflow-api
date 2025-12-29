@@ -20,6 +20,11 @@ subscription_choices = (
     ("scholar", "scholar"),
 )
 
+user_types = (
+    ("vendor", "vendor"),
+    ("user", "user"),
+)
+
 
 class User(AbstractUser, PermissionsMixin):
     id = models.CharField(primary_key=True, default=generate_id(), editable=False, blank=True, max_length=100)
@@ -38,6 +43,8 @@ class User(AbstractUser, PermissionsMixin):
         max_length=20, choices=account_status, blank=False, default="not activated")
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
+    
+    type = models.CharField(max_length=100, choices=user_types, default="user")
     
     # THIS IS THE KEY CHANGE - Use email as the login field
     USERNAME_FIELD = 'email'

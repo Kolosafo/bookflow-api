@@ -11,6 +11,7 @@ from django_ratelimit.decorators import ratelimit
 from django.views.decorators.cache import cache_page
 import json
 from pathlib import Path
+from .ai_post_creation import generate_blog_post
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -63,4 +64,39 @@ def post_detail(request, pk):
     elif request.method == "DELETE":
         post.delete()
         return Response({"message": "Post deleted"}, status=status.HTTP_204_NO_CONTENT)
+
+
+@api_view(['POST'])
+def generate_ai_blog_post(request):
+    """
+    Generate an AI blog post based on a keyword.
+    
+    Expected payload:
+    {
+        "keyword": "your topic here"
+    }
+    """
+    keyword = request.data.get('keyword')
+    
+    if not keyword:
+        return Response(
+            {"error": "Keyword is required"}, 
+            status=status.HTTP_400_BAD_REQUEST
+        )
+        
+    try:
+        # Generate the blog post
+        # The output_dir is relative to where the script runs, usually base dir
+        result = generate_blog_post(keyword, output_dir=os.path.join(BASE_DIR, 'media', 'generated_blogs'))
+        
+        return Response({
+            "message": "Blog post generated successfully",
+            "data": result
+        }, status=status.HTTP_200_OK)
+        
+    except Exception as e:
+        return Response(
+            {"error": str(e)}, 
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
 

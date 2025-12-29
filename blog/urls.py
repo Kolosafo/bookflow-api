@@ -8,6 +8,7 @@ app_name = 'blog'
 urlpatterns = [
     path("posts/", views.posts_list, name="posts_list"),
     path("posts/<str:pk>/", views.post_detail, name="post_detail"),
+    path("generate-ai-post/", views.generate_ai_blog_post, name="generate_ai_blog_post"),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

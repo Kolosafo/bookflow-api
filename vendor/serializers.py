@@ -28,6 +28,7 @@ class VendorSerializer(serializers.ModelSerializer):
             'daily_usage_count',
             'last_usage_reset',
             'is_active',
+            'dropdown_preview_text',
             'created_at'
         ]
         read_only_fields = ['id', 'daily_usage_count', 'last_usage_reset', 'created_at']
@@ -50,6 +51,8 @@ class VendorDetailSerializer(serializers.ModelSerializer):
             'daily_usage_count',
             'last_usage_reset',
             'is_active',
+            'dropdown_preview_text',
+            'is_widget_open_by_default',
             'created_at'
         ]
         read_only_fields = ['id', 'daily_usage_count', 'last_usage_reset', 'created_at']
@@ -140,8 +143,9 @@ class VendorAccountSerializer(serializers.ModelSerializer):
     Serializer for vendor account details
     """
     vendor_id = serializers.CharField(source='vendor.id', read_only=True)
-    vendor_api_key = serializers.CharField(source='vendor.api_key', read_only=True)
     vendor_plan = serializers.CharField(source='vendor.plan', read_only=True)
+    user_id = serializers.CharField(source='user.id', read_only=True)
+    user_type = serializers.CharField(source='user.type', read_only=True)
 
     class Meta:
         model = VendorAccount
@@ -154,8 +158,9 @@ class VendorAccountSerializer(serializers.ModelSerializer):
             'is_active',
             'created_at',
             'vendor_id',
-            'vendor_api_key',
-            'vendor_plan'
+            'vendor_plan',
+            'user_id',
+            'user_type'
         ]
         read_only_fields = ['id', 'status', 'created_at']
 

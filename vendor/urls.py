@@ -18,6 +18,10 @@ urlpatterns = [
     # Vendor CRUD endpoints
     path('', views.vendor_list, name='vendor_list'),
     path('single/<str:vendor_id>/', views.vendor_detail, name='vendor_detail'),
+    path('widget-settings/<str:vendor_id>/', views.get_widget_settings, name='get_widget_settings'),
+    path('test-book-value/', views.test_book_value, name='test_book_value'),
+    path('manage-test-keys/', views.manage_test_keys, name='manage_test_keys'),
+    path('outreach-email/', views.generate_vendor_outreach_email, name='outreach_email'),
 
     # BookInsight CRUD endpoints
     path('book-insights/', views.book_insight_list, name='book_insight_list'),

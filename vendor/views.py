@@ -8,9 +8,13 @@ from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework_simplejwt.tokens import RefreshToken
 from books.gemini import generate_book_insight, generate_book_rio
 import json
+from django.conf import settings
+from account.utils import generate_id
+from django.template.loader import render_to_string
 # Create your views here.
 
-from .models import Vendor, BookInsight, VendorAccount, BookROI
+from .models import Vendor, BookInsight, VendorAccount, BookROI, WidgetTestUsage, VendorTestKey
+from account.models import User
 from .serializers import (
     VendorSerializer,
     VendorDetailSerializer,
@@ -105,15 +109,223 @@ def vendor_list(request):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-@api_view(['GET'])
-@permission_classes([IsAuthenticated, IsAdminUser])
+@api_view(['GET', 'PATCH'])
+@permission_classes([IsAuthenticated])
 def vendor_detail(request, vendor_id):
     """
     GET: Retrieve a specific vendor by ID
+    PATCH: Update a specific vendor by ID
     """
     vendor = get_object_or_404(Vendor, id=vendor_id)
-    serializer = VendorDetailSerializer(vendor)
-    return Response(serializer.data, status=status.HTTP_200_OK)
+    
+    if request.method == 'GET':
+        serializer = VendorDetailSerializer(vendor)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    
+    elif request.method == 'PATCH':
+        # Only allow updating dropdown_preview_text
+        update_data = {}
+        if 'dropdown_preview_text' in request.data:
+            update_data['dropdown_preview_text'] = request.data.get('dropdown_preview_text')
+        
+        if 'is_widget_open_by_default' in request.data:
+            update_data['is_widget_open_by_default'] = request.data.get('is_widget_open_by_default')
+        
+        if not update_data:
+            return Response(
+                {"error": "Only 'dropdown_preview_text' can be updated via this endpoint"}, 
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        serializer = VendorDetailSerializer(vendor, data=update_data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+
+
+@api_view(['GET'])
+def get_widget_settings(request, vendor_id):
+    """
+    GET: Retrieve only the dropdown_preview_text for a specific vendor
+    """
+    vendor = get_object_or_404(Vendor, id=vendor_id)
+    return Response({
+        "dropdown_preview_text": vendor.dropdown_preview_text,
+        "is_widget_open_by_default": vendor.is_widget_open_by_default
+    }, status=status.HTTP_200_OK)
+
+
+@api_view(["POST"])
+def test_book_value(request):
+    """
+    POST: Free trial endpoint for vendors to test the widget.
+    Each unique API key has a lifetime limit of 5 uses.
+    Global limit is 120 analyses per day.
+    """
+    # Verify Vendor Test API Key
+    api_key_str = request.data.get('api_key')
+    if not api_key_str:
+        return Response(
+            {"error": "API Key is required"},
+            status=status.HTTP_400_BAD_REQUEST
+        )
+    
+    try:
+        test_key_obj = VendorTestKey.objects.get(key=api_key_str)
+    except VendorTestKey.DoesNotExist:
+        return Response(
+            {"error": "Invalid Test API Key"},
+            status=status.HTTP_401_UNAUTHORIZED
+        )
+
+    # Check if key can still be used (limit 5)
+    if not test_key_obj.can_be_used():
+        return Response(
+            {"error": "This test API key has reached its maximum usage limit of 5. Please contact support for more information."},
+            status=status.HTTP_403_FORBIDDEN
+        )
+
+    # Check global daily limit (limit 120)
+    if WidgetTestUsage.get_count_for_today() >= 120:
+        return Response(
+            {"error": "Global daily limit for free tests reached. Please try again tomorrow or contact support."},
+            status=status.HTTP_429_TOO_MANY_REQUESTS
+        )
+
+    # Validate request data
+    serializer = BookROIRequestSerializer(data=request.data)
+    if not serializer.is_valid():
+        return Response(
+            {
+                "error": "Invalid request data",
+                "details": serializer.errors
+            },
+            status=status.HTTP_400_BAD_REQUEST
+        )
+
+    validated_data = serializer.validated_data
+    book_title = validated_data['book_title']
+    author = validated_data.get('author', None)
+    reader_goal = validated_data['reader_goal']
+    reader_challenge = validated_data['reader_challenge']
+    available_time = validated_data['available_time']
+
+    try:
+        # Generate ROI analysis
+        ai_response = generate_book_rio(
+            book_title=book_title,
+            reader_goal=reader_goal,
+            reader_challenge=reader_challenge,
+            available_time=available_time,
+            author=author
+        )
+        parsed_response = json.loads(ai_response)
+
+        # Increment both per-key usage and global usage tally
+        test_key_obj.increment_usage()
+        WidgetTestUsage.increment_count()
+
+        return Response(
+            {
+                "data": parsed_response,
+                "message": "Free test analysis successful",
+                "key_usage_remaining": 5 - test_key_obj.usage_count,
+                "global_tests_remaining_today": max(0, 120 - WidgetTestUsage.get_count_for_today())
+            },
+            status=status.HTTP_200_OK
+        )
+
+    except Exception as e:
+        return Response(
+            {
+                "error": "Failed to generate ROI analysis",
+                "details": str(e)
+            },
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
+
+
+@api_view(['POST'])
+@permission_classes([IsAdminUser])
+def manage_test_keys(request):
+    """
+    POST: Manage VendorTestKey records.
+    1. Delete keys that have reached usage limit (>=5).
+    2. Generate 50 new unique API keys.
+    """
+    
+    # 2. Generate 50 new keys
+    new_keys = []
+    for _ in range(50):
+        new_key = VendorTestKey.objects.create()
+        new_keys.append(new_key.key)
+    
+    return Response({
+        "message": f"Cleanup successful ({deleted_count} expired keys deleted) and 50 new keys generated.",
+        "new_keys": new_keys
+    }, status=status.HTTP_201_CREATED)
+
+
+@api_view(['POST'])
+@permission_classes([IsAdminUser])
+def generate_vendor_outreach_email(request):
+    """
+    POST: Generate an outreach email for a vendor using the contact-vendor.html template.
+    Assigns an unassigned VendorTestKey to the vendor and marks it as assigned.
+    Parameters required in request data:
+    - blogger_name
+    - blog_name
+    - widget_preview_image_url
+    - widget_signup_url
+    """
+    required_params = ['blogger_name', 'blog_name', 'widget_preview_image_url', 'widget_signup_url']
+    for param in required_params:
+        if param not in request.data:
+            return Response(
+                {"error": f"Missing required parameter: {param}"},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+    # Find an unassigned key
+    test_key = VendorTestKey.objects.filter(is_assigned=False, is_active=True).first()
+    
+    if not test_key:
+        return Response(
+            {"error": "No unassigned test API keys available. Please generate more keys using /manage-test-keys/."},
+            status=status.HTTP_404_NOT_FOUND
+        )
+
+    # Render context
+    context = {
+        'blogger_name': request.data['blogger_name'],
+        'blog_name': request.data['blog_name'],
+        'widget_preview_image_url': request.data['widget_preview_image_url'],
+        'widget_signup_url': request.data['widget_signup_url'],
+        'api_key': test_key.key
+    }
+
+    try:
+        # Render the template to string
+        html_content = render_to_string('contact-vendor.html', context)
+        
+        # Mark the key as assigned
+        test_key.is_assigned = True
+        test_key.save()
+
+        return Response({
+            "message": "Outreach email generated successfully",
+            "api_key_assigned": test_key.key,
+            "html_content": html_content
+        }, status=status.HTTP_200_OK)
+
+    except Exception as e:
+        return Response(
+            {"error": "Failed to render email template", "details": str(e)},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
 
 
 # BookInsight GET endpoints
@@ -160,12 +372,42 @@ def vendor_signup(request):
     POST: Register a new vendor account
     Sends OTP to email for verification
     """
+    data = request.data
+    check_email_exists = VendorAccount.objects.filter(email=data['email']).first()
+    if check_email_exists:
+        return Response({
+            "errors": "email already exists",
+            "message": "email already exists",
+            "status": status.HTTP_409_CONFLICT,
+        }, status=status.HTTP_409_CONFLICT)
+    
+    # Also check if User with this email exists
+    if User.objects.filter(email=data['email']).exists():
+        return Response({
+            "errors": "email already exists",
+            "message": "email already exists",
+            "status": status.HTTP_409_CONFLICT,
+        }, status=status.HTTP_409_CONFLICT)
+        
     serializer = VendorSignUpSerializer(data=request.data)
-
     if serializer.is_valid():
         try:
             # Create vendor account
             vendor_account = serializer.save()
+            
+            # Create User profile for vendor (for JWT authentication)
+            user = User.objects.create_user(
+                email=vendor_account.email,
+                username=vendor_account.email,
+                password=data['password'],  # Use raw password from request
+                type="vendor",
+                status="not activated",
+                deviceId=str(generate_id())  # Generate unique device ID
+            )
+            
+            # Link user to vendor account
+            vendor_account.user = user
+            vendor_account.save()
 
             # Generate and send OTP
             otp = generate_otp()
@@ -241,15 +483,18 @@ def vendor_verify_email(request):
                 daily_usage_limit=1000
             )
 
-            # Link vendor to account
+            # Link vendor to account and activate
             vendor_account.vendor = vendor
             vendor_account.status = "activated"
             vendor_account.save()
+            
+            # Activate the User profile
+            if vendor_account.user:
+                vendor_account.user.status = "activated"
+                vendor_account.user.save()
 
-            # Generate JWT tokens
-            refresh = RefreshToken()
-            refresh['vendor_account_id'] = str(vendor_account.id)
-            refresh['email'] = vendor_account.email
+            # Generate JWT tokens using User profile
+            refresh = RefreshToken.for_user(vendor_account.user)
 
             # Serialize account data
             account_serializer = VendorAccountSerializer(vendor_account)
@@ -340,10 +585,8 @@ def vendor_signin(request):
                     "status": status.HTTP_403_FORBIDDEN
                 }, status=status.HTTP_403_FORBIDDEN)
 
-            # Generate JWT tokens
-            refresh = RefreshToken()
-            refresh['vendor_account_id'] = str(vendor_account.id)
-            refresh['email'] = vendor_account.email
+            # Generate JWT tokens using User profile
+            refresh = RefreshToken.for_user(vendor_account.user)
 
             # Serialize account data
             account_serializer = VendorAccountSerializer(vendor_account)
@@ -438,7 +681,7 @@ def vendor_resend_otp(request):
 
 
 # Book ROI endpoint
-@ratelimit(key="ip", rate="1000/1d", block=True)
+@ratelimit(key="ip", rate="120/1d", block=True)
 @api_view(["POST"])
 def get_book_rio(request, vendor_id):
     """
@@ -473,6 +716,7 @@ def get_book_rio(request, vendor_id):
     # Validate request data
     serializer = BookROIRequestSerializer(data=request.data)
     if not serializer.is_valid():
+        # print("ERROR: ", serializer.errors)
         return Response(
             {
                 "error": "Invalid request data",

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boost Your Blog Engagement with BookFlow Widget</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        background-color: #f5f5f5;
+        line-height: 1.6;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+      }
+      .header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 40px 30px;
+        text-align: center;
+      }
+      .logo {
+        font-size: 32px;
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
+      .header-subtitle {
+        color: #ffffff;
+        font-size: 16px;
+        opacity: 0.9;
+      }
+      .content {
+        padding: 40px 30px;
+      }
+      .greeting {
+        font-size: 18px;
+        color: #333333;
+        margin-bottom: 20px;
+      }
+      .body-text {
+        color: #555555;
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
+      .widget-preview {
+        background-color: #f8f9fa;
+        border: 2px dashed #667eea;
+        border-radius: 12px;
+        padding: 30px;
+        text-align: center;
+        margin: 30px 0;
+      }
+      .widget-preview img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .widget-preview-text {
+        color: #667eea;
+        font-size: 14px;
+        margin-top: 15px;
+        font-style: italic;
+      }
+      .benefits {
+        background-color: #f8f9fa;
+        border-radius: 12px;
+        padding: 25px;
+        margin: 30px 0;
+      }
+      .benefits-title {
+        font-size: 20px;
+        color: #333333;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .benefit-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+      }
+      .benefit-icon {
+        background-color: #667eea;
+        color: #ffffff;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 14px;
+        margin-right: 12px;
+        flex-shrink: 0;
+      }
+      .benefit-text {
+        color: #555555;
+        font-size: 15px;
+      }
+      .cta-section {
+        text-align: center;
+        margin: 40px 0;
+      }
+      .cta-button {
+        display: inline-block;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #ffffff;
+        text-decoration: none;
+        padding: 16px 40px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        transition: transform 0.2s;
+      }
+      .cta-button:hover {
+        transform: translateY(-2px);
+      }
+      .stats {
+        background-color: #f0f4ff;
+        border-radius: 12px;
+        padding: 25px;
+        margin: 30px 0;
+        text-align: center;
+      }
+      .stat-row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .stat-item {
+        flex: 1;
+        min-width: 150px;
+        margin: 10px;
+      }
+      .stat-number {
+        font-size: 32px;
+        font-weight: bold;
+        color: #667eea;
+        margin-bottom: 5px;
+      }
+      .stat-label {
+        font-size: 14px;
+        color: #666666;
+      }
+      .integration-code {
+        background-color: #2d3748;
+        color: #48bb78;
+        padding: 20px;
+        border-radius: 8px;
+        font-family: "Courier New", monospace;
+        font-size: 13px;
+        margin: 25px 0;
+        overflow-x: auto;
+      }
+      .highlight-box {
+        background-color: #fff3cd;
+        border-left: 4px solid #ffc107;
+        padding: 15px 20px;
+        margin: 20px 0;
+        border-radius: 4px;
+      }
+      .highlight-box strong {
+        color: #856404;
+      }
+      .highlight-box p {
+        margin: 5px 0;
+        color: #856404;
+        font-size: 14px;
+      }
+      .footer {
+        background-color: #f8f9fa;
+        padding: 30px;
+        text-align: center;
+        border-top: 1px solid #e0e0e0;
+      }
+      .footer-text {
+        color: #888888;
+        font-size: 13px;
+        margin-bottom: 15px;
+      }
+      .social-links {
+        margin: 20px 0;
+      }
+      .social-link {
+        display: inline-block;
+        margin: 0 10px;
+        color: #667eea;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .unsubscribe {
+        color: #999999;
+        font-size: 12px;
+        margin-top: 20px;
+      }
+      .unsubscribe a {
+        color: #667eea;
+        text-decoration: none;
+      }
+      @media only screen and (max-width: 600px) {
+        .content {
+          padding: 30px 20px;
+        }
+        .header {
+          padding: 30px 20px;
+        }
+        .logo {
+          font-size: 28px;
+        }
+        .stat-item {
+          min-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <!-- Header -->
+      <div class="header">
+        <div class="logo">📚 BookFlow</div>
+        <div class="header-subtitle">Pages into progress</div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="content">
+        <div class="greeting">Hi {{blogger_name}},</div>
+
+        <div class="body-text">
+          I've been following <strong>{{blog_name}}</strong> and love the book
+          recommendations you share with your community! Your insights help so
+          many readers discover their next great read.
+        </div>
+
+        <div class="body-text">
+          I wanted to reach out with a mutually beneficial opportunity: we've
+          built a <strong>free Book Value Widget</strong> at BookFlow that could
+          significantly boost engagement on your blog, and in return, we'd love
+          a backlink to help more readers discover our app.
+        </div>
+
+        <div class="body-text">
+          <strong>Here's the deal:</strong> You get a premium interactive widget
+          for free for your readers (normally $29/month), and we get a simple
+          backlink from your site. Fair exchange of value!
+        </div>
+
+        <!-- Widget Preview -->
+        <div class="widget-preview">
+          <img
+            src="{{widget_preview_image_url}}"
+            alt="BookFlow Widget Preview"
+          />
+          <div class="widget-preview-text">
+            Interactive widget right on your blog posts
+          </div>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="benefits">
+          <div class="benefits-title">Why Book Bloggers Love It</div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">✓</div>
+            <div class="benefit-text">
+              <strong>Increase Time on Page:</strong> Readers interact with the
+              widget, exploring whether books match their interests before
+              leaving your site
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">✓</div>
+            <div class="benefit-text">
+              <strong>Boost Credibility:</strong> AI-powered insights add value
+              beyond your review, positioning you as a helpful resource
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">✓</div>
+            <div class="benefit-text">
+              <strong>Zero Maintenance:</strong> One line of code, always
+              up-to-date, works on any platform (WordPress, Ghost, Webflow, Wix,
+              SquareSpace, etc.)
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">✓</div>
+            <div class="benefit-text">
+              <strong>100% Free Forever:</strong> You get 100 requests per day
+              for the Premium widget at no cost in exchange for a simple
+              backlink to BookFlow
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">✓</div>
+            <div class="benefit-text">
+              <strong>Mobile Optimized:</strong> Perfect experience on all
+              devices where your readers find you
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats">
+          <div class="stat-row">
+            <div class="stat-item">
+              <div class="stat-number">2.3x</div>
+              <div class="stat-label">Longer Session Time</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">120+</div>
+              <div class="stat-label">Bloggers Using It</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">4.8★</div>
+              <div class="stat-label">Average Rating</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="body-text">
+          <strong>Here's how it works:</strong> Your readers can type in any
+          book title, and our AI instantly analyzes whether that book would be
+          valuable for them based on their goals, interests, and what they're
+          looking to learn or experience.
+        </div>
+
+        <div class="body-text">
+          It's perfect for posts about book recommendations, reviews, or "best
+          books for..." lists. Think of it as giving your readers a personal
+          book advisor right within your content.
+        </div>
+
+        <!-- What We Need Section -->
+        <div class="benefits">
+          <div class="benefits-title">📋 What We're Looking For</div>
+
+          <div class="body-text" style="padding: 0 15px">
+            In exchange for free access to our premium widget, we'd appreciate:
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">1</div>
+            <div class="benefit-text">
+              <strong>A backlink to BookFlow</strong> somewhere on your blog
+              (footer, resources page, or within a relevant post). We'll provide
+              anchor text suggestions.
+            </div>
+          </div>
+
+          <div
+            class="body-text"
+            style="
+              padding: 0 15px;
+              margin-top: 20px;
+              color: #667eea;
+              font-weight: 600;
+            "
+          >
+            That's it! Simple, straightforward, and mutually beneficial.
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-section">
+          <a href="{{widget_signup_url}}" class="cta-button"
+            >Yes, Let's Partner! →</a
+          >
+          <div style="margin-top: 15px; font-size: 13px; color: #888888">
+            Get your widget code + backlink instructions in 24 hours
+          </div>
+        </div>
+
+        <!-- Integration Preview -->
+        <div class="body-text" style="margin-top: 40px">
+          <strong>Try It Right Now (Yes, This Code Actually Works!):</strong>
+        </div>
+
+        <div class="highlight-box">
+          <strong>🎉 Your Personal API Key Is Included Below</strong>
+          <p>
+            The code below contains YOUR unique API key and is fully functional.
+            Copy it and paste it into any page on your website to test the
+            widget immediately—no signup required yet!
+          </p>
+        </div>
+
+        <div class="integration-code">
+          &lt;iframe<br />
+          &nbsp;&nbsp;src="https://getbookflow.com/test/book-value?api_key={{api_key}}"<br />
+          &nbsp;&nbsp;width="100%"<br />
+          &nbsp;&nbsp;height="500"<br />
+          &nbsp;&nbsp;frameborder="0"<br />
+          &lt;/iframe&gt;
+        </div>
+
+        <div class="body-text">
+          That's it! Copy, paste into any blog post, and your readers can start
+          using it immediately. Test it on your site right now to see how it
+          looks and works with your design.
+        </div>
+
+        <div class="body-text" style="margin-top: 25px">
+          <strong>Need help integrating?</strong> We've created step-by-step
+          tutorials for all major platforms:
+        </div>
+
+        <div
+          style="
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+          "
+        >
+          <a
+            href="https://getbookflow.com/vendor/integration"
+            style="
+              color: #667eea;
+              text-decoration: none;
+              font-weight: 600;
+              font-size: 16px;
+            "
+            >📖 View Integration Guides for WordPress, Ghost, Webflow, Wix &
+            More →</a
+          >
+        </div>
+
+        <div class="body-text" style="margin-top: 30px">
+          I'd love to partner with {{blog_name}} on this. After you test the
+          widget and like what you see, click the button above to officially
+          partner with us. I'll send over the suggested backlink anchor text
+          within 24 hours.
+        </div>
+
+        <div class="body-text">
+          Feel free to reply with any questions or if you'd like personalized
+          help with integration!
+        </div>
+
+        <div class="body-text" style="margin-top: 30px">
+          Keep inspiring readers!<br />
+          <strong>Dauda Kolo</strong><br />
+          <span style="color: #888888; font-size: 14px">CEO at BookFlow</span>
+        </div>
+
+        <div
+          class="body-text"
+          style="
+            font-size: 13px;
+            color: #888888;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+          "
+        >
+          P.S. We're selective about partnerships and only reaching out to
+          quality blogs like yours. You'll also get priority support and early
+          access to new widget features. Plus, we provide analytics showing
+          which books your readers are most interested in!
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="footer-text">BookFlow - Pages into progress</div>
+
+        <div class="social-links">
+          <a href="https://getbookflow.com" class="social-link">Website</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
