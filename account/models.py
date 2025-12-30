@@ -151,7 +151,7 @@ class TermsOfUse(models.Model):
 class SupportMessage(models.Model):
     id = models.CharField(primary_key=True, default=generate_id(), editable=False, blank=True, max_length=100)
     email = models.CharField(max_length=300, blank=True, null=True)
-    message = models.CharField(max_length=300, blank=True, null=True)
+    message = models.TextField(blank=True, null=True)
     isResolved = models.BooleanField(default=False)
     
 
