@@ -7,6 +7,11 @@ from rest_framework import status
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework_simplejwt.tokens import RefreshToken
 from books.gemini import generate_book_insight, generate_book_rio
+from django.core.mail import EmailMessage
+from pathlib import Path
+BASE_DIR = Path(__file__).resolve().parent.parent
+import os
+
 import json
 from django.conf import settings
 from account.utils import generate_id
@@ -264,7 +269,7 @@ def manage_test_keys(request):
         new_keys.append(new_key.key)
     
     return Response({
-        "message": f"Cleanup successful ({deleted_count} expired keys deleted) and 50 new keys generated.",
+        "message": f"Cleanup successful (expired keys deleted) and 50 new keys generated.",
         "new_keys": new_keys
     }, status=status.HTTP_201_CREATED)
 
@@ -278,16 +283,14 @@ def generate_vendor_outreach_email(request):
     Parameters required in request data:
     - blogger_name
     - blog_name
-    - widget_preview_image_url
-    - widget_signup_url
     """
-    required_params = ['blogger_name', 'blog_name', 'widget_preview_image_url', 'widget_signup_url']
-    for param in required_params:
-        if param not in request.data:
-            return Response(
-                {"error": f"Missing required parameter: {param}"},
-                status=status.HTTP_400_BAD_REQUEST
-            )
+    # required_params = ['blogger_name', 'blog_name', 'praise_hook', 'audience_focus']
+    # for param in required_params:
+    #     if param not in request.data:
+    #         return Response(
+    #             {"error": f"Missing required parameter: {param}"},
+    #             status=status.HTTP_400_BAD_REQUEST
+    #         )
 
     # Find an unassigned key
     test_key = VendorTestKey.objects.filter(is_assigned=False, is_active=True).first()
@@ -298,27 +301,44 @@ def generate_vendor_outreach_email(request):
             status=status.HTTP_404_NOT_FOUND
         )
 
-    # Render context
-    context = {
-        'blogger_name': request.data['blogger_name'],
-        'blog_name': request.data['blog_name'],
-        'widget_preview_image_url': request.data['widget_preview_image_url'],
-        'widget_signup_url': request.data['widget_signup_url'],
-        'api_key': test_key.key
-    }
+
 
     try:
-        # Render the template to string
-        html_content = render_to_string('contact-vendor.html', context)
+        # LOADING BLOGS DATA FROM JSON
+        emails_path = os.path.join(BASE_DIR, 'static', "cold_email_list.json")
+        load_emails_data = open(emails_path, 'r')
+        cold_email_list = json.load(load_emails_data)
         
-        # Mark the key as assigned
-        test_key.is_assigned = True
-        test_key.save()
+        for email_data in cold_email_list:
+            # Render context
+            context = {
+                'blogger_name': email_data['blogger_name'],
+                'blog_name': email_data['blog_name'],
+                'praise_hook': email_data['praise_hook'],
+                'audience_focus': email_data['audience_focus'],
+                'api_key': test_key.key
+            }
+            # Render the template to string
+            html_content = render_to_string('contact-vendor.html', context)
+            subject = f"Partnership opportunity for {email_data['blog_name']}"
+    
+            
+            email = EmailMessage(
+                subject,
+                html_content,
+                "Dauda Kolo",
+                ["kolosafo@gmail.com"]
+                )
+            email.content_subtype = 'html'  # Set the email content type to HTML
+            email.send()
+            # Mark the key as assigned
+            test_key.is_assigned = True
+            test_key.save()
 
         return Response({
             "message": "Outreach email generated successfully",
             "api_key_assigned": test_key.key,
-            "html_content": html_content
+            # "html_content": html_content
         }, status=status.HTTP_200_OK)
 
     except Exception as e:
@@ -784,3 +804,71 @@ def get_book_rio(request, vendor_id):
             },
             status=status.HTTP_500_INTERNAL_SERVER_ERROR
         )
+
+
+
+
+import json
+from django.http import JsonResponse
+from django.db import transaction
+from django.views.decorators.csrf import csrf_exempt
+from .models import VendorTestKey
+
+@api_view(["GET"])
+def assign_vendor_keys(request):
+    emails_path = os.path.join(BASE_DIR, 'static', "cold_email_list.json")
+    load_emails_data = open(emails_path, 'r')
+    input_data = json.load(load_emails_data)
+
+    updated_data = []
+    num_items = len(input_data)
+
+    with transaction.atomic():
+        # 1. Fetch a batch of unique, unassigned keys using select_for_update()
+        # We filter for is_assigned=False to ensure each website gets a UNIQUE key.
+        available_keys = list(
+            VendorTestKey.objects.select_for_update()
+            .filter(is_active=True, is_assigned=False, usage_count__lt=5)
+            [:num_items] # Only take as many as we have items in the JSON
+        )
+
+        # 2. Assign keys to items
+        for i, item in enumerate(input_data):
+            if i < len(available_keys):
+                key_obj = available_keys[i]
+                
+                # Update JSON
+                item['api_key'] = key_obj.key
+                
+                # Update Model
+                key_obj.is_assigned = True
+                key_obj.increment_usage() # This increments usage and calls .save()
+            else:
+                # Fallback if you run out of keys in the database
+                item['api_key'] = None
+            
+            updated_data.append(item)
+
+    return JsonResponse(updated_data, safe=False)
+
+
+@ratelimit(key="ip", rate="1/1d", block=True)
+@api_view(['GET'])
+def create_assigned_test_key(request):
+    """
+    GET: Create a new VendorTestKey, mark it as assigned, and return the API key.
+    """
+    try:
+        # Create a new test key
+        new_key = VendorTestKey.objects.create(is_assigned=True)
+        
+        return Response({
+            "message": "Test API key created and assigned successfully",
+            "api_key": new_key.key
+        }, status=status.HTTP_201_CREATED)
+        
+    except Exception as e:
+        return Response({
+            "error": "Failed to create test API key",
+            "details": str(e)
+        }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

@@ -130,24 +130,27 @@
         text-align: center;
       }
       .stat-row {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        display: block;
+        text-align: center;
       }
       .stat-item {
-        flex: 1;
-        min-width: 150px;
-        margin: 10px;
+        display: inline-block;
+        width: 30%;
+        min-width: 120px;
+        margin: 10px 1%;
+        vertical-align: top;
       }
       .stat-number {
-        font-size: 32px;
+        font-size: 28px;
         font-weight: bold;
         color: #667eea;
         margin-bottom: 5px;
+        word-break: keep-all;
       }
       .stat-label {
-        font-size: 14px;
+        font-size: 13px;
         color: #666666;
+        line-height: 1.3;
       }
       .integration-code {
         background-color: #2d3748;
@@ -215,7 +218,23 @@
           font-size: 28px;
         }
         .stat-item {
+          display: block;
+          width: 100%;
           min-width: 100%;
+          margin: 15px 0;
+        }
+        .stat-number {
+          font-size: 32px;
+        }
+        .stat-label {
+          font-size: 14px;
+        }
+        .benefit-text {
+          font-size: 14px;
+        }
+        .integration-code {
+          font-size: 11px;
+          padding: 15px;
         }
       }
     </style>
@@ -233,9 +252,9 @@
         <div class="greeting">Hi {{blogger_name}},</div>
 
         <div class="body-text">
-          I've been following <strong>{{blog_name}}</strong> and love the book
-          recommendations you share with your community! Your insights help so
-          many readers discover their next great read.
+          I've been following <strong>{{ blog_name }}</strong> and really like
+          how you {{ praise_hook }}. It's a great fit for readers like me who are into
+          <strong>{{ audience_focus }}</strong>.
         </div>
 
         <div class="body-text">
@@ -249,17 +268,6 @@
           <strong>Here's the deal:</strong> You get a premium interactive widget
           for free for your readers (normally $29/month), and we get a simple
           backlink from your site. Fair exchange of value!
-        </div>
-
-        <!-- Widget Preview -->
-        <div class="widget-preview">
-          <img
-            src="{{widget_preview_image_url}}"
-            alt="BookFlow Widget Preview"
-          />
-          <div class="widget-preview-text">
-            Interactive widget right on your blog posts
-          </div>
         </div>
 
         <!-- Benefits Section -->
@@ -315,15 +323,15 @@
           <div class="stat-row">
             <div class="stat-item">
               <div class="stat-number">2.3x</div>
-              <div class="stat-label">Longer Session Time</div>
+              <div class="stat-label">Longer<br />Session Time</div>
             </div>
             <div class="stat-item">
               <div class="stat-number">120+</div>
-              <div class="stat-label">Bloggers Using It</div>
+              <div class="stat-label">Bloggers<br />Using It</div>
             </div>
             <div class="stat-item">
               <div class="stat-number">4.8★</div>
-              <div class="stat-label">Average Rating</div>
+              <div class="stat-label">Average<br />Rating</div>
             </div>
           </div>
         </div>
@@ -373,7 +381,7 @@
 
         <!-- CTA -->
         <div class="cta-section">
-          <a href="{{widget_signup_url}}" class="cta-button"
+          <a href="https://getbookflow.com/vendor/signup" class="cta-button"
             >Yes, Let's Partner! →</a
           >
           <div style="margin-top: 15px; font-size: 13px; color: #888888">

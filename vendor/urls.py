@@ -22,6 +22,8 @@ urlpatterns = [
     path('test-book-value/', views.test_book_value, name='test_book_value'),
     path('manage-test-keys/', views.manage_test_keys, name='manage_test_keys'),
     path('outreach-email/', views.generate_vendor_outreach_email, name='outreach_email'),
+    path('assign-vendor-keys/', views.assign_vendor_keys, name='assign_vendor_keys'),
+    path('create-assigned-test-key/', views.create_assigned_test_key, name='create_assigned_test_key'),
 
     # BookInsight CRUD endpoints
     path('book-insights/', views.book_insight_list, name='book_insight_list'),
