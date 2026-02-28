@@ -26,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 APP_SECRET_KEY = os.getenv("APP_SECRET_KEY", default="")
 SECRET_KEY = APP_SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['bookflow-api-bcke.onrender.com', '127.0.0.1', '09cf2c101a55.ngrok-free.app']
+ALLOWED_HOSTS = ['bookflow-api-bcke.onrender.com', 'bookflow-api-production.up.railway.app']
 
 
 EMAIL_HOST = 'smtp.gmail.com'
