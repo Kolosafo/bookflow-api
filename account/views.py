@@ -225,7 +225,7 @@ def forgot_password(request):
         print("email: ", email)
         save_otp(email, otp, "password_reset")
 
-        email_message = f"Reset your password \nHere is your One Time Password (OTP): {otp} \n\nIF YOU DIDN'T REQUEST TO CHANGE YOUR PASSWORD, PLEASE IGNORE THIS MESSAGE AND DO NOT SHARE THIS CODE WITH ANYONE, INCLUDING US. \n\nSincerely, \BookFlow Team"
+        email_message = f"Reset your password \nHere is your One Time Password (OTP): {otp} \n\nIF YOU DIDN'T REQUEST TO CHANGE YOUR PASSWORD, PLEASE IGNORE THIS MESSAGE AND DO NOT SHARE THIS CODE WITH ANYONE, INCLUDING US. \n\nSincerely, BookFlow Team"
 
         send_mail("Change Password", email_message, settings.EMAIL_HOST_USER, [
             email], fail_silently=False)
@@ -496,7 +496,7 @@ def contact_support(request):
             send_mail("BookFlow Support", f"From: {data['email']} \nMessage: {data['message']}", settings.EMAIL_HOST_USER, [
             "kolosafo@gmail.com"], fail_silently=False)
             
-            send_mail("BookFlow Support", f"Thanks for contacting support, your message has been recieved! \nOne of our support members will get back to you shortly. \nRegards, \BookFlow team", settings.EMAIL_HOST_USER, [
+            send_mail("BookFlow Support", f"Thanks for contacting support, your message has been recieved! \nOne of our support members will get back to you shortly. \nRegards, BookFlow team", settings.EMAIL_HOST_USER, [
                 data['email']], fail_silently=False)
 
             return Response({
