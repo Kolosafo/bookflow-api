@@ -63,7 +63,7 @@ def register(request):
             create_subscription(user)
             OTP = generate_otp()
             save_otp(data["email"], str(OTP), "email_verification")
-            send_verification_email(data["email"], str(OTP))
+            # send_verification_email(data["email"], str(OTP))
             
             # # TRY STORYING USER PUSH NOTIFICATION
             # try:
@@ -388,7 +388,15 @@ def load_subscription_usage(request):
     user = request.user
     get_user_obj = User.objects.get(id=user.id)
     subscription_usage = UserSubscriptionUsage.objects.get(user=user)
-    usage = getSubcriptionUsage(subscription_usage.summaries, subscription_usage.notes, subscription_usage.reminders, subscription_usage.smart_search)
+    usage = getSubcriptionUsage(
+        subscription_usage.summaries, 
+        subscription_usage.notes, 
+        subscription_usage.reminders, 
+        subscription_usage.smart_search,
+        subscription_usage.video_extractions,
+        subscription_usage.video_notes,
+        subscription_usage.video_reminders
+    )
     _allowedUsage = allowedUsage(get_user_obj.subscription)
     return Response({   
         "data": {"allowedUsage": _allowedUsage, "currentUsage":usage}, 

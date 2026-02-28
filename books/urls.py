@@ -48,6 +48,14 @@ urlpatterns = [
     path('ai_search_book/',
          views.ai_search_book, name="ai_search_book"),
 
+    # VIDEO INSIGHTS
+    path('analyze-video/', views.analyze_video_insight, name='analyze_video_insight'),
+    path('save-video-note/', views.save_video_note, name='save_video_note'),
+    path('get-video-notes/', views.get_video_notes, name='get_video_notes'),
+    path('delete-video-note/', views.delete_video_note, name='delete_video_note'),
+    path('get-extracted-videos/', views.get_extracted_videos, name='get_extracted_videos'),
+    path('delete-extracted-video/', views.delete_extracted_video, name='delete_extracted_video'),
+
     # CHAT AI ENDPOINTS
     path('chat_with_ai/',
          chat_views.chat_with_book_ai, name="chat_with_book_ai"),

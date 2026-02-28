@@ -26,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 APP_SECRET_KEY = os.getenv("APP_SECRET_KEY", default="")
 SECRET_KEY = APP_SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['bookflow-api-bcke.onrender.com']
+ALLOWED_HOSTS = ['bookflow-api-bcke.onrender.com', '127.0.0.1', '09cf2c101a55.ngrok-free.app']
 
 
 EMAIL_HOST = 'smtp.gmail.com'
@@ -139,7 +139,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://www.getbookflow.com",
     "https://expo.dev",                # Expo website
     "https://*.expo.dev",   # Expo previews (wildcard)   
-    # "http://localhost:3000"
+    "http://localhost:3000"
     
     # "http://localhost:19006",          # local Expo web preview
     # "http://127.0.0.1:19006",          # alternative localhost for Expo
@@ -176,16 +176,16 @@ CHANNEL_LAYERS = {
 
 DATABASES = {
     "default": {
-        # "ENGINE": "django.db.backends.sqlite3",
-        # "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
         
          #HEROKU
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv("DB_NAME", default=""),
-        'USER': os.getenv("DB_USERNAME", default=""),
-        'PASSWORD': os.getenv("DB_PASSWORD", default=""),
-        'HOST': os.getenv("DB_HOST_NAME", default=""),
-        'PORT': '5432'
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': os.getenv("DB_NAME", default=""),
+        # 'USER': os.getenv("DB_USERNAME", default=""),
+        # 'PASSWORD': os.getenv("DB_PASSWORD", default=""),
+        # 'HOST': os.getenv("DB_HOST_NAME", default=""),
+        # 'PORT': '5432'
     }
 }
 
@@ -235,6 +235,7 @@ AUTH_USER_MODEL = 'account.User'
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = "static/"
+MEDIA_ROOT = "media/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

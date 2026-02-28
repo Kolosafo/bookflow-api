@@ -4,12 +4,15 @@ from rest_framework.response import Response
 from rest_framework import status
 
 
-def getSubcriptionUsage(summaries, notes, reminders, smart_search):
+def getSubcriptionUsage(summaries, notes, reminders, smart_search, video_extractions, video_notes, video_reminders):
     return {
       "summaries": summaries,
       "notes": notes,
       "reminders": reminders,
-      "smart_search": smart_search
+      "smart_search": smart_search,
+      "video_extractions": video_extractions,
+      "video_notes": video_notes,
+      "video_reminders": video_reminders
       }
       
 
@@ -20,25 +23,37 @@ def allowedUsage(plan):
       "summaries": 1,
       "notes": 3,
       "reminders": 2,
-      "smart_search": 3
+      "smart_search": 3,
+      "video_extractions": 3,
+      "video_notes": 3,
+      "video_reminders": 2
       },
     "basic":{
-       "summaries": 10,
+      "summaries": 10,
       "notes": 25,
       "reminders": 10,
-      "smart_search": 10
+      "smart_search": 10,
+      "video_extractions": 10,
+      "video_notes": 10,
+      "video_reminders": 9
       },
     "premium":{
-       "summaries": 25,
+      "summaries": 25,
       "notes": 50,
       "reminders": 20,
-      "smart_search": 25
+      "smart_search": 25,
+      "video_extractions": 25,
+      "video_notes": 25,
+      "video_reminders": 25
       },
     "scholar":{
       "summaries": 60,
       "notes": 150,
       "reminders": 150,
-      "smart_search": 70
+      "smart_search": 70,
+      "video_extractions": 60,
+      "video_notes": 25,
+      "video_reminders": 25
     }
   }
   
@@ -60,6 +75,12 @@ def update_subscription_usage(user, usage):
         get_user_subscription.reminders -= 1
     elif usage == "smart_search":
         get_user_subscription.smart_search -= 1
+    elif usage == "video_extractions":
+        get_user_subscription.video_extractions -= 1
+    elif usage == "video_notes":
+        get_user_subscription.video_notes -= 1
+    elif usage == "video_reminders":
+        get_user_subscription.video_reminders -= 1
     else:
         return False
     get_user_subscription.save()
@@ -71,7 +92,7 @@ def update_subscription_usage(user, usage):
 def subscription_limit_required(usage_type: str):
     """
     Decorator to restrict access based on user's subscription usage.
-    usage_type: 'summaries', 'notes', 'reminders', 'smart_search'
+    usage_type: 'summaries', 'notes', 'reminders', 'smart_search', 'video_extractions', 'video_notes', 'video_reminders'
     """
     def decorator(view_func):
         @wraps(view_func)
@@ -103,6 +124,12 @@ def subscription_limit_required(usage_type: str):
             elif usage_type == "reminders" and subscription.reminders > 0:
                 allowed = True
             elif usage_type == "smart_search" and subscription.smart_search > 0:
+                allowed = True
+            elif usage_type == "video_extractions" and subscription.video_extractions > 0:
+                allowed = True
+            elif usage_type == "video_notes" and subscription.video_notes > 0:
+                allowed = True
+            elif usage_type == "video_reminders" and subscription.video_reminders > 0:
                 allowed = True
 
             if not allowed:

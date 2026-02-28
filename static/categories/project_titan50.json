@@ -1,0 +1,89 @@
+{
+  "books": [
+    {
+      "category": "Productivity, Discipline & Habits",
+      "items": [
+        "Atomic Habits - James Clear",
+        "Deep Work - Cal Newport",
+        "The 7 Habits of Highly Effective People - Stephen Covey",
+        "The One Thing - Gary Keller",
+        "Eat That Frog - Brian Tracy",
+        "Getting Things Done - David Allen",
+        "Discipline Is Destiny - Ryan Holiday",
+        "The Obstacle Is the Way - Ryan Holiday"
+      ]
+    },
+    {
+      "category": "Mindset, Growth & Resilience",
+      "items": [
+        "Mindset - Carol Dweck",
+        "Grit - Angela Duckworth",
+        "Man's Search for Meaning - Viktor Frankl",
+        "12 Rules for Life - Jordan Peterson",
+        "The Four Agreements - Don Miguel Ruiz",
+        "Meditations - Marcus Aurelius",
+        "Can't Hurt Me - David Goggins",
+        "Ego Is the Enemy - Ryan Holiday"
+      ]
+    },
+    {
+      "category": "Leadership, Strategy & Power",
+      "items": [
+        "How to Win Friends and Influence People - Dale Carnegie",
+        "Leaders Eat Last - Simon Sinek",
+        "Start with Why - Simon Sinek",
+        "Extreme Ownership - Jocko Willink",
+        "The 48 Laws of Power - Robert Greene",
+        "Mastery - Robert Greene",
+        "Good to Great - Jim Collins",
+        "The Art of War - Sun Tzu"
+      ]
+    },
+    {
+      "category": "Communication & Social Intelligence",
+      "items": [
+        "Crucial Conversations - Patterson, Grenny, McMillan",
+        "Nonviolent Communication - Marshall Rosenberg",
+        "The Charisma Myth - Olivia Fox Cabane",
+        "Never Split the Difference - Chris Voss",
+        "Exactly What to Say - Phil M. Jones"
+      ]
+    },
+    {
+      "category": "Relationships, Emotional Intelligence & Self-Awareness",
+      "items": [
+        "Attached - Amir Levine",
+        "Emotional Intelligence - Daniel Goleman",
+        "The 5 Love Languages - Gary Chapman",
+        "Models - Mark Manson",
+        "Set Boundaries, Find Peace - Nedra Tawwab",
+        "The Social Skills Guidebook - Chris MacLeod",
+        "The Way of the Superior Man - David Deida",
+        "Daring Greatly - Brené Brown"
+      ]
+    },
+    {
+      "category": "Finance, Wealth & Money Mastery",
+      "items": [
+        "Rich Dad Poor Dad - Robert Kiyosaki",
+        "The Psychology of Money - Morgan Housel",
+        "The Richest Man in Babylon - George Clason",
+        "I Will Teach You to Be Rich - Ramit Sethi",
+        "Think and Grow Rich - Napoleon Hill",
+        "The Intelligent Investor - Benjamin Graham",
+        "The Simple Path to Wealth - JL Collins",
+        "Unshakeable - Tony Robbins"
+      ]
+    },
+    {
+      "category": "Character, Purpose & Life Philosophy",
+      "items": [
+        "The Alchemist - Paulo Coelho",
+        "The Mountain Is You - Brianna Wiest",
+        "As a Man Thinketh - James Allen",
+        "The Prophet - Kahlil Gibran",
+        "Man's Search for Meaning - Viktor Frankl"
+      ]
+    }
+  ]
+}

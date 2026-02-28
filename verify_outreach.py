@@ -32,8 +32,6 @@ def verify_outreach_email():
     data = {
         "blogger_name": "Jane Doe",
         "blog_name": "Jane's Book Nook",
-        "widget_preview_image_url": "https://example.com/preview.png",
-        "widget_signup_url": "https://getbookflow.com/signup"
     }
 
     print("--- Test: Generating Outreach Email ---")

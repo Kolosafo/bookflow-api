@@ -115,6 +115,9 @@ def update_all_user_subscription_usage():
                         'notes': 25,
                         'reminders': 10,
                         'smart_search': 10,
+                        'video_extractions': 10,
+                        'video_notes': 10,
+                        'video_reminders': 9,
                     }
                 )
 
@@ -127,6 +130,9 @@ def update_all_user_subscription_usage():
                     usage.notes = 25
                     usage.reminders = 10
                     usage.smart_search = 10
+                    usage.video_extractions = 10
+                    usage.video_notes = 10
+                    usage.video_reminders = 9
                     usage.save()
                     updated_count += 1
                     logger.info(f"✓ Updated subscription usage for {user.email}")

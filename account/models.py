@@ -67,6 +67,9 @@ class UserSubscriptionUsage(models.Model):
     notes = models.IntegerField(default=3)
     reminders = models.IntegerField(default=2)
     smart_search = models.IntegerField(default=3)
+    video_extractions = models.IntegerField(default=3)
+    video_notes = models.IntegerField(default=3)
+    video_reminders = models.IntegerField(default=2)
 
     def __str__(self):
         return self.user.email

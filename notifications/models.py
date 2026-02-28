@@ -18,10 +18,15 @@ NotificationFrequency = (
     ("weekly", "weekly"),
     ("monthly", "monthly"),
 )
+NotificationType = (
+    ("book", "book"),
+    ("video", "video"),
+)
 
 class NoteNotification(models.Model):
     id = models.CharField(primary_key=True, default=generate_id(), editable=False, blank=True, max_length=100)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='note_notification')
+    # type = models.CharField(max_length=50, choices=NotificationType, default="book")
     reminder_time =models.CharField(max_length=50, blank=True, null=True)
     frequency = models.CharField(max_length=500, blank=True, null=True, choices=NotificationFrequency, default="daily")
     title =  models.CharField(max_length=1000, blank=True, null=True)

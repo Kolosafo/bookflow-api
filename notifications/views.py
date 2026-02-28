@@ -6,7 +6,7 @@ from django_ratelimit.decorators import ratelimit
 from rest_framework.permissions import IsAuthenticated
 from .models import NoteNotification
 from account.models import User
-from books.models import Notes
+from books.models import Notes, VideoNotes
 from .serializers import NoteNotificationSerializer
 from account.subscription_utils import update_subscription_usage, subscription_limit_required
 import json
@@ -60,47 +60,128 @@ def save_note_notification(request):
 
 
 @ratelimit(key='ip', rate='30/1d')
+@api_view(["POST"])
+@permission_classes([IsAuthenticated])
+# @subscription_limit_required("video_reminders")
+def save_video_note_notification(request):
+    try:
+        data = request.data
+        note_notification_book, created = NoteNotification.objects.get_or_create(frequency=data['frequency'], reminder_time=data['reminderTime'], title=data['title'], noteId=data['noteId'], content=data['content'], user=request.user)
+        serializer = NoteNotificationSerializer(note_notification_book)
+        # handle update the note itself
+        print("NOTE ID: ", data['noteId']) # THE NOTE ID SENT HERE IS ACTUALLY VIDEO ID
+        try:
+            get_note = VideoNotes.objects.get(video_id=data['noteId'], user=request.user)
+            get_note.has_notification = True
+            get_note.save()
+        except:
+            pass
+        
+        try:
+            if data['notificationToken']:
+                get_user = User.objects.get(id=request.user.id)
+                get_user.notification_token = data['notificationToken']
+                get_user.save()
+            
+        except Exception as e:
+            pass        
+        # # update_subscription_usage(request.user, "video_reminders")
+        return Response({   
+            "data": serializer.data, 
+            "message":"success",
+            "status": status.HTTP_200_OK,
+            }, status=status.HTTP_200_OK)
+            
+    except Exception as e:
+        return Response(
+            {
+                "message": f"Error loading books: {str(e)}",
+                "status": status.HTTP_400_BAD_REQUEST,
+            },
+            status=status.HTTP_400_BAD_REQUEST
+        )
+
+
+
+@ratelimit(key='ip', rate='30/1d')
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def delete_note_notification(request, noteId):
     try:
-        get_note = Notes.objects.get(id=noteId)
+        get_note = Notes.objects.get(id=noteId, user=request.user)
         get_note.has_notification = False
         get_note.save()
-        get_notification = NoteNotification.objects.get(noteId=noteId)
+        get_notification = NoteNotification.objects.get(noteId=noteId, user=request.user)
         get_notification.delete()
         return Response({
                 "data": "success",
-                "errors": "",
-                "message": "success",
-                "status": "error",
+                "message": "Notification deleted successfully",
+                "status": status.HTTP_200_OK,
             }, status=status.HTTP_200_OK)
     except Exception as E:
         return Response({
-                "errors": "ERROR",
                 "message": f"An error occurred {E}",
-                "status": "error",
+                "status": status.HTTP_404_NOT_FOUND,
             }, status=status.HTTP_404_NOT_FOUND)
-        
-        
+
+
+@ratelimit(key='ip', rate='30/1d')
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def delete_video_note_notification(request, noteId):
+    try:
+        get_note = VideoNotes.objects.get(id=noteId, user=request.user)
+        get_note.has_notification = False
+        get_note.save()
+        get_notification = NoteNotification.objects.get(noteId=noteId, user=request.user)
+        get_notification.delete()
+        return Response({
+                "data": "success",
+                "message": "Video notification deleted successfully",
+                "status": status.HTTP_200_OK,
+            }, status=status.HTTP_200_OK)
+    except Exception as E:
+        return Response({
+                "message": f"An error occurred {E}",
+                "status": status.HTTP_404_NOT_FOUND,
+            }, status=status.HTTP_404_NOT_FOUND)
+
 
 @ratelimit(key='ip', rate='30/1d')
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def get_note_notification(request, noteId):
     try:
-        get_notification = NoteNotification.objects.get(noteId=noteId)
-        serializer = NoteNotification(get_notification)
+        get_notification = NoteNotification.objects.get(noteId=noteId, user=request.user)
+        serializer = NoteNotificationSerializer(get_notification)
         return Response({
                 "data": serializer.data,
-                "errors": "",
                 "message": "success",
-                "status": "error",
+                "status": status.HTTP_200_OK,
             }, status=status.HTTP_200_OK)
     except Exception as E:
-        print("ERROR: ", E)
         return Response({
-                "errors": "ERROR",
                 "message": f"An error occurred {E}",
-                "status": "error",
+                "status": status.HTTP_404_NOT_FOUND,
+            }, status=status.HTTP_404_NOT_FOUND)
+
+
+@ratelimit(key='ip', rate='30/1d')
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_video_note_notification(request, noteId):
+    try:
+        get_notification = NoteNotification.objects.get(noteId=noteId, user=request.user)
+        serializer = NoteNotificationSerializer(get_notification)
+        return Response({
+                "data": serializer.data,
+                "message": "success",
+                "status": status.HTTP_200_OK,
+            }, status=status.HTTP_200_OK)
+    except Exception as E:
+        return Response({
+                "message": f"An error occurred {E}",
+                "status": status.HTTP_404_NOT_FOUND,
             }, status=status.HTTP_404_NOT_FOUND)
         
         

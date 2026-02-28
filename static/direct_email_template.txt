@@ -1,0 +1,23 @@
+Hi [Blogger Name],
+Love [Blog Name]! Quick partnership proposal: We've built a free Book Value Widget (normally $29/month) that boosts reader engagement on book blogs.
+The exchange: You get our premium widget free forever, we get a simple backlink.
+
+How it works: Your readers type in any book title, and our AI instantly analyzes whether that book would be 
+valuable for them based on their goals and interests.
+
+Why book bloggers love it:
+
+Increases time on page – readers interact with the widget before leaving your site
+Boosts credibility – AI-powered insights position you as a helpful resource
+Zero maintenance – one line of iframe code, always up-to-date, works on WordPress, Ghost, Webflow, Wix, etc.
+100% free forever – you get 100 requests per day in exchange for a simple backlink
+Mobile optimized – perfect experience on all devices
+
+Try it now with this working code:
+<iframe src="https://getbookflow.com/test/book-value?api_key=[KEY]" width="100%" height="500"></iframe>
+
+Integration guides: https://getbookflow.com/vendor/integration
+Sign up: https://getbookflow.com/vendor/signup
+120+ bloggers already use it. Interested?
+Dauda Kolo | CEO, BookFlow
+https://getbookflow.com

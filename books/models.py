@@ -148,3 +148,36 @@ class ChatHistory(models.Model):
 
     def __str__(self):
         return f"Chat for {self.book_title} by {self.user.email}"
+
+
+
+
+class VideoNotes(models.Model):
+    id = models.CharField(primary_key=True, default=generate_id(), editable=False, blank=True, max_length=100)
+    video_id = models.CharField(max_length=255, unique=True)
+    has_notification = models.BooleanField(default=False)
+    video_title = models.CharField(max_length=255)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user_video_note')
+    content = models.TextField(blank=True, null=True)
+    title = models.CharField(max_length=255)
+    note_type = models.CharField(max_length=255, blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+    def __str__(self):
+        return f"{self.video_title}"
+
+
+
+
+# EXTRACTED VIDEO MODEL
+class ExtractVideoInsights(models.Model):
+    id = models.CharField(primary_key=True, default=generate_id(), editable=False, blank=True, max_length=100)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='extracted_video_insights')
+    videoTitle = models.CharField(max_length=505)
+    # thumbnail = models.ImageField(upload_to='images/', blank=True, null=True)   
+    summary = models.TextField()
+    key_takeaways = models.JSONField(default=list)
+    reminders = models.JSONField(default=list)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Extracted video insights for {self.videoTitle} by {self.user.email}"

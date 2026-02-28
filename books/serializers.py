@@ -12,7 +12,9 @@ from .models import (
     OnePageSummary,
     BookAnalysisResponse,
     Notes,
-    ChatHistory
+    ChatHistory,
+    ExtractVideoInsights,
+    VideoNotes
 )
 
 
@@ -154,3 +156,17 @@ class ChatHistorySerializer(serializers.ModelSerializer):
             'updated_at'
         ]
         read_only_fields = ['id', 'created_at', 'updated_at']
+
+# EXTRACTED VIDEO SERIALIZER
+class ExtractVideoInsightsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ExtractVideoInsights
+        fields = "__all__"
+        read_only_fields = ['id', 'created_at']
+
+
+class VideoNotesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = VideoNotes
+        fields = "__all__"
+        read_only_fields = ['id', 'created_at']

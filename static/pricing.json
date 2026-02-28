@@ -6,12 +6,12 @@
     "oldMonthlyPrice": 0,
     "currencyType": "USD",
     "price": 0,
-    "usdRate": 1525,
     "features": [
       "1 Book Summary",
-      "Create up to 3 notes",
-      "2 Custom Reminders",
-      "3 Smart Searches"
+      "3 Smart Searches",
+      "3 Video Extractions",
+      "3 Video Notes",
+      "2 Video Reminders"
     ],
     "buttonText": "Free Plan",
     "isPopular": false
@@ -24,12 +24,12 @@
     "oldMonthlyPrice": 8,
     "currencyType": "USD",
     "price": 4.99,
-    "usdRate": 1525,
     "features": [
       "10 Book Summaries",
-      "Create up to 25 notes",
-      "10 Custom Reminders",
-      "10 Smart Searches"
+      "10 Smart Searches",
+      "10 Video Extractions",
+      "10 Video Notes",
+      "9 Video Reminders"
     ],
     "buttonText": "Basic to Premium",
     "isPopular": false
@@ -42,12 +42,12 @@
     "oldMonthlyPrice": 15,
     "currencyType": "USD",
     "price": 9.99,
-    "usdRate": 1525,
     "features": [
       "25 Book Summaries",
-      "Create up to 50 notes",
-      "20 Custom Reminders",
-      "25 Smart Searches"
+      "25 Smart Searches",
+      "25 Video Extractions",
+      "25 Video Notes",
+      "25 Video Reminders"
     ],
     "buttonText": "Upgrade to Premium",
     "isPopular": true
@@ -60,12 +60,12 @@
     "oldMonthlyPrice": 45,
     "currencyType": "USD",
     "price": 29.99,
-    "usdRate": 1525,
     "features": [
       "60 Book Summaries",
-      "Create unlimited notes",
-      "Unlimited Custom Reminders",
-      "70 Smart Searches"
+      "70 Smart Searches",
+      "60 Video Extractions",
+      "25 Video Notes",
+      "25 Video Reminders"
     ],
     "buttonText": "Upgrade to Premium",
     "isPopular": false

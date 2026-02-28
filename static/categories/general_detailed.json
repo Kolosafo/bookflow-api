@@ -1,0 +1,2371 @@
+{
+  "categories": [
+    {
+      "category": "Productivity, Discipline & Habits",
+      "books": {
+        "Atomic Habits - James Clear": {
+          "kind": "books#volume",
+          "id": "CSDdvQEACAAJ",
+          "etag": "DI/yQagdRBg",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/CSDdvQEACAAJ",
+          "volumeInfo": {
+            "title": "Summary and Analysis",
+            "subtitle": "Atomic Habits by James Clear : an Easy and Proven Way to Build Good Habits and Break Bad Ones",
+            "authors": [
+              "Black Book"
+            ],
+            "publishedDate": "2018-10-30",
+            "description": "Overall Summary of Atomic Habits In Atomic Habits: An Easy & Proven Way to Build Good Habits and Break Bad Ones, James Clear explains the concept of habits at an atomic level. The book prioritizes habit building over goal setting and outlines various pros and cons of the two. Instead of making massive changes in any particular area, a greater effect can be reached by making numerous small changes. In place of one big 10% improvement, you can make dozens of small 1% improvements that when added together have a much larger impact. The book breaks down the 4 steps of habits: cue, craving, response, and reward, and then further explains the psychology behind why habits hold so much power. The book goes into considerable detail for both how to develop and stick with positive habits, and how to identify and shake off bad habits. Not every positive habit is without flaws. There can be unexpected downsides, even to outright mastery. James Clear elucidates a number of ways to keep positive habits from stagnating and keep your priorities in focus. The goal of a positive habit is to have it eventually become automatic. The way to achieve habit automation is through repetition. A habit will never become automatic through the passage of time alone. There are a number of techniques and strategies that can be employed in habit development, and even technology can play an important role in sticking with a positive habit. For summary inforamtion of Atomic Habit Click on BUY BUTTON tag:atomic habits james clear,atomic habits book james clear,book atomic habits,book atomic,atomic habits,book,james clear,james clear atomic habits,james clear habit",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_10",
+                "identifier": "1729460321"
+              },
+              {
+                "type": "ISBN_13",
+                "identifier": "9781729460320"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": false
+            },
+            "pageCount": 46,
+            "printType": "BOOK",
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=CSDdvQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=CSDdvQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=CSDdvQEACAAJ&dq=Atomic+Habits+-+James+Clear&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=CSDdvQEACAAJ&dq=Atomic+Habits+-+James+Clear&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Summary_and_Analysis.html?hl=&id=CSDdvQEACAAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=CSDdvQEACAAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "The book prioritizes habit building over goal setting and outlines various pros and cons of the two. Instead of making massive changes in any particular area, a greater effect can be reached by making numerous small changes."
+          }
+        },
+        "Deep Work - Cal Newport": {
+          "kind": "books#volume",
+          "id": "lZpFCgAAQBAJ",
+          "etag": "2NeMaIZyNro",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/lZpFCgAAQBAJ",
+          "volumeInfo": {
+            "title": "Deep Work",
+            "subtitle": "Rules for Focused Success in a Distracted World",
+            "authors": [
+              "Cal Newport"
+            ],
+            "publisher": "Hachette UK",
+            "publishedDate": "2016-01-05",
+            "description": "One of the most valuable skills in our economy is becoming increasingly rare. If you master this skill, you'll achieve extraordinary results. Deep Work is an indispensable guide to anyone seeking focused success in a distracted world. 'Cal Newport is exceptional in the realm of self-help authors' New York Times 'Deep work' is the ability to focus without distraction on a cognitively demanding task. Coined by author and professor Cal Newport on his popular blog Study Hacks, deep work will make you better at what you do, let you achieve more in less time and provide the sense of true fulfilment that comes from the mastery of a skill. In short, deep work is like a superpower in our increasingly competitive economy. And yet most people, whether knowledge workers in noisy open-plan offices or creatives struggling to sharpen their vision, have lost the ability to go deep - spending their days instead in a frantic blur of email and social media, not even realising there's a better way. A mix of cultural criticism and actionable advice, Deep Work takes the reader on a journey through memorable stories -- from Carl Jung building a stone tower in the woods to focus his mind, to a social media pioneer buying a round-trip business class ticket to Tokyo to write a book free from distraction in the air -- and surprising suggestions, such as the claim that most serious professionals should quit social media and that you should practice being bored. Put simply: developing and cultivating a deep work practice is one of the best decisions you can make in an increasingly distracted world. This book will point the way.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9780349411910"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "0349411913"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": false
+            },
+            "pageCount": 190,
+            "printType": "BOOK",
+            "categories": [
+              "Business & Economics"
+            ],
+            "averageRating": 5,
+            "ratingsCount": 1,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "2.7.9.0.preview.2",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=lZpFCgAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=lZpFCgAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=lZpFCgAAQBAJ&dq=Deep+Work+-+Cal+Newport&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=lZpFCgAAQBAJ&dq=Deep+Work+-+Cal+Newport&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Deep_Work.html?hl=&id=lZpFCgAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": true
+            },
+            "pdf": {
+              "isAvailable": true
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=lZpFCgAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "This book will point the way. One of the most valuable skills in our economy is becoming increasingly rare. If you master this skill, you&#39;ll achieve extraordinary results. Deep Work will show you how."
+          }
+        },
+        "The 7 Habits of Highly Effective People - Stephen Covey": {
+          "kind": "books#volume",
+          "id": "upUxaNWSaRIC",
+          "etag": "pCvdfjxttSI",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/upUxaNWSaRIC",
+          "volumeInfo": {
+            "title": "The 7 Habits of Highly Effective People",
+            "subtitle": "Powerful Lessons in Personal Change",
+            "authors": [
+              "Stephen R. Covey"
+            ],
+            "publisher": "Simon and Schuster",
+            "publishedDate": "2004",
+            "description": "A leading management consultant outlines seven organizational rules for improving effectiveness and increasing productivity at work and at home.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9780743272452"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "0743272455"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": false
+            },
+            "pageCount": 392,
+            "printType": "BOOK",
+            "categories": [
+              "Character"
+            ],
+            "averageRating": 4.5,
+            "ratingsCount": 23,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "0.3.4.0.preview.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=upUxaNWSaRIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=upUxaNWSaRIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=upUxaNWSaRIC&printsec=frontcover&dq=The+7+Habits+of+Highly+Effective+People+-+Stephen+Covey&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=upUxaNWSaRIC&dq=The+7+Habits+of+Highly+Effective+People+-+Stephen+Covey&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/The_7_Habits_of_Highly_Effective_People.html?hl=&id=upUxaNWSaRIC"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=upUxaNWSaRIC&hl=&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "A leading management consultant outlines seven organizational rules for improving effectiveness and increasing productivity at work and at home."
+          }
+        },
+        "The One Thing - Gary Keller": {
+          "kind": "books#volume",
+          "id": "S6wxEAAAQBAJ",
+          "etag": "ofcxYf8i074",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/S6wxEAAAQBAJ",
+          "volumeInfo": {
+            "title": "SUMMARY - The ONE Thing: The Surprisingly Simple Truth Behind Extraordinary Results By Gary Keller And Jay Papasan",
+            "authors": [
+              "Shortcut Edition"
+            ],
+            "publisher": "Shortcut Edition",
+            "publishedDate": "2021-06-04",
+            "description": "* Our summary is short, simple and pragmatic. It allows you to have the essential ideas of a big book in less than 30 minutes. As you read this summary, you will discover how to achieve all your goals, using the surprisingly simple, yet extremely effective technique of \"the one thing\". You will also discover how to : reorganize your life according to your priorities; overcoming the sense of urgency and lack of time; get better results faster; implement a strategy leading to your goals; reduce stress and regain your energy; control what really matters to you. Gary Keller did not succeed as an entrepreneur by working harder or longer than others, but by finding the secret to what he calls \"The One Thing\". This innovative principle can be summed up as follows: reduce all possible options in a given situation to the one important thing to do that, once done, will make all the others easier to do, or even useless. *Buy now the summary of this book for the modest price of a cup of coffee!",
+            "readingModes": {
+              "text": true,
+              "image": true
+            },
+            "pageCount": 25,
+            "printType": "BOOK",
+            "categories": [
+              "Business & Economics"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "0.3.4.0.preview.3",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=S6wxEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=S6wxEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=S6wxEAAAQBAJ&printsec=frontcover&dq=The+One+Thing+-+Gary+Keller&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=S6wxEAAAQBAJ&dq=The+One+Thing+-+Gary+Keller&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/SUMMARY_The_ONE_Thing_The_Surprisingly_S.html?hl=&id=S6wxEAAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/SUMMARY_The_ONE_Thing_The_Surprisingly_S-sample-epub.acsm?id=S6wxEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/SUMMARY_The_ONE_Thing_The_Surprisingly_S-sample-pdf.acsm?id=S6wxEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=S6wxEAAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "This innovative principle can be summed up as follows: reduce all possible options in a given situation to the one important thing to do that, once done, will make all the others easier to do, or even useless. *Buy now the summary of this ..."
+          }
+        },
+        "Getting Things Done - David Allen": {
+          "kind": "books#volume",
+          "id": "iykLVJAK49kC",
+          "etag": "YtRFUgRYgNE",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/iykLVJAK49kC",
+          "volumeInfo": {
+            "title": "Getting Things Done",
+            "subtitle": "The Art of Stress-Free Productivity",
+            "authors": [
+              "David Allen"
+            ],
+            "publisher": "Penguin",
+            "publishedDate": "2002-12-31",
+            "description": "In today's world, yesterday's methods just don't work. Veteran coach and management consultant David Allen recognizes that time management is useless the minute your schedule is interrupted; setting priorities isn't relevant when your e-mail is down; procrastination solutions won't help if your goals aren't clear. Instead, Allen shares with readers the proven methods he has already introduced in seminars and at top organizations across the country. The key to Getting Things Done? Relaxation. Allen's premise is simple: our ability to be productive is directly proportional to our ability to relax. Only when our minds are clear and our thoughts are organized can we achieve stress-free productivity. His seamless system teaches us how to identify, track, and-most important-choose the next action on all our tasks, commitments, and projects and thus master all the demands on our time while unleashing our creative potential. The book's stylish, dynamic design makes it easy to follow Allen's tips, examples, and inspiration to achieve what we all seek-energy, focus, and relaxed control.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9781101128497"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "1101128496"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": false
+            },
+            "pageCount": 292,
+            "printType": "BOOK",
+            "categories": [
+              "Business & Economics"
+            ],
+            "averageRating": 4.5,
+            "ratingsCount": 18,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "4.5.3.0.preview.2",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=iykLVJAK49kC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=iykLVJAK49kC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=iykLVJAK49kC&dq=Getting+Things+Done+-+David+Allen&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=iykLVJAK49kC&dq=Getting+Things+Done+-+David+Allen&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Getting_Things_Done.html?hl=&id=iykLVJAK49kC"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": true
+            },
+            "pdf": {
+              "isAvailable": true
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=iykLVJAK49kC&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "The book&#39;s stylish, dynamic design makes it easy to follow Allen&#39;s tips, examples, and inspiration to achieve what we all seek-energy, focus, and relaxed control."
+          }
+        },
+        "Eat That Frog - Brian Tracy": {
+          "kind": "books#volume",
+          "id": "1m-LH_l3QR4C",
+          "etag": "9LdyyCpZ41I",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/1m-LH_l3QR4C",
+          "volumeInfo": {
+            "title": "Eat That Frog! (EasyRead Super Large 20pt Edition)",
+            "publisher": "ReadHowYouWant.com",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9781427085771"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "1427085773"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": true
+            },
+            "pageCount": 234,
+            "printType": "BOOK",
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "0.4.3.0.preview.1",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=1m-LH_l3QR4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=1m-LH_l3QR4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=1m-LH_l3QR4C&printsec=frontcover&dq=Eat+That+Frog+-+Brian+Tracy&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=1m-LH_l3QR4C&dq=Eat+That+Frog+-+Brian+Tracy&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Eat_That_Frog_EasyRead_Super_Large_20pt.html?hl=&id=1m-LH_l3QR4C"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/Eat_That_Frog_EasyRead_Super_Large_20pt-sample-pdf.acsm?id=1m-LH_l3QR4C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=1m-LH_l3QR4C&hl=&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          }
+        },
+        "Discipline Is Destiny - Ryan Holiday": {
+          "kind": "books#volume",
+          "id": "u_JXEAAAQBAJ",
+          "etag": "MIpAQxQx5Tw",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/u_JXEAAAQBAJ",
+          "volumeInfo": {
+            "title": "Discipline Is Destiny",
+            "subtitle": "The Power of Self-Control",
+            "authors": [
+              "Ryan Holiday"
+            ],
+            "publisher": "Penguin",
+            "publishedDate": "2022-09-27",
+            "description": "The instant New York Times, Wall Street Journal, and USA Today Bestseller! In his New York Times bestselling book Courage is Calling, author Ryan Holiday made the Stoic case for a bold and brave life. In this much-anticipated second book of his Stoic Virtue series, Holiday celebrates the awesome power of self-discipline and those who have seized it. To master anything, one must first master themselves\u2013one\u2019s emotions, one\u2019s thoughts, one\u2019s actions. Eisenhower famously said that freedom is really the opportunity to practice self-discipline. Cicero called the virtue of temperance the polish of life. Without boundaries and restraint, we risk not only failing to meet our full potential and jeopardizing what we have achieved, but we ensure misery and shame. In a world of temptation and excess, this ancient idea is more urgent than ever. In Discipline is Destiny, Holiday draws on the stories of historical figures we can emulate as pillars of self-discipline, including Lou Gehrig, Queen Elizabeth II, boxer Floyd Patterson, Marcus Aurelius and writer Toni Morrison, as well as the cautionary tales of Napoleon, F. Scott Fitzgerald and Babe Ruth. Through these engaging examples, Holiday teaches readers the power of self-discipline and balance, and cautions against the perils of extravagance and hedonism. At the heart of Stoicism are four simple virtues: courage, temperance, justice, and wisdom. Everything else, the Stoics believed, flows from them. Discipline is Destiny will guide readers down the path to self-mastery, upon which all the other virtues depend. Discipline is predictive. You cannot succeed without it. And if you lose it, you cannot help but bring yourself failure and unhappiness.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9780593191699"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "0593191692"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": false
+            },
+            "pageCount": 353,
+            "printType": "BOOK",
+            "categories": [
+              "Business & Economics"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "1.9.3.0.preview.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=u_JXEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=u_JXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=u_JXEAAAQBAJ&dq=Discipline+Is+Destiny+-+Ryan+Holiday&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=u_JXEAAAQBAJ&dq=Discipline+Is+Destiny+-+Ryan+Holiday&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Discipline_Is_Destiny.html?hl=&id=u_JXEAAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": true
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=u_JXEAAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "In Discipline is Destiny, Holiday draws on the stories of historical figures we can emulate as pillars of self-discipline, including Lou Gehrig, Queen Elizabeth II, boxer Floyd Patterson, Marcus Aurelius and writer Toni Morrison, as well as ..."
+          }
+        },
+        "The Obstacle Is the Way - Ryan Holiday": {
+          "kind": "books#volume",
+          "id": "lUp1AgAAQBAJ",
+          "etag": "oE+jdEPUhC4",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/lUp1AgAAQBAJ",
+          "volumeInfo": {
+            "title": "The Obstacle Is the Way",
+            "subtitle": "The Timeless Art of Turning Trials into Triumph",
+            "authors": [
+              "Ryan Holiday"
+            ],
+            "publisher": "Penguin",
+            "publishedDate": "2014-05-01",
+            "description": "#1 Wall Street Journal Bestseller The Obstacle is the Way has become a cult classic, beloved by men and women around the world who apply its wisdom to become more successful at whatever they do. Its many fans include a former governor and movie star (Arnold Schwarzenegger), a hip hop icon (LL Cool J), an Irish tennis pro (James McGee), an NBC sportscaster (Michele Tafoya), and the coaches and players of winning teams like the New England Patriots, Seattle Seahawks, Chicago Cubs, and University of Texas men\u2019s basketball team. The book draws its inspiration from stoicism, the ancient Greek philosophy of enduring pain or adversity with perseverance and resilience. Stoics focus on the things they can control, let go of everything else, and turn every new obstacle into an opportunity to get better, stronger, tougher. As Marcus Aurelius put it nearly 2000 years ago: \u201cThe impediment to action advances action. What stands in the way becomes the way.\u201d Ryan Holiday shows us how some of the most successful people in history\u2014from John D. Rockefeller to Amelia Earhart to Ulysses S. Grant to Steve Jobs\u2014have applied stoicism to overcome difficult or even impossible situations. Their embrace of these principles ultimately mattered more than their natural intelligence, talents, or luck. If you\u2019re feeling frustrated, demoralized, or stuck in a rut, this book can help you turn your problems into your biggest advantages. And along the way it will inspire you with dozens of true stories of the greats from every age and era.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9781101620595"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "1101620595"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": false
+            },
+            "pageCount": 226,
+            "printType": "BOOK",
+            "categories": [
+              "Business & Economics"
+            ],
+            "averageRating": 5,
+            "ratingsCount": 1,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "1.28.27.0.preview.2",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=lUp1AgAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=lUp1AgAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=lUp1AgAAQBAJ&dq=The+Obstacle+Is+the+Way+-+Ryan+Holiday&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=lUp1AgAAQBAJ&dq=The+Obstacle+Is+the+Way+-+Ryan+Holiday&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/The_Obstacle_Is_the_Way.html?hl=&id=lUp1AgAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": true
+            },
+            "pdf": {
+              "isAvailable": true
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=lUp1AgAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "If you\u2019re feeling frustrated, demoralized, or stuck in a rut, this book can help you turn your problems into your biggest advantages. And along the way it will inspire you with dozens of true stories of the greats from every age and era."
+          }
+        },
+        "Essentialism - Greg McKeown": {
+          "kind": "books#volume",
+          "id": "ORJrngEACAAJ",
+          "etag": "xqMPSMJgFEY",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/ORJrngEACAAJ",
+          "volumeInfo": {
+            "title": "Essentialism",
+            "subtitle": "The Disciplined Pursuit of Less",
+            "authors": [
+              "Greg McKeown"
+            ],
+            "publisher": "Currency",
+            "publishedDate": "2014",
+            "description": "Discusses a systematic discipline for discerning what is absolutely essential, then eliminating everything that is not, so you can make the highest possible contribution towards the things that really matter.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_10",
+                "identifier": "0804140839"
+              },
+              {
+                "type": "ISBN_13",
+                "identifier": "9780804140836"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": false
+            },
+            "pageCount": 0,
+            "printType": "BOOK",
+            "categories": [
+              "Choice (Psychology)."
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=ORJrngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=ORJrngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=ORJrngEACAAJ&dq=Essentialism+-+Greg+McKeown&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=ORJrngEACAAJ&dq=Essentialism+-+Greg+McKeown&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Essentialism.html?hl=&id=ORJrngEACAAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=ORJrngEACAAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "Discusses a systematic discipline for discerning what is absolutely essential, then eliminating everything that is not, so you can make the highest possible contribution towards the things that really matter."
+          }
+        },
+        "The Power of Habit - Charles Duhigg": {
+          "kind": "books#volume",
+          "id": "oFYNngEACAAJ",
+          "etag": "7gM6YlPRwS8",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/oFYNngEACAAJ",
+          "volumeInfo": {
+            "title": "The Power of Habit: Why We Do What We Do in Life & Business",
+            "authors": [
+              "Charles Duhigg"
+            ],
+            "publisher": "Penguin Group",
+            "publishedDate": "2014-01-07",
+            "description": "For use in schools and libraries only. Identifies the neurological processes behind behaviors, explaining how self-control and success are largely driven by habits and providing guidelines for achieving personal goals and overall well-being by adjusting specific habits.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_10",
+                "identifier": "0606352147"
+              },
+              {
+                "type": "ISBN_13",
+                "identifier": "9780606352147"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": false
+            },
+            "pageCount": 0,
+            "printType": "BOOK",
+            "categories": [
+              "Business & Economics"
+            ],
+            "averageRating": 4,
+            "ratingsCount": 1,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=oFYNngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=oFYNngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=oFYNngEACAAJ&dq=The+Power+of+Habit+-+Charles+Duhigg&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=oFYNngEACAAJ&dq=The+Power+of+Habit+-+Charles+Duhigg&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/The_Power_of_Habit_Why_We_Do_What_We_Do.html?hl=&id=oFYNngEACAAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=oFYNngEACAAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "For use in schools and libraries only."
+          }
+        },
+        "Make Time - Jake Knapp": {
+          "kind": "books#volume",
+          "id": "puFqDwAAQBAJ",
+          "etag": "AQqdBQkvKhM",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/puFqDwAAQBAJ",
+          "volumeInfo": {
+            "title": "Make Time",
+            "subtitle": "How to Focus on What Matters Every Day",
+            "authors": [
+              "Jake Knapp",
+              "John Zeratsky"
+            ],
+            "publisher": "Crown Currency",
+            "publishedDate": "2018-09-25",
+            "description": "From the New York Times bestselling authors of Sprint comes \u201ca unique and engaging read about a proven habit framework [that] readers can apply to each day\u201d (Insider, Best Books to Form New Habits). \u201cIf you want to achieve more (without going nuts), read this book.\u201d\u2014Charles Duhigg, author of The Power of Habit Nobody ever looked at an empty calendar and said, \"The best way to spend this time is by cramming it full of meetings!\" or got to work in the morning and thought, Today I'll spend hours on Facebook! Yet that's exactly what we do. Why? In a world where information refreshes endlessly and the workday feels like a race to react to other people's priorities faster, frazzled and distracted has become our default position. But what if the exhaustion of constant busyness wasn't mandatory? What if you could step off the hamster wheel and start taking control of your time and attention? That's what this book is about. As creators of Google Ventures' renowned \"design sprint,\" Jake and John have helped hundreds of teams solve important problems by changing how they work. Building on the success of these sprints and their experience designing ubiquitous tech products from Gmail to YouTube, they spent years experimenting with their own habits and routines, looking for ways to help people optimize their energy, focus, and time. Now they've packaged the most effective tactics into a four-step daily framework that anyone can use to systematically design their days. Make Time is not a one-size-fits-all formula. Instead, it offers a customizable menu of bite-size tips and strategies that can be tailored to individual habits and lifestyles. Make Time isn't about productivity, or checking off more to-dos. Nor does it propose unrealistic solutions like throwing out your smartphone or swearing off social media. Making time isn't about radically overhauling your lifestyle; it's about making small shifts in your environment to liberate yourself from constant busyness and distraction. A must-read for anyone who has ever thought, If only there were more hours in the day..., Make Time will help you stop passively reacting to the demands of the modern world and start intentionally making time for the things that matter.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9780525572428"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "0525572422"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": false
+            },
+            "pageCount": 306,
+            "printType": "BOOK",
+            "categories": [
+              "Business & Economics"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "0.5.0.0.preview.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=puFqDwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=puFqDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=puFqDwAAQBAJ&dq=Make+Time+-+Jake+Knapp&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=puFqDwAAQBAJ&dq=Make+Time+-+Jake+Knapp&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Make_Time.html?hl=&id=puFqDwAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": true
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=puFqDwAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "From the New York Times bestselling authors of Sprint comes \u201ca unique and engaging read about a proven habit framework [that] readers can apply to each day\u201d (Insider, Best Books to Form New Habits). \u201cIf you want to achieve more ..."
+          }
+        },
+        "Peak Performance - Brad Stulberg": {
+          "kind": "books#volume",
+          "id": "WXq8DgAAQBAJ",
+          "etag": "fDOQaoHh0dA",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/WXq8DgAAQBAJ",
+          "volumeInfo": {
+            "title": "Peak Performance",
+            "subtitle": "Elevate Your Game, Avoid Burnout, and Thrive with the New Science of Success",
+            "authors": [
+              "Brad Stulberg",
+              "Steve Magness"
+            ],
+            "publisher": "Rodale",
+            "publishedDate": "2017-06-06",
+            "description": "\"A transfixing book on how to sustain peak performance and avoid burnout\" \u2014 Adam Grant, New York Times bestselling author of Option B, Originals, and Give and Take \"An essential playbook for success, happiness, and getting the most out of ourselves.\" \u2014 Arianna Huffington, author of Thrive and The Sleep Revolution \"I doubt anyone can read Peak Performance without itching to apply something to their own lives.\" \u2014 David Epstein, New York Times bestselling author of The Sports Gene A few common principles drive performance, regardless of the field or the task at hand. Whether someone is trying to qualify for the Olympics, break ground in mathematical theory or craft an artistic masterpiece, many of the practices that lead to great success are the same. In Peak Performance, Brad Stulberg, a former McKinsey and Company consultant and writer who covers health and the science of human performance, and Steve Magness, a performance scientist and coach of Olympic athletes, team up to demystify these practices and demonstrate how you can achieve your best. The first book of its kind, Peak Performance combines the inspiring stories of top performers across a range of capabilities \u2014 from athletic, to intellectual, to artistic \u2014 with the latest scientific insights into the cognitive and neurochemical factors that drive performance in all domains. In doing so, Peak Performance uncovers new linkages that hold promise as performance enhancers but have been overlooked in our traditionally-siloed ways of thinking. The result is a life-changing book in which you can learn how to enhance your performance via myriad ways including: optimally alternating between periods of intense work and rest; priming the body and mind for enhanced productivity; and developing and harnessing the power of a self-transcending purpose. In revealing the science of great performance and the stories of great performers across a wide range of capabilities, Peak Performance uncovers the secrets of success, and coaches you on how to use them. If you want to take your game to the next level, whatever \"your game\" may be, Peak Performance will teach you how.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9781623367930"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "162336793X"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": false
+            },
+            "pageCount": 246,
+            "printType": "BOOK",
+            "categories": [
+              "Self-Help"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "0.1.1.0.preview.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=WXq8DgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=WXq8DgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=WXq8DgAAQBAJ&printsec=frontcover&dq=Peak+Performance+-+Brad+Stulberg&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=WXq8DgAAQBAJ&dq=Peak+Performance+-+Brad+Stulberg&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Peak_Performance.html?hl=&id=WXq8DgAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=WXq8DgAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "The first book of its kind, Peak Performance combines the inspiring stories of top performers across a range of capabilities \u2014 from athletic, to intellectual, to artistic \u2014 with the latest scientific insights into the cognitive and ..."
+          }
+        },
+        "The War of Art - Steven Pressfield": {
+          "kind": "books#volume",
+          "id": "sR3hAAAAQBAJ",
+          "etag": "Tf93tzKc6Xg",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/sR3hAAAAQBAJ",
+          "volumeInfo": {
+            "title": "The War of Art",
+            "subtitle": "Break Through the Blocks and Win Your Inner Creative Battles",
+            "authors": [
+              "Steven Pressfield"
+            ],
+            "publisher": "Black Irish Entertainment LLC",
+            "publishedDate": "2002-06-03",
+            "description": "What keeps so many of us from doing what we long to do? Why is there a naysayer within? How can we avoid the roadblocks of any creative endeavor\u2014be it starting up a dream business venture, writing a novel, or painting a masterpiece? The War of Art identifies the enemy that every one of us must face, outlines a battle plan to conquer this internal foe, then pinpoints just how to achieve the greatest success. The War of Art emphasizes the resolve needed to recognize and overcome the obstacles of ambition and then effectively shows how to reach the highest level of creative discipline. Think of it as tough love . . . for yourself.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9781936891047"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "1936891042"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": true
+            },
+            "pageCount": 195,
+            "printType": "BOOK",
+            "categories": [
+              "Self-Help"
+            ],
+            "averageRating": 5,
+            "ratingsCount": 1,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "1.5.5.0.preview.3",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=sR3hAAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=sR3hAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=sR3hAAAAQBAJ&printsec=frontcover&dq=The+War+of+Art+-+Steven+Pressfield&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=sR3hAAAAQBAJ&dq=The+War+of+Art+-+Steven+Pressfield&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/The_War_of_Art.html?hl=&id=sR3hAAAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/The_War_of_Art-sample-epub.acsm?id=sR3hAAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/The_War_of_Art-sample-pdf.acsm?id=sR3hAAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=sR3hAAAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "The War of Art identifies the enemy that every one of us must face, outlines a battle plan to conquer this internal foe, then pinpoints just how to achieve the greatest success."
+          }
+        },
+        "The Productivity Project - Chris Bailey": {
+          "kind": "books#volume",
+          "id": "a6XSCQAAQBAJ",
+          "etag": "urFG2jQ0YBg",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/a6XSCQAAQBAJ",
+          "volumeInfo": {
+            "title": "The Productivity Project",
+            "subtitle": "Accomplishing More by Managing Your Time, Attention, and Energy",
+            "authors": [
+              "Chris Bailey"
+            ],
+            "publisher": "Crown Currency",
+            "publishedDate": "2016-01-05",
+            "description": "A fresh, personal, and entertaining exploration of a topic that concerns all of us: how to be more productive at work and in every facet of our lives. Chris Bailey turned down lucrative job offers to pursue a lifelong dream\u2014to spend a year performing a deep dive experiment into the pursuit of productivity, a subject he had been enamored with since he was a teenager. After obtaining his business degree, he created a blog to chronicle a year-long series of productivity experiments he conducted on himself, where he also continued his research and interviews with some of the world\u2019s foremost experts, from Charles Duhigg to David Allen. Among the experiments that he tackled: Bailey went several weeks with getting by on little to no sleep; he cut out caffeine and sugar; he lived in total isolation for 10 days; he used his smartphone for just an hour a day for three months; he gained ten pounds of muscle mass; he stretched his work week to 90 hours; a late riser, he got up at 5:30 every morning for three months\u2014all the while monitoring the impact of his experiments on the quality and quantity of his work. The Productivity Project\u2014and the lessons Chris learned\u2014are the result of that year-long journey. Among the counterintuitive insights Chris Bailey will teach you: \u00b7 slowing down to work more deliberately; \u00b7 shrinking or eliminating the unimportant; \u00b7 the rule of three; \u00b7 striving for imperfection; \u00b7 scheduling less time for important tasks; \u00b7 the 20 second rule to distract yourself from the inevitable distractions; \u00b7 and the concept of productive procrastination. In an eye-opening and thoroughly engaging read, Bailey offers a treasure trove of insights and over 25 best practices that will help you accomplish more.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9781101904046"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "1101904046"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": false
+            },
+            "pageCount": 314,
+            "printType": "BOOK",
+            "categories": [
+              "Business & Economics"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "1.10.10.0.preview.2",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=a6XSCQAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=a6XSCQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=a6XSCQAAQBAJ&dq=The+Productivity+Project+-+Chris+Bailey&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=a6XSCQAAQBAJ&dq=The+Productivity+Project+-+Chris+Bailey&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/The_Productivity_Project.html?hl=&id=a6XSCQAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": true
+            },
+            "pdf": {
+              "isAvailable": true
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=a6XSCQAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "Chris Bailey turned down lucrative job offers to pursue a lifelong dream\u2014to spend a year performing a deep dive experiment into the pursuit of productivity, a subject he had been enamored with since he was a teenager."
+          }
+        },
+        "Flow - Mihaly Csikszentmihalyi": {
+          "kind": "books#volume",
+          "id": "rTUB9tEDyfgC",
+          "etag": "TEFvZ1ZG9rE",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/rTUB9tEDyfgC",
+          "volumeInfo": {
+            "title": "Flow",
+            "subtitle": "The Classic Work on how to Achieve Happiness",
+            "authors": [
+              "Mihaly Csikszentmihalyi"
+            ],
+            "publisher": "Random House",
+            "publishedDate": "2002",
+            "description": "What really makes people glad to be alive? What are the inner experiences that make life worthwhile? For more than two decades Mihaly Csikszentmihalyi studied those states in which people report feelings of concentration and deep enjoyment. His studies re",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9780712657594"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "0712657592"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": false
+            },
+            "pageCount": 322,
+            "printType": "BOOK",
+            "categories": [
+              "Body, Mind & Spirit"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "1.14.0.0.preview.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=rTUB9tEDyfgC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=rTUB9tEDyfgC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=rTUB9tEDyfgC&dq=Flow+-+Mihaly+Csikszentmihalyi&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=rTUB9tEDyfgC&dq=Flow+-+Mihaly+Csikszentmihalyi&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Flow.html?hl=&id=rTUB9tEDyfgC"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": true
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=rTUB9tEDyfgC&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "What really makes people glad to be alive? What are the inner experiences that make life worthwhile? For more than two decades Mihaly Csikszentmihalyi studied those states in which people report feelings of concentration and deep enjoyment."
+          }
+        },
+        "Mind Management, Not Time Management - David Kadavy": {
+          "kind": "books#volume",
+          "id": "xcK-zQEACAAJ",
+          "etag": "x3YmJQwi9sU",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/xcK-zQEACAAJ",
+          "volumeInfo": {
+            "title": "Mind Management, Not Time Management",
+            "authors": [
+              "David Kadavy"
+            ],
+            "publishedDate": "2020-11-03",
+            "description": "You have the TIME. Do you have the ENERGY? You've done everything you can to save time. Every productivity tip, every \"life hack,\" every time management technique. But the more time you save, the less time you have. The more overwhelmed, stressed, exhausted you feel. \"Time management\" is squeezing blood from a stone. Introducing a new approach to productivity. Instead of struggling to get more out of your time, start effortlessly getting more out of your mind. In Mind Management, Not Time Management, best-selling author David Kadavy shares the fruits of his decade-long deep dive into how to truly be productive in a constantly changing world.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_10",
+                "identifier": "0578733692"
+              },
+              {
+                "type": "ISBN_13",
+                "identifier": "9780578733692"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": false
+            },
+            "pageCount": 230,
+            "printType": "BOOK",
+            "categories": [
+              "Business & Economics"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=xcK-zQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=xcK-zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=xcK-zQEACAAJ&dq=Mind+Management,+Not+Time+Management+-+David+Kadavy&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=xcK-zQEACAAJ&dq=Mind+Management,+Not+Time+Management+-+David+Kadavy&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Mind_Management_Not_Time_Management.html?hl=&id=xcK-zQEACAAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=xcK-zQEACAAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "&quot;Time management&quot; is squeezing blood from a stone. Introducing a new approach to productivity. Instead of struggling to get more out of your time, start effortlessly getting more out of your mind."
+          }
+        },
+        "The Miracle Morning - Hal Elrod": {
+          "kind": "books#volume",
+          "id": "xsCIDwAAQBAJ",
+          "etag": "sBRDYOQrHeY",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/xsCIDwAAQBAJ",
+          "volumeInfo": {
+            "title": "THE MIRACLE MORNING - Summarized for Busy People",
+            "subtitle": "The Not-So-Obvious Secret Guaranteed to Transform Your Life (Before 8AM): Based on the Book by Hal Elrod",
+            "authors": [
+              "Goldmine Reads"
+            ],
+            "publisher": "Goldmine Reads",
+            "publishedDate": "2019-02-19",
+            "description": "This book summary and analysis was created for individuals who want to extract the essential contents and are too busy to go through the full version. This book is not intended to replace the original book. Instead, we highly encourage you to buy the full version. Regarded as \u201cone of the most life-changing books written,\u201d The Miracle Morning takes only the simplest approach to live the life you deserve. What if you could wake up tomorrow and you\u2019re finally living the life that you want? It can happen when you put the necessary effort into making it happen. The Miracle Morning provides the practices that are done by the most successful people around the globe\u2014this morning routine has transformed the lives thousands of people around the world and this is done simply by waking up each day with more ENERGY, MOTIVATION, and FOCUS to take life by the reins and push forward. The next chapter of your life is more than what you have imagined possible. Wake up and accept your full potential! Wait no more, take action and get this book now!",
+            "readingModes": {
+              "text": true,
+              "image": true
+            },
+            "pageCount": 46,
+            "printType": "BOOK",
+            "categories": [
+              "Business & Economics"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "1.2.3.0.preview.3",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=xsCIDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=xsCIDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=xsCIDwAAQBAJ&printsec=frontcover&dq=The+Miracle+Morning+-+Hal+Elrod&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=xsCIDwAAQBAJ&dq=The+Miracle+Morning+-+Hal+Elrod&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/THE_MIRACLE_MORNING_Summarized_for_Busy.html?hl=&id=xsCIDwAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": true
+            },
+            "pdf": {
+              "isAvailable": true
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=xsCIDwAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "This book summary and analysis was created for individuals who want to extract the essential contents and are too busy to go through the full version. This book is not intended to replace the original book."
+          }
+        },
+        "Willpower - Baumeister & Tierney": {
+          "kind": "books#volume",
+          "id": "Lo_sXwAACAAJ",
+          "etag": "UyJ+ZRNtpdQ",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/Lo_sXwAACAAJ",
+          "volumeInfo": {
+            "title": "Willpower",
+            "subtitle": "Rediscovering Our Greatest Strength",
+            "authors": [
+              "Roy F. Baumeister",
+              "John Tierney"
+            ],
+            "publishedDate": "2012-01-01",
+            "description": "Can you resist everything except temptation? In a hedonistic age full of distractions, it's hard to possess willpower - or in fact even understand why we should need it. Yet it's actually the most important factor in achieving success and a happy life, shown to be more significant than money, looks, background or intelligence. This book reveals the secrets of self-control. Here Roy Baumeister, one of the world's most esteemed and influential psychologists, and journalist John Tierney, turn this notion on its head. They show us that willpower is like a muscle that can be strengthened with practice and improved over time. The latest laboratory work shows that self-control has a physical basis to it and so is dramatically affected by simple things such as eating and sleeping - to the extent that a life-changing decision may go in different directions depending on whether it's made before or after lunch. Based on years of psychological research and filled with practical advice, this book will teach you how to gain from self-control without pain, and discover the very real power in willpower. The results are nothing short of life-changing.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_10",
+                "identifier": "1846146100"
+              },
+              {
+                "type": "ISBN_13",
+                "identifier": "9781846146107"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": false
+            },
+            "pageCount": 304,
+            "printType": "BOOK",
+            "categories": [
+              "Self-control"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=Lo_sXwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=Lo_sXwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=Lo_sXwAACAAJ&dq=Willpower+-+Baumeister+%26+Tierney&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=Lo_sXwAACAAJ&dq=Willpower+-+Baumeister+%26+Tierney&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Willpower.html?hl=&id=Lo_sXwAACAAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=Lo_sXwAACAAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "Can you resist everything except temptation? In a hedonistic age full of distractions, it&#39;s hard to possess willpower - or in fact even understand why we should need it."
+          }
+        },
+        "The Now Habit - Neil Fiore": {
+          "kind": "books#volume",
+          "id": "hCiQEAAAQBAJ",
+          "etag": "BqOu3X7Yxa4",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/hCiQEAAAQBAJ",
+          "volumeInfo": {
+            "title": "The Now Habit",
+            "subtitle": "A Strategic Program for Overcoming Procrastination and Enjoying Guilt-Free Play",
+            "authors": [
+              "Neil Fiore"
+            ],
+            "publisher": "National Geographic Books",
+            "publishedDate": "2007-04-05",
+            "description": "Learn how to overcome procrastination and enjoy guilt-free play! One of the most effective programs to combat procrastination, THE NOW HABIT has sold over 100,000 copies, has been translated into 11 languages, and is now revised and updated. Featuring a new introduction and a new section providing strategies to understand and deal with the role technology plays in procrastination today, THE NOW HABIT offers a comprehensive plan to help readers lower their stress and increase their time to enjoy guilt-free play. Dr. Fiore\u2019s techniques will help any busy person start tasks sooner and accomplish them more quickly, without the anxiety brought on by the negative habits of procrastination and perfectionism.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9781585425525"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "1585425524"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": false
+            },
+            "pageCount": 0,
+            "printType": "BOOK",
+            "categories": [
+              "Self-Help"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=hCiQEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=hCiQEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=hCiQEAAAQBAJ&dq=The+Now+Habit+-+Neil+Fiore&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=hCiQEAAAQBAJ&dq=The+Now+Habit+-+Neil+Fiore&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/The_Now_Habit.html?hl=&id=hCiQEAAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=hCiQEAAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "One of the most effective programs to combat procrastination, THE NOW HABIT has sold over 100,000 copies, has been translated into 11 languages, and is now revised and updated."
+          }
+        },
+        "Indistractable - Nir Eyal": {
+          "kind": "books#volume",
+          "id": "kO5KEAAAQBAJ",
+          "etag": "0BtxsQDIM7w",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/kO5KEAAAQBAJ",
+          "volumeInfo": {
+            "title": "Indistractable",
+            "subtitle": "How to Control Your Attention and Choose Your Life",
+            "authors": [
+              "Nir Eyal"
+            ],
+            "publisher": "BenBella Books",
+            "publishedDate": "2019-09-10",
+            "description": "\"Indistractable provides a framework that will deliver the focus you need to get results.\" \u2014James Clear, author of Atomic Habits \"If you value your time, your focus, or your relationships, this book is essential reading. I'm putting these ideas into practice.\" \u2014Jonathan Haidt, author of The Righteous Mind NATIONAL BESTSELLER WINNER OF THE OUTSTANDING WORKS OF LITERATURE (OWL) AWARD INCLUDED IN THE TOP 5 BEST PERSONAL DEVELOPMENT BOOKS OF THE YEAR BY AUDIBLE INCLUDED IN THE TOP 20 BEST BUSINESS AND LEADERSHIP BOOKS OF THE YEAR BY AMAZON FEATURED IN THE AMAZON BOOK REVIEW NEWSLETTER, JANUARY 2020 GOODREADS BEST SCIENCE & TECHNOLOGY OF 2019 FINALIST You sit down at your desk to work on an important project, but a notification on your phone interrupts your morning. Later, as you're about to get back to work, a colleague taps you on the shoulder to chat. At home, screens get in the way of quality time with your family. Another day goes by, and once again, your most important personal and professional goals are put on hold. What would be possible if you followed through on your best intentions? What could you accomplish if you could stay focused? What if you had the power to become \"indistractable?\" International bestselling author, former Stanford lecturer, and behavioral design expert, Nir Eyal, wrote Silicon Valley's handbook for making technology habit-forming. Five years after publishing Hooked, Eyal reveals distraction's Achilles' heel in his groundbreaking new book. In Indistractable, Eyal reveals the hidden psychology driving us to distraction. He describes why solving the problem is not as simple as swearing off our devices: Abstinence is impractical and often makes us want more. Eyal lays bare the secret of finally doing what you say you will do with a four-step, research-backed model. Indistractable reveals the key to getting the best out of technology, without letting it get the best of us. Inside, Eyal overturns conventional wisdom and reveals: \u2022 Why distraction at work is a symptom of a dysfunctional company culture\u2014and how to fix it \u2022 What really drives human behavior and why \"time management is pain management\" \u2022 Why your relationships (and your sex life) depend on you becoming indistractable \u2022 How to raise indistractable children in an increasingly distracting world Empowering and optimistic, Indistractable provides practical, novel techniques to control your time and attention\u2014helping you live the life you really want.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9781948836531"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "194883653X"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": false
+            },
+            "pageCount": 289,
+            "printType": "BOOK",
+            "categories": [
+              "Business & Economics"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "1.3.3.0.preview.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=kO5KEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=kO5KEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=kO5KEAAAQBAJ&printsec=frontcover&dq=Indistractable+-+Nir+Eyal&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=kO5KEAAAQBAJ&dq=Indistractable+-+Nir+Eyal&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Indistractable.html?hl=&id=kO5KEAAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=kO5KEAAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "&quot;Indistractable provides a framework that will deliver the focus you need to get results.&quot; \u2014James Clear, author of Atomic Habits &quot;If you value your time, your focus, or your relationships, this book is essential reading."
+          }
+        },
+        "Smarter Faster Better - Charles Duhigg": {
+          "kind": "books#volume",
+          "id": "himPEAAAQBAJ",
+          "etag": "IGtOArzipaE",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/himPEAAAQBAJ",
+          "volumeInfo": {
+            "title": "Smarter Faster Better",
+            "subtitle": "The Transformative Power of Real Productivity",
+            "authors": [
+              "Charles Duhigg"
+            ],
+            "publisher": "National Geographic Books",
+            "publishedDate": "2017-03-07",
+            "description": "NEW YORK TIMES BESTSELLER \u2022 The author of The Power of Habit and \u201cmaster of the life hack\u201d (GQ) explores the fascinating science of productivity and offers real-world takeaways to apply your life, whether you\u2019re chasing peak productivity or simply trying to get back on track. \u201cDuhigg melds cutting-edge science, deep reporting, and wide-ranging stories to give us a fuller, more human way of thinking about how productivity actually happens.\u201d\u2014Susan Cain, author of Quiet In The Power of Habit, Pulitzer Prize\u2013winning journalist Charles Duhigg explained why we do what we do. In Smarter Faster Better, he applies the same relentless curiosity and rich storytelling to how we can improve at the things we do. At the core of Smarter Faster Better are eight key concepts\u2014from motivation and goal setting to focus and decision making\u2014that explain why some people and companies get so much done. Drawing on the latest findings in neuroscience, psychology, and behavioral economics\u2014as well as the experiences of CEOs, educational reformers, four-star generals, FBI agents, airplane pilots, and Broadway songwriters\u2014this book reveals that the most productive people, companies, and organizations don\u2019t merely act differently. They view the world, and their choices, in profoundly different ways. Smarter Faster Better is a story-filled exploration of the science of productivity, one that can help us learn to succeed with less stress and struggle\u2014and become smarter, faster, and better at everything we do.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9780812983593"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "0812983599"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": false
+            },
+            "pageCount": 0,
+            "printType": "BOOK",
+            "categories": [
+              "Business & Economics"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=himPEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=himPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=himPEAAAQBAJ&dq=Smarter+Faster+Better+-+Charles+Duhigg&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=himPEAAAQBAJ&dq=Smarter+Faster+Better+-+Charles+Duhigg&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Smarter_Faster_Better.html?hl=&id=himPEAAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=himPEAAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "Smarter Faster Better is a story-filled exploration of the science of productivity, one that can help us learn to succeed with less stress and struggle\u2014and become smarter, faster, and better at everything we do."
+          }
+        },
+        "The Compound Effect - Darren Hardy": {
+          "kind": "books#volume",
+          "id": "EmZGDgAAQBAJ",
+          "etag": "mKFNGtkHUV8",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/EmZGDgAAQBAJ",
+          "volumeInfo": {
+            "title": "The Compound Effect",
+            "authors": [
+              "Darren Hardy"
+            ],
+            "publisher": "Vanguard Press",
+            "publishedDate": "2011-11-01",
+            "description": "The New York Times and Wall Street Journal bestseller, based on the principle that little, everyday decisions will either take you to the life you desire or to disaster by default. No gimmicks. No Hyperbole. No Magic Bullet. The Compound Effect is a distillation of the fundamental principles that have guided the most phenomenal achievements in business, relationships, and beyond. This easy-to-use, step-by-step operating system allows you to multiply your success, chart your progress, and achieve any desire. If you're serious about living an extraordinary life, use the power of The Compound Effect to create the success you want. You will find strategies including: How to win--every time! The No. 1 strategy to achieve any goal and triumph over any competitor, even if they're smarter, more talented or more experienced. Eradicating your bad habits (some you might be unaware of!) that are derailing your progress. The real, lasting keys to motivation--how to get yourself to do things you don't feel like doing. Capturing the elusive, awesome force of momentum. Catch this, and you'll be unstoppable. The acceleration secrets of superachievers. Do they have an unfair advantage? Yes they do, and now you can too!",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9781593157142"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "1593157142"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": false
+            },
+            "pageCount": 158,
+            "printType": "BOOK",
+            "categories": [
+              "Business & Economics"
+            ],
+            "averageRating": 5,
+            "ratingsCount": 1,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "1.3.4.0.preview.2",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=EmZGDgAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=EmZGDgAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=EmZGDgAAQBAJ&dq=The+Compound+Effect+-+Darren+Hardy&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=EmZGDgAAQBAJ&dq=The+Compound+Effect+-+Darren+Hardy&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/The_Compound_Effect.html?hl=&id=EmZGDgAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": true
+            },
+            "pdf": {
+              "isAvailable": true
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=EmZGDgAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "No gimmicks. No Hyperbole. No Magic Bullet. The Compound Effect is a distillation of the fundamental principles that have guided the most phenomenal achievements in business, relationships, and beyond."
+          }
+        },
+        "Finish What You Start - Peter Hollins": {
+          "kind": "books#volume",
+          "id": "jKWtDwAAQBAJ",
+          "etag": "a3mTHkUcMII",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/jKWtDwAAQBAJ",
+          "volumeInfo": {
+            "title": "Finish What You Start",
+            "subtitle": "The Art of Following Through, Taking Action, Executing, & Self-Discipline",
+            "authors": [
+              "Peter Hollins"
+            ],
+            "publisher": "PublishDrive",
+            "publishedDate": "2019-08-13",
+            "description": "Practical tactics to grow your willpower, stop procrastination, focus like a laser, and achieve whatever you set your mind to. Following through and finishing what you start- more valuable skills than you realize. They are a combination of traits that enables you to create the life you want - without having to compromise or wait. The alternative is a status quo that you\u2019re stuck in. Is your life a series of unfinished tasks and intentions? That stops now. Finish What You Start is a unique deep dive into the psychology and science of accomplishment, productivity, and getting things done. It takes a thorough look why we are sometimes stuck, and gives detailed, step by step solutions you can start using today. Every phase of finishing and following through is covered, and even productivity pros will be able to learn something new. Above all else, this is a guide to understanding your brain and instincts better for optimal results. Channel massive productivity and mental toughness. Peter Hollins has studied psychology and peak human performance for over a dozen years and is a bestselling author. He has worked with dozens of individuals to unlock their potential and path towards success. His writing draws on his academic, coaching, and research experience. Resist distractions, de-motivation, temptations, laziness, and excuses. \u2022The surprising motivations that push us past obstacles. \u2022How daily rules and a manifesto can help you achieve. \u2022Valuable and insightful mindsets to view productivity from entirely new lights. Seize self-control and finally accomplish your big and small goals. \u2022The science and tactics to beating procrastination easily. \u2022Focus and willpower pitfalls you are probably committing at this very moment. \u2022How to beat distractions, remain focused, stay on task, and get to what matters - consistently. Transform your life through productive habits and avoiding mental traps.",
+            "industryIdentifiers": [
+              {
+                "type": "OTHER",
+                "identifier": "PKEY:6610000213122"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": true
+            },
+            "pageCount": 115,
+            "printType": "BOOK",
+            "categories": [
+              "Study Aids"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "1.34.31.0.preview.3",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=jKWtDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=jKWtDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=jKWtDwAAQBAJ&printsec=frontcover&dq=Finish+What+You+Start+-+Peter+Hollins&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=jKWtDwAAQBAJ&dq=Finish+What+You+Start+-+Peter+Hollins&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Finish_What_You_Start.html?hl=&id=jKWtDwAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/Finish_What_You_Start-sample-epub.acsm?id=jKWtDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/Finish_What_You_Start-sample-pdf.acsm?id=jKWtDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=jKWtDwAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "Every phase of finishing and following through is covered, and even productivity pros will be able to learn something new. Above all else, this is a guide to understanding your brain and instincts better for optimal results."
+          }
+        },
+        "Ultralearning - Scott Young": {
+          "kind": "books#volume",
+          "id": "qhC2DwAAQBAJ",
+          "etag": "LmdCJp35SSc",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/qhC2DwAAQBAJ",
+          "volumeInfo": {
+            "title": "SUMMARY: Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career: By Scott Young | The MW Summary Guide",
+            "authors": [
+              "The Mindset Warrior"
+            ],
+            "publisher": "KP",
+            "description": "An Easy to Digest Summary Guide... \u2605\u2606BONUS MATERIAL AVAILABLE INSIDE\u2605\u2606 The Mindset Warrior Summary Guides, provides you with a unique summarized version of the core information contained in the full book, and the essentials you need in order to fully comprehend and apply. Maybe you've read the original book but would like a reminder of the information? \u2705 Maybe you haven't read the book, but want a short summary to save time? \u2705 Maybe you'd just like a summarized version to refer to in the future? \u2705 In any case, The Mindset Warrior Summary Guides can provide you with just that. Inside You'll Learn: \u2731 How re-reading your notes kills your retention \u2731 The type of feedback you should avoid if you want the fastest results possible \u2731 Why you actually want to seek failure in the short run for long term success \u2731 The straight-forward method 2 guys used to learn 4 languages in 1 year Lets get Started. Download Your Book Today.. NOTE: To Purchase the \"Ultralearning\"(full book); which this is not, simply type in the name of the book in the search bar of your bookstore.",
+            "readingModes": {
+              "text": true,
+              "image": true
+            },
+            "pageCount": 80,
+            "printType": "BOOK",
+            "categories": [
+              "Study Aids"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "1.2.2.0.preview.3",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=qhC2DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=qhC2DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=qhC2DwAAQBAJ&printsec=frontcover&dq=Ultralearning+-+Scott+Young&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=qhC2DwAAQBAJ&dq=Ultralearning+-+Scott+Young&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/SUMMARY_Ultralearning_Master_Hard_Skills.html?hl=&id=qhC2DwAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/SUMMARY_Ultralearning_Master_Hard_Skills-sample-epub.acsm?id=qhC2DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "pdf": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/SUMMARY_Ultralearning_Master_Hard_Skills-sample-pdf.acsm?id=qhC2DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=qhC2DwAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "Download Your Book Today.. NOTE: To Purchase the &quot;Ultralearning&quot;(full book); which this is not, simply type in the name of the book in the search bar of your bookstore."
+          }
+        },
+        "The 5 AM Club - Robin Sharma": {
+          "kind": "books#volume",
+          "id": "Nh9PDwAAQBAJ",
+          "etag": "cjcFPqlw3so",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/Nh9PDwAAQBAJ",
+          "volumeInfo": {
+            "title": "The 5AM Club",
+            "subtitle": "Own Your Morning. Elevate Your Life.",
+            "authors": [
+              "Robin Sharma"
+            ],
+            "publisher": "HarperCollins",
+            "publishedDate": "2018-12-04",
+            "description": "Legendary leadership and elite performance expert Robin Sharma introduced The 5am Club concept over twenty years ago, based on a revolutionary morning routine that has helped his clients maximize their productivity, activate their best health and bulletproof their serenity in this age of overwhelming complexity. Now, in this life-changing book, handcrafted by the author over a rigorous four-year period, you will discover the early-rising habit that has helped so many accomplish epic results while upgrading their happiness, helpfulness and feelings of aliveness. Through an enchanting\u2014and often amusing\u2014story about two struggling strangers who meet an eccentric tycoon who becomes their secret mentor, The 5am Club will walk you through: How great geniuses, business titans and the world\u2019s wisest people start their mornings to produce astonishing achievements A little-known formula you can use instantly to wake up early feeling inspired, focused and flooded with a fiery drive to get the most out of each day A step-by-step method to protect the quietest hours of daybreak so you have time for exercise, self-renewal and personal growth A neuroscience-based practice proven to help make it easy to rise while most people are sleeping, giving you precious time for yourself to think, express your creativity and begin the day peacefully instead of being rushed \u201cInsider-only\u201d tactics to defend your gifts, talents and dreams against digital distraction and trivial diversions so you enjoy fortune, influence and a magnificent impact on the world Part manifesto for mastery, part playbook for genius-grade productivity and part companion for a life lived beautifully, The 5am Club is a work that will transform your life. Forever.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9781443456630"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "1443456632"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": false
+            },
+            "pageCount": 356,
+            "printType": "BOOK",
+            "categories": [
+              "Self-Help"
+            ],
+            "averageRating": 5,
+            "ratingsCount": 2,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "2.5.5.0.preview.2",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=Nh9PDwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=Nh9PDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=Nh9PDwAAQBAJ&dq=The+5+AM+Club+-+Robin+Sharma&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=Nh9PDwAAQBAJ&dq=The+5+AM+Club+-+Robin+Sharma&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/The_5AM_Club.html?hl=&id=Nh9PDwAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": true
+            },
+            "pdf": {
+              "isAvailable": true
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=Nh9PDwAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "Now, in this life-changing book, handcrafted by the author over a rigorous four-year period, you will discover the early-rising habit that has helped so many accomplish epic results while upgrading their happiness, helpfulness and feelings ..."
+          }
+        },
+        "Tiny Habits - BJ Fogg": {
+          "kind": "books#volume",
+          "id": "5TmbDwAAQBAJ",
+          "etag": "IrgSMD/AXxw",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/5TmbDwAAQBAJ",
+          "volumeInfo": {
+            "title": "Tiny Habits",
+            "subtitle": "The Small Changes that Change Everything",
+            "authors": [
+              "B. J. Fogg"
+            ],
+            "publisher": "Harvest",
+            "publishedDate": "2020",
+            "description": "The world's leading expert on habit formation shows how you can have a happier, healthier life: by starting small. Myth: Change is hard. Reality: Change can be easy if you know the simple steps of Behavior Design. Myth: It's all about willpower. Reality: Willpower is fickle and finite, and exactly the wrong way to create habits. Myth: You have to make a plan and stick to it. Reality: You transform your life by starting small and being flexible. BJ FOGG is here to change your life--and revolutionize how we think about human behavior. Based on twenty years of research and Fogg's experience coaching more than 40,000 people, Tiny Habits cracks the code of habit formation. With breakthrough discoveries in every chapter, you'll learn the simplest proven ways to transform your life. Fogg shows you how to feel good about your successes instead of bad about your failures. Whether you want to lose weight, de-stress, sleep better, or be more productive each day, Tiny Habits makes it easy to achieve. Already the habit guru to companies around the world, Fogg brings his proven method to a global audience for the first time. Whether you want to lose weight, de-stress, sleep better, or exercise more, Tiny Habits makes it easy to achieve.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9780358003328"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "0358003326"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": true
+            },
+            "pageCount": 317,
+            "printType": "BOOK",
+            "categories": [
+              "Business & Economics"
+            ],
+            "averageRating": 5,
+            "ratingsCount": 1,
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "0.1.2.0.preview.1",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=5TmbDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=5TmbDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=5TmbDwAAQBAJ&printsec=frontcover&dq=Tiny+Habits+-+BJ+Fogg&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=5TmbDwAAQBAJ&dq=Tiny+Habits+-+BJ+Fogg&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Tiny_Habits.html?hl=&id=5TmbDwAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": true,
+              "acsTokenLink": "http://books.google.com/books/download/Tiny_Habits-sample-pdf.acsm?id=5TmbDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=5TmbDwAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "BJ FOGG is here to change your life--and revolutionize how we think about human behavior. Based on twenty years of research and Fogg&#39;s experience coaching more than 40,000 people, Tiny Habits cracks the code of habit formation."
+          }
+        },
+        "Principles - Ray Dalio": {
+          "kind": "books#volume",
+          "id": "okk1DwAAQBAJ",
+          "etag": "yDHcjUiRNMc",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/okk1DwAAQBAJ",
+          "volumeInfo": {
+            "title": "Principles",
+            "subtitle": "Life and Work",
+            "authors": [
+              "Ray Dalio"
+            ],
+            "publisher": "Simon and Schuster",
+            "publishedDate": "2017-09-19",
+            "description": "Dalio \"shares the unconventional principles that he's developed, refined, and used over the past forty years to create unique results in both life and business--and which any person or organization can adopt to help achieve their goals\"--Amazon.com.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9781501124020"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "1501124021"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": false
+            },
+            "pageCount": 592,
+            "printType": "BOOK",
+            "categories": [
+              "Business & Economics"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "0.9.3.0.preview.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=okk1DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=okk1DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=okk1DwAAQBAJ&printsec=frontcover&dq=Principles+-+Ray+Dalio&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=okk1DwAAQBAJ&dq=Principles+-+Ray+Dalio&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Principles.html?hl=&id=okk1DwAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "PARTIAL",
+            "embeddable": true,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=okk1DwAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "SAMPLE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "Dalio &quot;shares the unconventional principles that he&#39;s developed, refined, and used over the past forty years to create unique results in both life and business--and which any person or organization can adopt to help achieve their goals&quot;- ..."
+          }
+        },
+        "The Motivation Myth - Jeff Haden": {
+          "kind": "books#volume",
+          "id": "v3ydxgEACAAJ",
+          "etag": "H7XkCSUOAMY",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/v3ydxgEACAAJ",
+          "volumeInfo": {
+            "title": "Summary of The Motivation Myth",
+            "subtitle": "How High Achievers Really Set Themselves Up to Win by Jeff Haden",
+            "authors": [
+              "Abbey Beathan"
+            ],
+            "publishedDate": "2019-06-10",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_10",
+                "identifier": "1646153928"
+              },
+              {
+                "type": "ISBN_13",
+                "identifier": "9781646153923"
+              }
+            ],
+            "readingModes": {
+              "text": false,
+              "image": false
+            },
+            "pageCount": 74,
+            "printType": "BOOK",
+            "categories": [
+              "Study Aids"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": false,
+            "contentVersion": "preview-1.0.0",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=v3ydxgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=v3ydxgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=v3ydxgEACAAJ&dq=The+Motivation+Myth+-+Jeff+Haden&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=v3ydxgEACAAJ&dq=The+Motivation+Myth+-+Jeff+Haden&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Summary_of_The_Motivation_Myth.html?hl=&id=v3ydxgEACAAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": false
+            },
+            "pdf": {
+              "isAvailable": false
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=v3ydxgEACAAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "The Motivation Myth: How High Achievers Really Set Themselves Up to Win by Jeff Haden - Book Summary - Abbey Beathan (Disclaimer: This is NOT the original book.) Motivation is key to achieving your most ambitious goals."
+          }
+        },
+        "Hyperfocus - Chris Bailey": {
+          "kind": "books#volume",
+          "id": "Klw_DwAAQBAJ",
+          "etag": "wRIIZRHWtUs",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/Klw_DwAAQBAJ",
+          "volumeInfo": {
+            "title": "Hyperfocus",
+            "subtitle": "How to Manage Your Attention in a World of Distraction",
+            "authors": [
+              "Chris Bailey"
+            ],
+            "publisher": "Penguin",
+            "publishedDate": "2018-08-28",
+            "description": "By the author of How To Calm Your Mind, a practical guide to managing your attention\u2014the most powerful resource you have to get stuff done, become more creative, and live a meaningful life Our attention has never been as overwhelmed as it is today. Many of us recognize that our brains struggle to multitask. Despite this, we feel compelled to do so anyway while we fill each moment of our lives to the brim with mindless distraction. Hyperfocus provides profound insights into how you can best take charge of your attention to achieve a greater sense of purpose and productivity throughout the day. The most recent neuroscientific research reveals that our brain has two powerful modes that can be unlocked when we use our attention effectively: a focused mode (hyperfocus), which is the foundation for being highly productive, and a creative mode (scatterfocus), which enables us to connect ideas in novel ways. Hyperfocus helps you access each of the two mental modes so you can concentrate more deeply, think more clearly, and work and live more deliberately every day. Chris Bailey examines such topics such as: identifying and dealing with the four key types of distraction and interruption; establishing a clear physical and mental environment in which to work; controlling motivation and working fewer hours to become more productive; taking time-outs with intention; multitasking strategically; and learning when to pay attention and when to let your mind wander wherever it wants to. By transforming how you think about your attention, Hyperfocus reveals that the more effectively you learn to take charge of it, the better you'll be able to manage every aspect of your life.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9780525522249"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "0525522247"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": false
+            },
+            "pageCount": 285,
+            "printType": "BOOK",
+            "categories": [
+              "Self-Help"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "1.9.9.0.preview.2",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=Klw_DwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=Klw_DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=Klw_DwAAQBAJ&dq=Hyperfocus+-+Chris+Bailey&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=Klw_DwAAQBAJ&dq=Hyperfocus+-+Chris+Bailey&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Hyperfocus.html?hl=&id=Klw_DwAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": true
+            },
+            "pdf": {
+              "isAvailable": true
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=Klw_DwAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "Hyperfocus provides profound insights into how you can best take charge of your attention to achieve a greater sense of purpose and productivity throughout the day."
+          }
+        },
+        "Master Your Time, Master Your Life - Brian Tracy": {
+          "kind": "books#volume",
+          "id": "37NpCwAAQBAJ",
+          "etag": "8vd7ZYOFEQ0",
+          "selfLink": "https://www.googleapis.com/books/v1/volumes/37NpCwAAQBAJ",
+          "volumeInfo": {
+            "title": "Master Your Time, Master Your Life",
+            "subtitle": "The Breakthrough System to Get More Results, Faster, in Every Area of Your Life",
+            "authors": [
+              "Brian Tracy"
+            ],
+            "publisher": "Penguin",
+            "publishedDate": "2016-10-11",
+            "description": "Discover 10 Essential Ways to Make the Most of Your Time \u201cTime is money,\u201d as the saying goes, but most of us never feel we have enough of either. In Master Your Time, Master Your Life, internationally acclaimed productivity expert and bestselling author Brian Tracy presents a brilliant new approach to time management that will help you gain control of your time and accomplish far more, faster and more easily than you ever thought possible. Drawing on the latest research in productivity science and Tracy\u2019s decades of expertise, this breakthrough program allocates time into ten categories of priority\u2014including strategic planning/goal setting, people and family, income improvement, rest/relaxation, and even creative time\u2014and reveals the best techniques for focusing on each effectively. By thoughtfully applying the principles in Master Your Time, Master Your Life, you\u2019ll not only achieve greater results and reach your goals more quickly and successfully, you\u2019ll also have more time to devote to what you truly love.",
+            "industryIdentifiers": [
+              {
+                "type": "ISBN_13",
+                "identifier": "9780399183836"
+              },
+              {
+                "type": "ISBN_10",
+                "identifier": "0399183833"
+              }
+            ],
+            "readingModes": {
+              "text": true,
+              "image": false
+            },
+            "pageCount": 241,
+            "printType": "BOOK",
+            "categories": [
+              "Self-Help"
+            ],
+            "maturityRating": "NOT_MATURE",
+            "allowAnonLogging": true,
+            "contentVersion": "1.3.3.0.preview.2",
+            "panelizationSummary": {
+              "containsEpubBubbles": false,
+              "containsImageBubbles": false
+            },
+            "imageLinks": {
+              "smallThumbnail": "http://books.google.com/books/content?id=37NpCwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=37NpCwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+            },
+            "language": "en",
+            "previewLink": "http://books.google.com/books?id=37NpCwAAQBAJ&dq=Master+Your+Time,+Master+Your+Life+-+Brian+Tracy&hl=&cd=1&source=gbs_api",
+            "infoLink": "http://books.google.com/books?id=37NpCwAAQBAJ&dq=Master+Your+Time,+Master+Your+Life+-+Brian+Tracy&hl=&source=gbs_api",
+            "canonicalVolumeLink": "https://books.google.com/books/about/Master_Your_Time_Master_Your_Life.html?hl=&id=37NpCwAAQBAJ"
+          },
+          "saleInfo": {
+            "country": "NG",
+            "saleability": "NOT_FOR_SALE",
+            "isEbook": false
+          },
+          "accessInfo": {
+            "country": "NG",
+            "viewability": "NO_PAGES",
+            "embeddable": false,
+            "publicDomain": false,
+            "textToSpeechPermission": "ALLOWED",
+            "epub": {
+              "isAvailable": true
+            },
+            "pdf": {
+              "isAvailable": true
+            },
+            "webReaderLink": "http://play.google.com/books/reader?id=37NpCwAAQBAJ&hl=&source=gbs_api",
+            "accessViewStatus": "NONE",
+            "quoteSharingAllowed": false
+          },
+          "searchInfo": {
+            "textSnippet": "In Master Your Time, Master Your Life, internationally acclaimed productivity expert and bestselling author Brian Tracy presents a brilliant new approach to time management that will help you gain control of your time and accomplish far ..."
+          }
+        }
+      }
+    },
+    {
+      "category": "Mindset, Growth & Resilience",
+      "books": [
+        "Mindset - Carol Dweck",
+        "Grit - Angela Duckworth",
+        "Man's Search for Meaning - Viktor Frankl",
+        "12 Rules for Life - Jordan Peterson",
+        "The Four Agreements - Don Miguel Ruiz",
+        "Meditations - Marcus Aurelius",
+        "Can't Hurt Me - David Goggins",
+        "Ego Is the Enemy - Ryan Holiday",
+        "The Subtle Art of Not Giving a F*** - Mark Manson",
+        "The Mountain Is You - Brianna Wiest",
+        "The Power of Now - Eckhart Tolle",
+        "Think Like a Monk - Jay Shetty",
+        "The Courage to Be Disliked - Ichiro Kishimi",
+        "As a Man Thinketh - James Allen",
+        "The Magic of Thinking Big - David Schwartz",
+        "The Untethered Soul - Michael Singer",
+        "The Alchemist - Paulo Coelho",
+        "The Road Less Traveled - M. Scott Peck",
+        "Awareness - Anthony De Mello",
+        "The Art of Happiness - Dalai Lama",
+        "The Power of Positive Thinking - Norman Peale",
+        "The Big Leap - Gay Hendricks",
+        "Psycho-Cybernetics - Maxwell Maltz",
+        "The Happiness Advantage - Shawn Achor",
+        "The Way of Zen - Alan Watts",
+        "The Practicing Mind - Thomas Sterner",
+        "The Comfort Crisis - Michael Easter",
+        "Stillness Is the Key - Ryan Holiday",
+        "The Science of Self-Discipline - Peter Hollins",
+        "A Guide to the Good Life - William Irvine"
+      ]
+    },
+    {
+      "category": "Leadership, Strategy & Power",
+      "books": [
+        "How to Win Friends and Influence People - Dale Carnegie",
+        "Leaders Eat Last - Simon Sinek",
+        "Start With Why - Simon Sinek",
+        "Extreme Ownership - Jocko Willink",
+        "The 48 Laws of Power - Robert Greene",
+        "Mastery - Robert Greene",
+        "The Art of War - Sun Tzu",
+        "Good to Great - Jim Collins",
+        "The Dichotomy of Leadership - Jocko Willink",
+        "Leadership Strategy and Tactics - Jocko Willink",
+        "Dare to Lead - Bren\u00e9 Brown",
+        "Turn the Ship Around - L. David Marquet",
+        "The Leader Who Had No Title - Robin Sharma",
+        "The 21 Irrefutable Laws of Leadership - John Maxwell",
+        "Principles - Ray Dalio",
+        "Great by Choice - Jim Collins",
+        "The Innovator's Dilemma - Clayton Christensen",
+        "The Hard Thing About Hard Things - Ben Horowitz",
+        "Zero to One - Peter Thiel",
+        "Measure What Matters - John Doerr",
+        "The Lean Startup - Eric Ries",
+        "Playing to Win - A.G. Lafley",
+        "The Fifth Discipline - Peter Senge",
+        "Blue Ocean Strategy - Kim & Mauborgne",
+        "The Art of Worldly Wisdom - Baltasar Graci\u00e1n",
+        "The Prince - Niccol\u00f2 Machiavelli",
+        "The 33 Strategies of War - Robert Greene",
+        "Radical Candor - Kim Scott",
+        "Who Moved My Cheese - Spencer Johnson",
+        "The Effective Executive - Peter Drucker"
+      ]
+    },
+    {
+      "category": "Communication & Social Intelligence",
+      "books": [
+        "Crucial Conversations - Patterson & Grenny",
+        "Nonviolent Communication - Marshall Rosenberg",
+        "The Charisma Myth - Olivia Fox Cabane",
+        "Never Split the Difference - Chris Voss",
+        "Exactly What to Say - Phil M. Jones",
+        "Influence - Robert Cialdini",
+        "How to Talk to Anyone - Leil Lowndes",
+        "The Art of Communicating - Thich Nhat Hanh",
+        "The Like Switch - Jack Schafer",
+        "Captivate - Vanessa Van Edwards",
+        "Difficult Conversations - Stone, Patton, Heen",
+        "The 5 Essential People Skills - Dale Carnegie",
+        "What Every Body Is Saying - Joe Navarro",
+        "Just Listen - Mark Goulston",
+        "Talk Like TED - Carmine Gallo",
+        "How to Have Confidence and Power in Dealing With People - Les Giblin",
+        "The Communication Book - Krogerus & Tsch\u00e4ppeler",
+        "Conversational Intelligence - Judith Glaser",
+        "Surrounded by Idiots - Thomas Erikson",
+        "The Art of Witty Banter - Patrick King",
+        "The Definitive Book of Body Language - Allan Pease",
+        "Smart Brevity - Axios",
+        "On Speaking Well - Peggy Noonan",
+        "Storyworthy - Matthew Dicks",
+        "How to Speak, How to Listen - Mortimer Adler",
+        "Fierce Conversations - Susan Scott",
+        "Presence - Amy Cuddy",
+        "Influence Is Your Superpower - Zoe Chance",
+        "Say What You Mean - Oren Jay Sofer",
+        "Words That Change Minds - Shelle Rose Charvet"
+      ]
+    },
+    {
+      "category": "Relationships, Emotional Intelligence & Self-Awareness",
+      "books": [
+        "Attached - Amir Levine",
+        "Emotional Intelligence - Daniel Goleman",
+        "The 5 Love Languages - Gary Chapman",
+        "Models - Mark Manson",
+        "Set Boundaries, Find Peace - Nedra Tawwab",
+        "The Social Skills Guidebook - Chris MacLeod",
+        "Daring Greatly - Bren\u00e9 Brown",
+        "The Way of the Superior Man - David Deida",
+        "Men Are from Mars, Women Are from Venus - John Gray",
+        "The Road Less Traveled - M. Scott Peck",
+        "No More Mr. Nice Guy - Robert Glover",
+        "The Art of Loving - Erich Fromm",
+        "Emotional Agility - Susan David",
+        "Hold Me Tight - Sue Johnson",
+        "The State of Affairs - Esther Perel",
+        "Wired for Love - Stan Tatkin",
+        "Getting the Love You Want - Harville Hendrix",
+        "Difficult Men - Brett Martin",
+        "The Gifts of Imperfection - Bren\u00e9 Brown",
+        "Insight - Tasha Eurich",
+        "Emotional First Aid - Guy Winch",
+        "Why Men Love B***** - Sherry Argov",
+        "Conscious Loving - Gay & Kathlyn Hendricks",
+        "You're Not Listening - Kate Murphy",
+        "The Art of Seduction - Robert Greene",
+        "The Untethered Soul - Michael Singer",
+        "Radical Acceptance - Tara Brach",
+        "Attached to God - Krispin Mayfield",
+        "The Miracle of Mindfulness - Thich Nhat Hanh",
+        "Self-Compassion - Kristin Neff"
+      ]
+    },
+    {
+      "category": "Finance, Wealth & Money Mastery",
+      "books": [
+        "Rich Dad Poor Dad - Robert Kiyosaki",
+        "The Psychology of Money - Morgan Housel",
+        "The Richest Man in Babylon - George Clason",
+        "I Will Teach You to Be Rich - Ramit Sethi",
+        "Think and Grow Rich - Napoleon Hill",
+        "The Intelligent Investor - Benjamin Graham",
+        "The Simple Path to Wealth - JL Collins",
+        "Unshakeable - Tony Robbins",
+        "Money Master the Game - Tony Robbins",
+        "The Millionaire Next Door - Thomas Stanley",
+        "The Total Money Makeover - Dave Ramsey",
+        "Your Money or Your Life - Vicki Robin",
+        "The Automatic Millionaire - David Bach",
+        "The Wealthy Barber - David Chilton",
+        "The Little Book of Common Sense Investing - Jack Bogle",
+        "The Barefoot Investor - Scott Pape",
+        "Financial Freedom - Grant Sabatier",
+        "The Almanack of Naval Ravikant - Eric Jorgenson",
+        "The Millionaire Fastlane - MJ DeMarco",
+        "Rich Dad's Cashflow Quadrant - Robert Kiyosaki",
+        "The Science of Getting Rich - Wallace Wattles",
+        "Secrets of the Millionaire Mind - T. Harv Eker",
+        "Quit Like a Millionaire - Kristy Shen",
+        "Broke Millennial - Erin Lowry",
+        "The Snowball - Alice Schroeder",
+        "Everyday Millionaires - Chris Hogan",
+        "The Latte Factor - David Bach",
+        "One Up On Wall Street - Peter Lynch",
+        "A Random Walk Down Wall Street - Burton Malkiel",
+        "The Psychology of Persuasion - Robert Cialdini"
+      ]
+    }
+  ]
+}

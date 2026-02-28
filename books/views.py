@@ -7,14 +7,28 @@ from rest_framework.permissions import AllowAny,IsAuthenticated
 from .utils import search_books, get_book_by_id, search_books_by_categroy, extract_books_items
 from django_ratelimit.decorators import ratelimit
 from .summary_response_example import test_response
-from .models import BookAnalysisResponse, UserExtractedBooks, BookmarkBook, Notes
-from .serializers import BookAnalysisResponseSerializer, BookmarkBookSerializer, UserExtractedBooksSerializer, NotesSerializer
+from .models import BookAnalysisResponse, UserExtractedBooks, BookmarkBook, Notes, ExtractVideoInsights, VideoNotes
+from .serializers import (
+    BookAnalysisResponseSerializer, 
+    BookmarkBookSerializer, 
+    UserExtractedBooksSerializer, 
+    NotesSerializer, 
+    ExtractVideoInsightsSerializer,
+    VideoNotesSerializer
+)
 from account.subscription_utils import update_subscription_usage, subscription_limit_required
 from .tasks import SCHEDULE_BOOK_SUMMARY, handle_search_book
 from django.views.decorators.cache import cache_page
 import os 
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
+from django.core.files.storage import default_storage
+from django.core.files.base import ContentFile
+from .gemini import generate_video_insights
+from account.utils import generate_id
+from django.conf import settings
+
+import tempfile
 # Create your views here.
 
 
@@ -361,7 +375,7 @@ def delete_user_extracted_books(request):
 @ratelimit(key='ip', rate='40/60m')
 @api_view(["POST"])
 @permission_classes([IsAuthenticated])
-# @subscription_limit_required('note')
+@subscription_limit_required('note')
 def save_note(request):
     try:
         data = request.data
@@ -466,3 +480,206 @@ def ai_search_book(request):
             status=status.HTTP_400_BAD_REQUEST
         )
 
+@ratelimit(key='ip', rate='10/1d')
+@api_view(["POST"])
+@permission_classes([IsAuthenticated])
+@subscription_limit_required("video_extractions")
+def analyze_video_insight(request):
+    """
+    POST: Upload a video file (max 30s recommended) and get AI insights.
+    Stores video temporarily in local temp file for Gemini processing.
+    """
+    try:
+        if 'video' not in request.FILES:
+            return Response(
+                {"error": "No video file provided"},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        video_file = request.FILES['video']
+        
+        # Validate file size (e.g., max 15MB approx 30s of decent quality)
+        if video_file.size > 15 * 1024 * 1024:
+             return Response(
+                {"error": "Video file too large. Please upload a shorter video (max 15MB)."},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        # Handle local temp file creation
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.mp4') as temp_video:
+            try:
+                # Write uploaded chunks to temp file
+                for chunk in video_file.chunks():
+                    temp_video.write(chunk)
+                
+                temp_video_path = temp_video.name
+                # print(f"Saved video to local temp: {temp_video_path}")
+                
+                # Generate insights using the local file path
+                insights_json = generate_video_insights(temp_video_path)
+                
+                # Parse JSON to ensure it's valid structure
+                parsed_insights = json.loads(insights_json)
+                
+                # Save insights to database
+                save_extracted = ExtractVideoInsights.objects.create(
+                    user=request.user,
+                    videoTitle=request.data['video_title'],
+                    # thumbnail=request.data['thumbnail'],
+                    summary=parsed_insights['summary'],
+                    key_takeaways=parsed_insights['key_takeaways'],
+                    reminders=parsed_insights['reminders'],
+                )
+                
+                # update_subscription_usage(request.user, "video_extractions")
+                
+                return Response({
+                    "data": parsed_insights,
+                    "saved_item_id": save_extracted.id,
+                    "message": "Video analysis successful",
+                    "status": status.HTTP_200_OK
+                }, status=status.HTTP_200_OK)
+
+            except Exception as e:
+                print(f"AI Error: {str(e)}")
+                return Response(
+                    {"error": "Failed to analyze video", "details": str(e)},
+                    status=status.HTTP_500_INTERNAL_SERVER_ERROR
+                )
+            finally:
+                # Cleanup: Delete the local temp file
+                if os.path.exists(temp_video.name):
+                    try:
+                        os.remove(temp_video.name)
+                        # print(f"Deleted temp video file: {temp_video.name}")
+                    except Exception as e:
+                        # print(f"Error deletion temp file: {e}")
+                        pass
+
+    except Exception as e:
+        # print("ERROR MDG: ", str(e))
+        return Response(
+            {"error": "An unexpected error occurred", "details": str(e)},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+@subscription_limit_required("video_notes")
+def save_video_note(request):
+    """
+    POST: Save a new video note for the user.
+    """
+    data = request.data.copy()
+    data['user'] = request.user.id
+    # data['type'] = "video"
+    serializer = VideoNotesSerializer(data=data)
+    if serializer.is_valid():
+        serializer.save()
+        # update_subscription_usage(request.user, "video_notes")
+        return Response({
+            "data": serializer.data,
+            "message": "Video note saved successfully",
+            "status": status.HTTP_201_CREATED
+        }, status=status.HTTP_201_CREATED)
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_video_notes(request):
+    """
+    GET: Retrieve all notes for the authenticated user.
+    Can be filtered by video_id via query param.
+    """
+    video_id = request.query_params.get('video_id')
+    if video_id:
+        notes = VideoNotes.objects.filter(user=request.user, video_id=video_id)
+    else:
+        notes = VideoNotes.objects.filter(user=request.user)
+        
+    serializer = VideoNotesSerializer(notes, many=True)
+    return Response({
+        "data": serializer.data,
+        "message": "Video notes retrieved successfully",
+        "status": status.HTTP_200_OK
+    }, status=status.HTTP_200_OK)
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def delete_video_note(request):
+    """
+    POST: Delete a specific video note.
+    Expects note_id in request body.
+    """
+    note_id = request.data.get('note_id')
+    if not note_id:
+        return Response({"error": "note_id is required"}, status=status.HTTP_400_BAD_REQUEST)
+    
+    try:
+        note = VideoNotes.objects.get(id=note_id, user=request.user)
+        note.delete()
+        return Response({
+            "message": "Video note deleted successfully",
+            "status": status.HTTP_200_OK
+        }, status=status.HTTP_200_OK)
+    except VideoNotes.DoesNotExist:
+        return Response({"error": "Note not found"}, status=status.HTTP_404_NOT_FOUND)
+
+
+@ratelimit(key='ip', rate='300/1d')
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_extracted_videos(request):
+    """
+    GET: Retrieve all extracted video insights for the authenticated user.
+    """
+    try:
+        extracted_videos = ExtractVideoInsights.objects.filter(user=request.user).order_by('-created_at')
+        serializer = ExtractVideoInsightsSerializer(extracted_videos, many=True)
+        return Response({
+            "data": serializer.data,
+            "message": "success",
+            "status": status.HTTP_200_OK,
+        }, status=status.HTTP_200_OK)
+    except Exception as e:
+        return Response({
+            "message": f"Error loading extracted videos: {str(e)}",
+            "status": status.HTTP_400_BAD_REQUEST,
+        }, status=status.HTTP_400_BAD_REQUEST)
+
+
+@ratelimit(key='ip', rate='300/1d')
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def delete_extracted_video(request):
+    """
+    POST: Delete a specific extracted video.
+    Expects video_id in request body.
+    """
+    try:
+        video_id = request.data.get('video_id')
+        if not video_id:
+            return Response({
+                "error": "video_id is required",
+                "status": status.HTTP_400_BAD_REQUEST
+            }, status=status.HTTP_400_BAD_REQUEST)
+        
+        extracted_video = ExtractVideoInsights.objects.get(id=video_id, user=request.user)
+        extracted_video.delete()
+        return Response({
+            "message": "Extracted video deleted successfully",
+            "status": status.HTTP_200_OK,
+        }, status=status.HTTP_200_OK)
+    except ExtractVideoInsights.DoesNotExist:
+        return Response({
+            "error": "Extracted video not found",
+            "status": status.HTTP_404_NOT_FOUND
+        }, status=status.HTTP_404_NOT_FOUND)
+    except Exception as e:
+        return Response({
+            "message": f"Error deleting extracted video: {str(e)}",
+            "status": status.HTTP_400_BAD_REQUEST,
+        }, status=status.HTTP_400_BAD_REQUEST)
