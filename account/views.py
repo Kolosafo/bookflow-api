@@ -7,19 +7,24 @@ from rest_framework.response import Response
 from rest_framework import exceptions, status
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from .models import User
-from .serializers import SignUpSerializer, SupportSerializer, BioAuthSerializer, PrivacyPolicySerializer, TermsOfUsSerializer, SubscriptionUsageSerializer
+from .serializers import (
+    SignUpSerializer, SupportSerializer, BioAuthSerializer, 
+    PrivacyPolicySerializer, TermsOfUsSerializer, SubscriptionUsageSerializer,
+    UserSerializer
+)
 from django.utils import timezone
 from rest_framework.permissions import IsAuthenticated
 from books.tasks import SCHEDULE_FREE_TIER
 from .models import OTPService, DeleteAccount, PrivacyPolicy, TermsOfUse, UserSubscriptionUsage, SubscribeInApp
 from .emailFunc import send_verification_email, send_free_trial_email
-from .utils import generate_otp
+from .utils import generate_otp, generate_social_username
 from books.tasks import single_free_trial
 from .actions import save_otp, validate_otp
 from django.core.mail import send_mail
 from django.conf import settings
 from .subscription_utils import getSubcriptionUsage, create_subscription, allowedUsage
 # from notification.models import UserNotification
+from django.db.models import Q
 import json
 import os
 from pathlib import Path
@@ -38,14 +43,29 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 def register(request):
     data = request.data
             
-    if User.objects.filter(email=data['email']):
-        check_email_exists = User.objects.filter(email=data['email']).first()
-        if check_email_exists:
-            return Response({
-                "errors": "email already exists",
-                "message": "email already exists",
-                "status": status.HTTP_409_CONFLICT,
-            }, status=status.HTTP_409_CONFLICT)
+    email = data.get('email')
+    username = data.get('username')
+
+    if not username or not email:
+        return Response({
+            "errors": "Both Username and Email are required",
+            "message": "Both Username and Email are required",
+            "status": status.HTTP_400_BAD_REQUEST,
+        }, status=status.HTTP_400_BAD_REQUEST)
+
+    if User.objects.filter(email=email).exists():
+        return Response({
+            "errors": "email already exists",
+            "message": "email already exists",
+            "status": status.HTTP_409_CONFLICT,
+        }, status=status.HTTP_409_CONFLICT)
+        
+    if User.objects.filter(username=username).exists():
+        return Response({
+            "errors": "username already exists",
+            "message": "username already exists",
+            "status": status.HTTP_409_CONFLICT,
+        }, status=status.HTTP_409_CONFLICT)
             
     if data['password'] != data['password_confirm']:
         return Response({
@@ -54,24 +74,25 @@ def register(request):
             "status": status.HTTP_409_CONFLICT,
         }, status=status.HTTP_409_CONFLICT)
     try:
-        data['username'] = data['email']
         serializer = SignUpSerializer(data=data)
         if serializer.is_valid(raise_exception=True):
             user = serializer.save()
             refresh = RefreshToken.for_user(user)
             access_token = str(refresh.access_token)
             create_subscription(user)
-            OTP = generate_otp()
-            save_otp(data["email"], str(OTP), "email_verification")
-            # send_verification_email(data["email"], str(OTP))
             
-            # # TRY STORYING USER PUSH NOTIFICATION
-            # try:
-            #     if data['pushNotificationToken']:
-            #         UserNotification.objects.create(user=user, notificationToken=data['pushNotificationToken'])
-            # except Exception as E:
-            #     pass
-            return Response({"refresh":str(refresh), "access": access_token,"data":serializer.data, "status": status.HTTP_201_CREATED})
+            # Email verification for traditional sign up
+            OTP = generate_otp()
+            save_otp(email, str(OTP), "email_verification")
+            send_verification_email(email, str(OTP))
+
+            user_serializer = UserSerializer(user)
+            return Response({
+                "refresh": str(refresh), 
+                "access": access_token,
+                "data": user_serializer.data, 
+                "status": status.HTTP_201_CREATED
+            })
     except Exception as e:
         return Response({
             "errors": str(e),
@@ -90,13 +111,17 @@ def register(request):
 
 @api_view(['POST'])
 def confirm_email(request):
-    user_email = request.data['email']
-    otp = request.data['otp']
-    # print("EMAIL", user_email)
+    user_email = request.data.get('email')
+    otp = request.data.get('otp')
+    
+    if not user_email:
+         return Response({"message": "Email is required", "status": status.HTTP_400_BAD_REQUEST}, status=status.HTTP_400_BAD_REQUEST)
 
-    # TODO: RUN THIS ONLY IF USER ACCOUNT STATUS IS NOT ACTIVATED
     try:
-        check_user = User.objects.get(email=user_email)
+        check_user = User.objects.filter(email__iexact=user_email).first()
+        if not check_user:
+             return Response("User not found!", status=status.HTTP_404_NOT_FOUND)
+             
         if not check_user.status == "not activated":
             return Response({
                 "errors": None,
@@ -114,8 +139,7 @@ def confirm_email(request):
         
 
     except Exception as E:
-        # print("ERROR", E)
-        return Response("Invalid OTP or User with that email doesn't exist!", status=status.HTTP_404_NOT_FOUND)
+        return Response(str(E), status=status.HTTP_400_BAD_REQUEST)
 
     return Response({
                 "errors": None,
@@ -141,7 +165,7 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
         'date_subscription_ends',
     ]
     
-    @classmethod
+    # Define which fields to include in JWT token claims (can be different from response)
     def get_token(cls, user):
         token = super().get_token(user)            
         if user.status == "blocked":
@@ -170,24 +194,152 @@ class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTokenObtainPairSerializer
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
-        data = request.data
-        # try:
-        #     User.objects.get(username = data['username'], deviceId=data['deviceId'])
-        # except Exception as e:
-        #         return Response({"detail": "invalid user ID"}, status=status.HTTP_403_FORBIDDEN)
         try:
             serializer.is_valid(raise_exception=True)
+            
+            email = request.data.get('email')
+            if not email:
+                raise Exception("Email is required.")
+                
+            user = User.objects.filter(email__iexact=email).first()
+            
+            if not user:
+                raise Exception("User not found.")
+                
+            user_serializer = UserSerializer(user)
+            
+            # Return custom structure: tokens + data
+            token_data = serializer.validated_data
+            return Response({
+                "refresh": token_data['refresh'],
+                "access": token_data['access'],
+                "data": user_serializer.data,
+                "message": "Login successful",
+                "status": status.HTTP_200_OK
+            }, status=status.HTTP_200_OK)
         except Exception as e:
             return Response({"detail": str(e)}, status=status.HTTP_403_FORBIDDEN)
 
-        token_data = serializer.validated_data
-        return Response(token_data, status=status.HTTP_200_OK)
+
+@api_view(['POST'])
+@permission_classes([AllowAny])
+def google_auth(request):
+    data = request.data
+    email = data.get('email')
+    if not email:
+        return Response({"message": "Email is required"}, status=status.HTTP_400_BAD_REQUEST)
+    
+    user = User.objects.filter(email=email).first()
+    new_user = False
+    
+    if not user:
+        new_user = True
+        username = generate_social_username()
+        # Ensure unique username
+        while User.objects.filter(username=username).exists():
+            username = generate_social_username()
+            
+        user = User.objects.create_user(
+            username=username,
+            email=email,
+            status="activated"
+        )
+        create_subscription(user)
+        # single_free_trial(user) # Optional, based on your logic
+    
+    refresh = RefreshToken.for_user(user)
+    user_serializer = UserSerializer(user)
+    
+    return Response({
+        "refresh": str(refresh),
+        "access": str(refresh.access_token),
+        "data": user_serializer.data,
+        "message": "Sign-in successful",
+        "newUser": new_user,
+        "status": status.HTTP_200_OK
+    }, status=status.HTTP_200_OK)
+
+
+@api_view(['POST'])
+@permission_classes([AllowAny])
+def apple_auth(request):
+    data = request.data
+    email = data.get('email')
+    apple_token = data.get('token')
+    
+    if not apple_token:
+        return Response({"message": "Apple token is required"}, status=status.HTTP_400_BAD_REQUEST)
+    
+    # Strictly search by Apple ID token
+    user = User.objects.filter(apple_user_id=apple_token).first()
+    
+    new_user = False
+    if not user:
+        new_user = True
+        username = generate_social_username()
+        while User.objects.filter(username=username).exists():
+            username = generate_social_username()
+        
+        # Ensure we satisfy UserManager which needs an email
+        actual_email = email if email else f"{apple_token}@apple.user"
+            
+        user = User.objects.create_user(
+            email=actual_email,
+            password=None,
+            username=username,
+            status="activated",
+            is_apple_signin=True,
+            apple_user_id=apple_token
+        )
+        create_subscription(user)
+    
+    refresh = RefreshToken.for_user(user)
+    user_serializer = UserSerializer(user)
+    
+    return Response({
+        "refresh": str(refresh),
+        "access": str(refresh.access_token),
+        "data": user_serializer.data,
+        "message": "Sign-in successful",
+        "newUser": new_user,
+        "status": status.HTTP_200_OK
+    }, status=status.HTTP_200_OK)
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def update_username(request):
+    user = request.user
+    new_username = request.data.get('username')
+    
+    if not new_username:
+        return Response({"message": "Username is required"}, status=status.HTTP_400_BAD_REQUEST)
+    
+    if User.objects.filter(username=new_username).exclude(id=user.id).exists():
+        return Response({"message": "Username already exists"}, status=status.HTTP_409_CONFLICT)
+        
+    user.username = new_username
+    user.save()
+    
+    user_serializer = UserSerializer(user)
+    return Response({
+        "data": user_serializer.data,
+        "message": "Username updated successfully",
+        "status": status.HTTP_200_OK
+    }, status=status.HTTP_200_OK)
 
 
 
 @api_view(['POST'])
 def resend_OTP(request):
-    email = request.data['email']
+    email = request.data.get('email')
+    if not email:
+         return Response({"message": "Email is required", "status": status.HTTP_400_BAD_REQUEST}, status=status.HTTP_400_BAD_REQUEST)
+         
+    user = User.objects.filter(email__iexact=email).first()
+    if not user:
+         return Response({"message": "User not found or has no email associated", "status": status.HTTP_404_NOT_FOUND}, status=status.HTTP_404_NOT_FOUND)
+
     
     get_previous = OTPService.objects.filter(email=email).last()
     if get_previous:
@@ -209,20 +361,27 @@ def resend_OTP(request):
 @api_view(['POST'])
 def forgot_password(request):
     try:
-        email = request.data['email']
+        email = request.data.get('email')
+        if not email:
+            raise ValueError("Email is required")
+            
         otp = generate_otp()
-        get_user = User.objects.get(email=email.lower())
+        get_user = User.objects.filter(email__iexact=email).first()
+        
+        if not get_user:
+            raise ValueError("User with that email doesn't exist!")
+
         if(get_user.status == "suspended"):
             return Response("error", status.HTTP_400_BAD_REQUEST)
         
         try:
             # DELETE ANYONE THAT ALREADY EXISTS
-            reset_password = OTPService.objects.filter(email=email.lower(), type="password_reset").first()
-            reset_password.delete()
+            reset_password = OTPService.objects.filter(email=email, type="password_reset").first()
+            if reset_password:
+                reset_password.delete()
         except:
             pass
         
-        print("email: ", email)
         save_otp(email, otp, "password_reset")
 
         email_message = f"Reset your password \nHere is your One Time Password (OTP): {otp} \n\nIF YOU DIDN'T REQUEST TO CHANGE YOUR PASSWORD, PLEASE IGNORE THIS MESSAGE AND DO NOT SHARE THIS CODE WITH ANYONE, INCLUDING US. \n\nSincerely, BookFlow Team"
@@ -247,6 +406,15 @@ def forgot_password(request):
 @api_view(['POST'])
 def password_reset(request):
     data = request.data
+    email = data.get('email')
+    
+    if not email:
+        return Response({
+                "data": "Email is required",
+                "errors": True,
+                "message": "Email is required",
+                "status": status.HTTP_400_BAD_REQUEST,
+            }, status=status.HTTP_400_BAD_REQUEST)
 
     if data['password'] != data['confirm_password']:
         raise exceptions.APIException({
@@ -256,7 +424,17 @@ def password_reset(request):
                 "status": status.HTTP_400_BAD_REQUEST,
             }, status=status.HTTP_400_BAD_REQUEST)
 
-    _validate_reset_otp = validate_otp(data['email'], data['otp'], "password_reset")
+    user = User.objects.filter(email__iexact=email).first()
+    if not user:
+        return Response({
+                "data": "this user does not exist",
+                "errors": True,
+                "message": "this user does not exist",
+                "status": status.HTTP_404_NOT_FOUND,
+            }, status=status.HTTP_404_NOT_FOUND)
+
+    _validate_reset_otp = validate_otp(email, data['otp'], "password_reset")
+    
     if not _validate_reset_otp:
         return Response({
                 "data": "invalid OTP",
@@ -265,14 +443,6 @@ def password_reset(request):
                 "status": status.HTTP_400_BAD_REQUEST,
             }, status=status.HTTP_400_BAD_REQUEST)
         
-    user = User.objects.filter(email=data['email'].lower()).first()
-    if not user:
-        return Response({
-                "data": "this user does not exist",
-                "errors": True,
-                "message": "this user does not exist",
-                "status": status.HTTP_404_NOT_FOUND,
-            }, status=status.HTTP_404_NOT_FOUND)
     try:
         user.deviceId = data['deviceId']
     except:

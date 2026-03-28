@@ -16,6 +16,10 @@ urlpatterns = [
          views.register, name="register"),
     path('bio_login/', views.biometric_login, name='bio_login'),
     path('login/', views.MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('google_auth/', views.google_auth, name='google_auth'),
+    path('apple_auth/', views.apple_auth, name='apple_auth'),
+    path('update_username/', views.update_username, name='update_username'),
+
     path('confirm_email/',
          views.confirm_email, name="confirm_email"),
     path('resent_otp/',

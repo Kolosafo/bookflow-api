@@ -45,6 +45,8 @@ class User(AbstractUser, PermissionsMixin):
     is_staff = models.BooleanField(default=False)
     
     type = models.CharField(max_length=100, choices=user_types, default="user")
+    is_apple_signin = models.BooleanField(default=False)
+    apple_user_id = models.CharField(max_length=255, blank=True, null=True, unique=True)
     
     # THIS IS THE KEY CHANGE - Use email as the login field
     USERNAME_FIELD = 'email'

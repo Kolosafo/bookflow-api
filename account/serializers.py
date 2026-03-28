@@ -2,6 +2,21 @@
 from rest_framework import serializers
 from .models import User, PrivacyPolicy, TermsOfUse, SupportMessage, UserSubscriptionUsage
 
+class UserSerializer(serializers.ModelSerializer):
+    subscription = serializers.SerializerMethodField()
+
+    class Meta:
+        model = User
+        fields = [
+            'id', 'username', 'email', 'timezone', "deviceId", 
+            'status', 'interests', 'subscription', 'free_trail', 
+            'date_subscription_ends', 'date_subscribed', 'is_apple_signin'
+        ]
+
+    def get_subscription(self, obj):
+        # If user has a free trial, pretend it's a monthly premium
+        return "monthly premium" if obj.free_trail else obj.subscription
+
 class SignUpSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
 
@@ -82,4 +97,3 @@ class SubscriptionUsageSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserSubscriptionUsage
         fields = '__all__'
-   
