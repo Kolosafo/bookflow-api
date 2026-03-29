@@ -14,7 +14,7 @@ from channels.auth import AuthMiddlewareStack
 from books.routing import websocket_urlpatterns
 from books.chat_ai.socket_auth import JWTAuthMiddleware
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bookflow_api.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 
 # Initialize Django ASGI application early to ensure the AppRegistry
 # is populated before importing code that may import ORM models.
