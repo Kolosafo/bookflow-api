@@ -29,7 +29,7 @@ SECRET_KEY = APP_SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bookflow-api-bcke.onrender.com', 'bookflow-api-production.up.railway.app', '127.0.0.1', '7423-102-91-102-83.ngrok-free.app']
+ALLOWED_HOSTS = ['bookflow-api-547ff4a93bca.herokuapp.com/']
 
 
 EMAIL_HOST = 'smtp.gmail.com'
