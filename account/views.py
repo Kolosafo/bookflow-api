@@ -22,7 +22,7 @@ from books.tasks import single_free_trial
 from .actions import save_otp, validate_otp
 from django.core.mail import send_mail
 from django.conf import settings
-from .subscription_utils import getSubcriptionUsage, create_subscription, allowedUsage
+from .subscription_utils import getSubcriptionUsage, create_subscription, allowedUsage, update_all_usage_for_plan
 # from notification.models import UserNotification
 from django.db.models import Q
 import json
@@ -559,15 +559,17 @@ def load_subscription_usage(request):
     get_user_obj = User.objects.get(id=user.id)
     subscription_usage = UserSubscriptionUsage.objects.get(user=user)
     usage = getSubcriptionUsage(
-        subscription_usage.summaries, 
-        subscription_usage.notes, 
-        subscription_usage.reminders, 
+        subscription_usage.summaries,
+        subscription_usage.notes,
+        subscription_usage.reminders,
         subscription_usage.smart_search,
         subscription_usage.video_extractions,
         subscription_usage.video_notes,
         subscription_usage.video_reminders
     )
-    _allowedUsage = allowedUsage(get_user_obj.subscription)
+    # Free trial users get basic-tier limits
+    effective_plan = "basic" if get_user_obj.free_trail else get_user_obj.subscription
+    _allowedUsage = allowedUsage(effective_plan)
     return Response({   
         "data": {"allowedUsage": _allowedUsage, "currentUsage":usage}, 
         "message":"success",
@@ -585,12 +587,23 @@ def subscribe(request):
         user = request.user
         data = request.data
         get_user = User.objects.get(id=user.id)
-        SubscribeInApp.objects.create(user=get_user, productId=data['productId'], status=data['status'], amount=data['amount'], transactionRef=data['transactionRef'], data=data['data'])
-        get_user.subscription=data['type']
-        get_user.date_subscribed= timezone.now()
+        SubscribeInApp.objects.update_or_create(
+            transactionRef=data['transactionRef'],
+            defaults={
+                'user': get_user,
+                'productId': data['productId'],
+                'status': data['status'],
+                'amount': data['amount'],
+                'data': data['data'],
+            }
+        )
+        get_user.subscription = data['type']
+        get_user.date_subscribed = timezone.now()
         get_user.date_subscription_ends = timezone.now().date() + timezone.timedelta(days=30)
-            
         get_user.save()
+
+        # Reset usage counters to the new plan's limits
+        update_all_usage_for_plan(get_user, data['type'])
         
         return Response({   
             "data": {

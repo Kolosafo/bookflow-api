@@ -14,8 +14,8 @@ class UserSerializer(serializers.ModelSerializer):
         ]
 
     def get_subscription(self, obj):
-        # If user has a free trial, pretend it's a monthly premium
-        return "monthly premium" if obj.free_trail else obj.subscription
+        # Free trial gives basic-tier access; return actual subscription otherwise
+        return "basic" if obj.free_trail else obj.subscription
 
 class SignUpSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
@@ -49,12 +49,12 @@ class BioAuthSerializer(serializers.ModelSerializer):
                   ]
 
     def get_subscription(self, obj):
-        # If user has a free trial, pretend it's a monthly premium
-        return "monthly premium" if obj.free_trail else obj.subscription
-    
-    
-    
-        
+        # Free trial gives basic-tier access; return actual subscription otherwise
+        return "basic" if obj.free_trail else obj.subscription
+
+
+
+
 
 class PrivacyPolicySerializer(serializers.ModelSerializer):
     content_html = serializers.SerializerMethodField()

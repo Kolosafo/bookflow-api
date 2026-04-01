@@ -89,6 +89,37 @@ def update_subscription_usage(user, usage):
 
 
 
+def update_all_usage_for_plan(user, plan: str):
+    """
+    Reset a user's subscription usage counters to the limits for the given plan.
+    Called whenever a user subscribes or upgrades.
+    """
+    limits = allowedUsage(plan)
+    try:
+        usage = UserSubscriptionUsage.objects.get(user=user)
+    except UserSubscriptionUsage.DoesNotExist:
+        UserSubscriptionUsage.objects.create(
+            user=user,
+            summaries=limits["summaries"],
+            notes=limits["notes"],
+            reminders=limits["reminders"],
+            smart_search=limits["smart_search"],
+            video_extractions=limits["video_extractions"],
+            video_notes=limits["video_notes"],
+            video_reminders=limits["video_reminders"],
+        )
+        return True
+    usage.summaries = limits["summaries"]
+    usage.notes = limits["notes"]
+    usage.reminders = limits["reminders"]
+    usage.smart_search = limits["smart_search"]
+    usage.video_extractions = limits["video_extractions"]
+    usage.video_notes = limits["video_notes"]
+    usage.video_reminders = limits["video_reminders"]
+    usage.save()
+    return True
+
+
 def subscription_limit_required(usage_type: str):
     """
     Decorator to restrict access based on user's subscription usage.

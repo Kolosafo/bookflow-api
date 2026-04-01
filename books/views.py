@@ -34,7 +34,7 @@ import tempfile
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
-# @subscription_limit_required('summaries')
+@subscription_limit_required('summaries')
 def summarize_book(request):
     try:
         data = request.data
@@ -375,7 +375,7 @@ def delete_user_extracted_books(request):
 @ratelimit(key='ip', rate='40/60m')
 @api_view(["POST"])
 @permission_classes([IsAuthenticated])
-# @subscription_limit_required('note')
+@subscription_limit_required('notes')
 def save_note(request):
     try:
         data = request.data
@@ -531,8 +531,8 @@ def analyze_video_insight(request):
                     reminders=parsed_insights['reminders'],
                 )
                 
-                # update_subscription_usage(request.user, "video_extractions")
-                
+                update_subscription_usage(request.user, "video_extractions")
+
                 return Response({
                     "data": parsed_insights,
                     "saved_item_id": save_extracted.id,
@@ -577,7 +577,7 @@ def save_video_note(request):
     serializer = VideoNotesSerializer(data=data)
     if serializer.is_valid():
         serializer.save()
-        # update_subscription_usage(request.user, "video_notes")
+        update_subscription_usage(request.user, "video_notes")
         return Response({
             "data": serializer.data,
             "message": "Video note saved successfully",
