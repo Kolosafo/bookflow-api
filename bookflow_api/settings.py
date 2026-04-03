@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 APP_SECRET_KEY = os.getenv("APP_SECRET_KEY", default="")
 SECRET_KEY = APP_SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['bookflow-api-547ff4a93bca.herokuapp.com']
 
@@ -87,7 +87,7 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=30),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=90),
     'ROTATE_REFRESH_TOKENS': True,
     'BLACKLIST_AFTER_ROTATION': True,
