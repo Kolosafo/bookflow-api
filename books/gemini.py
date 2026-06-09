@@ -39,7 +39,9 @@ def generate_summary_keypoints(book_title, author):
         "response_schema": BookAnalysisResponse,
     },
     )
-
+    # print("GEMINI RESPONSE: ", response)
+    if response.text is None:
+        raise ValueError(f"Gemini returned no content for '{book_title}' — response may have been blocked or is empty")
     return response.text
 
 

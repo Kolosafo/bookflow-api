@@ -106,8 +106,9 @@ def get_summarized_book(request, id):
             }, status=status.HTTP_404_NOT_FOUND)
         
         
+@ratelimit(key='ip', rate='15/1d')
 @api_view(['GET'])
-@permission_classes([IsAuthenticated])
+@permission_classes([AllowAny])
 def search_books_by_category_api(request, category):
     try:
         books = search_books_by_categroy(40,category)
@@ -128,8 +129,9 @@ def search_books_by_category_api(request, category):
         
         
 
+@ratelimit(key='ip', rate='15/1d')
 @api_view(['POST'])
-@permission_classes([IsAuthenticated])
+@permission_classes([AllowAny])
 def search_books_api(request):
     try:
         data = request.data
@@ -354,8 +356,9 @@ def delete_user_extracted_books(request):
     try:
         get_book = UserExtractedBooks.objects.filter(user=request.user, book_id=book_id)
         for book in get_book:
+            print("BOOK GOTTEN")
             book.delete()
-            book.save()
+            # book.save()
         return Response({   
             "message":"success",
             "status": status.HTTP_200_OK,
@@ -452,7 +455,7 @@ def remove_note(request):
 
 
 
-@ratelimit(key='ip', rate='30/1d')
+@ratelimit(key='ip', rate='5/1d')
 @api_view(["POST"])
 @permission_classes([IsAuthenticated])
 @subscription_limit_required('smart_search')
@@ -465,7 +468,7 @@ def ai_search_book(request):
             author = None
         search_result = handle_search_book(data['title'], author)
         update_subscription_usage(request.user, "smart_search")
-        return Response({   
+        return Response({
             "data": search_result['books'], 
             "message":"success",
             "status": status.HTTP_200_OK,
